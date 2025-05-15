@@ -1,9 +1,9 @@
 {
-  "name": "portfolio_jd",
+  "name": "nuestratierra_co",
   "private": true,
   "version": "0.1.0",
   "author": "Juan David Castro",
-  "description": "Professional portfolio created with react-vite",
+  "description": "Corporación NuestraTierra Website.",
   "type": "module",
   "scripts": {
     "dev": "vite",
