@@ -1,4 +1,4 @@
-# Nuestra tierra cp 🌎
+# Nuestra tierra co 🌎
 
 Corporación Nuestratierra website.
 
