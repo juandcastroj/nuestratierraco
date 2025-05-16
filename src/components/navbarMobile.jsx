@@ -1,6 +1,6 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import ThemeSwitcher from "./themeSwitcher";
+// import ThemeSwitcher from "./themeSwitcher";
 import { Link } from "react-router-dom";
 
 export function NavbarMobile({
@@ -45,7 +45,7 @@ export function NavbarMobile({
                 ))}
               </div>
 
-              <ThemeSwitcher className="inline lg:hidden" />
+              {/* <ThemeSwitcher className="inline lg:hidden" /> */}
             </div>
           </div>
         </DialogPanel>

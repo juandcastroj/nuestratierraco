@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import ThemeSwitcher from "./themeSwitcher";
+// import ThemeSwitcher from "./themeSwitcher";
 import { useLocation } from "react-router-dom";
 
 export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
@@ -64,7 +64,7 @@ export function NavbarDesktop({ navigationItems, handleMobileMenu }) {
           })}
         </div>
 
-        <ThemeSwitcher className="hidden lg:inline" />
+        {/* <ThemeSwitcher className="hidden lg:inline" /> */}
       </nav>
     </>
   );
