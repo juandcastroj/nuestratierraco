@@ -1,16 +1,26 @@
 const navigation = {
 
   main: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Partners', href: '#' },
+    { name: '¿Quiénes somos?', href: '#' },
+    { name: 'Proyectos', href: '#' },
+    { name: 'Catálogo', href: '#' },
+    { name: 'Inscripciones', href: '#' },
+    { name: 'Contacto', href: '#' },
   ],
 
   social: [
+      {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/company/nuestra-tierra-co/',
+      icon: (props) => (
+        <svg fill="currentColor" viewBox="0 0 50 50" {...props}>
+            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+        </svg>
+      ),
+    },
     {
       name: 'Facebook',
-      href: '#',
+      href: 'https://www.facebook.com/nuestratierraco',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -23,7 +33,7 @@ const navigation = {
     },
     {
       name: 'Instagram',
-      href: '#',
+      href: 'https://www.instagram.com/nuestratierraco/',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -35,17 +45,8 @@ const navigation = {
       ),
     },
     {
-      name: 'X',
-      href: '#',
-      icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
-        </svg>
-      ),
-    },
-    {
       name: 'YouTube',
-      href: '#',
+      href: 'https://www.youtube.com/watch?v=Q9qxPsBak48&t=9s',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -56,6 +57,15 @@ const navigation = {
         </svg>
       ),
     },
+    {
+      name: 'TikTok',
+      href: 'https://tiktok.com/@nuestratierraco',
+      icon: (props) => (
+        <svg fill="currentColor" viewBox="0 0 55 55" {...props}>
+            <path d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"></path>
+        </svg>
+      ),
+    },
   ],
   
 }
@@ -63,7 +73,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-gray-900">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">
         <nav aria-label="Footer" className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
           {navigation.main.map((item) => (
             <a key={item.name} href={item.href} className="text-gray-400 hover:text-white">
@@ -75,11 +85,11 @@ export default function Footer() {
           {navigation.social.map((item) => (
             <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
               <span className="sr-only">{item.name}</span>
-              <item.icon aria-hidden="true" className="size-6" />
+              <item.icon aria-hidden="true" className="size-8" />
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-sm/6 text-gray-400">&copy; 2025 Nuestra tierra.</p>
+        <p className="mt-10 text-center text-sm/6 text-gray-400">&copy; 2025 Nuestra Tierra Co.</p>
       </div>
     </footer>
   )

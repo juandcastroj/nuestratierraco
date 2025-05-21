@@ -1,14 +1,8 @@
-// const stats = [
-//   { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-//   { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-//   { id: 3, name: 'New users annually', value: '46,000' },
-// ]
-
 const stats2 = [
-  { id: 1, name: 'Creators on the platform', value: '8,000+' },
-  { id: 2, name: 'Flat platform fee', value: '3%' },
-  { id: 3, name: 'Uptime guarantee', value: '99.9%' },
-  { id: 4, name: 'Paid out to creators', value: '$70M' },
+  { id: 1, name: 'de residuos plásticos con la fabricación de un cuaderno.', value: '250 gr' },
+  { id: 2, name: 'de residuos plásticos con la fabricación de una libreta.', value: '125 gr' },
+  { id: 3, name: 'de residuos plásticos con la fabricación de una tabla legajadora.', value: '270 gr' },
+  { id: 4, name: 'de residuos plásticos con la fabricación de una repisa.', value: '850 gr' },
 ]
 
 export default function Stats() {
@@ -16,17 +10,21 @@ export default function Stats() {
     <>
       <div className="bg-[#033649] py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="text-center">
+          <div className="mx-auto max-w-2xl lg:max-w-7xl">
+            <div className="text-center sm:max-w-4xl mx-auto">
               <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                Trusted by creators worldwide
-              </h2>
-              <p className="mt-4 text-lg/8 text-gray-300">Lorem ipsum dolor sit amet consect adipisicing possimus.</p>
+                La gestión de residuos plásticos como una oportunidad</h2>
+              <p className="mt-4 text-lg/8 text-gray-300">
+                  Recuperamos el plástico a través de donaciones comunitarias.
+                  Trabajamos con PP, HDPE (envases de aseo, cuidado personal,
+                  tapas, entre otros) y PLAde impresión 3D.</p>  <br />
+              <p className="mt-2 text-2xl text-gray-200 font-bold">
+                Recuperamos:</p>
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
               {stats2.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-white/5 p-8">
-                  <dt className="text-sm/6 font-semibold text-gray-300">{stat.name}</dt>
+                  <dt className="text-base font-semibold text-gray-300 leading-normal mt-3">{stat.name}</dt>
                   <dd className="order-first text-3xl font-semibold tracking-tight text-white">{stat.value}</dd>
                 </div>
               ))}
