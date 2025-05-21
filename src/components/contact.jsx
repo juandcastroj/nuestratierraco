@@ -1,5 +1,5 @@
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
-import { Form } from './testimonials'
+// import { Form } from './testimonials'
 
 export default function Contact() {
 
@@ -52,7 +52,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <Form/>
+        {/* <Form/> */}
       </div>
     </div>
   )

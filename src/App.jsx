@@ -5,7 +5,6 @@ import Home from './pages/home';
 import ContactUsRoute from './pages/contact_us';
 import ProjectsRoute from './pages/projects';
 import StackRoute from './pages/stack';
-import './assets/css/bg.css'
 
 export default function App() {
 
