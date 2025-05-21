@@ -3,7 +3,7 @@ export default function Hero() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32">
+        <div className="mx-auto max-w-2xl pt-32 pb-12 sm:py-32">
         
           <div className="text-center">
             <h1 className="text-balance text-5xl sm:text-7xl font-extrabold text-[#033649] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">

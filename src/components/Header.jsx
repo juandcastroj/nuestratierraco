@@ -11,6 +11,10 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [hasBackground, setHasBackground] = useState(false);
 
+    const handleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen)
+    }
+
       useEffect(() => {
         const handleScroll = () => {
           const currentScrollY = window.scrollY;
@@ -93,6 +97,7 @@ export default function Header() {
                     <Link
                       key={item.name}
                       to={item.to}
+                      onClick={handleMobileMenu}
                       className="-mx-3 block rounded-lg px-6 py-3 text-lg font-semibold text-[#033649] hover:text-[#336f85]"
                     >
                       {item.name}
@@ -100,12 +105,13 @@ export default function Header() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="/login"
+                   onClick={handleMobileMenu}
                     className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-base/7 font-semibold text-[#033649] hover:text-[#336f85]"
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
