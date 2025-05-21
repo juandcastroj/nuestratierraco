@@ -1,10 +1,10 @@
 const featuredTestimonial = {
-  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
+  body: 'Somos como la cebolla, con muchas capas que se abren cada día. No importa el cansancio, la vida sigue. ',
   author: {
-    name: 'Brenna Goyette',
-    handle: 'brennagoyette',
+    name: 'Victoria',
+    handle: 'victoria',
     imageUrl:
-      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
+      'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/Victoria.png',
     logoUrl: 'https://tailwindcss.com/plus-assets/img/logos/savvycal-logo-[#004e64].svg',
   },
 }
@@ -13,24 +13,24 @@ const testimonials = [
   [
     [
       {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+        body: 'Nuestra lucha siempre se hará desde el amor y el cuidado colectivo.',
         author: {
-          name: 'Leslie Alexander',
-          handle: 'lesliealexander',
+          name: 'Mich',
+          handle: 'Mich',
           imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/Mich.png',
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
+        body: 'Cuando me dicen que no puedo , yo responderé, PUEDO si yo quiero.',
         author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
+          name: 'Luisa Maria',
+          handle: 'luisa',
           imageUrl:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/luisa.png',
         },
       },
       // More testimonials...
@@ -39,24 +39,24 @@ const testimonials = [
   [
     [
       {
-        body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
+        body: 'Por las que abrieron el camino, por las que caminamos y por las que lo seguirán.',
         author: {
-          name: 'Tom Cook',
-          handle: 'tomcook',
+          name: 'Kelly',
+          handle: 'kelly',
           imageUrl:
-            'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/Kelly.png',
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
+        body: 'Ser ama de casa me dio la fuerza que heredé de mi mamá; Ser empresaria me dio el coraje que ella siempre me mostró.',
         author: {
-          name: 'Leonard Krasner',
-          handle: 'leonardkrasner',
+          name: 'Viviana',
+          handle: 'viviana',
           imageUrl:
-            'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            'https://f004.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_zfa3cc3473c62f5129e650f19_f1023409d238bdd2e_d20250521_m210530_c004_v0402016_t0042_u01747861530121',
         },
       },
       // More testimonials...
@@ -76,10 +76,21 @@ export default function Testimonials() {
   
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-base/7 font-semibold text-[#004e64]">Testimonials</h2>
+          {/* <h2 className="text-base/7 font-semibold text-[#004e64]">Testimonios</h2> */}
           <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-[#004e64] sm:text-5xl">
-            We have worked with thousands of amazing people
+            Mujeres NuestraTierra:
           </p>
+
+          <p className="mt-6 text-lg leading-2 text-[#004e64]">
+            La iniciativa "Mujeres Nuestra
+              Tierra" es un testimonio de nuestro
+              compromiso con la equidad de
+              género y la inclusión. Trabajamos
+              para empoderar a las mujeres y
+              promover la igualdad de
+              oportunidades en todos los
+              aspectos de la sociedad.
+              </p>
         </div>
         <div className="mx-auto animate-fade-up mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-[#004e64] sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
           
@@ -91,7 +102,7 @@ export default function Testimonials() {
               <img
                 alt=""
                 src={featuredTestimonial.author.imageUrl}
-                className="size-10 flex-none rounded-full bg-gray-50"
+                className="size-14 flex-none rounded-full bg-gray-50"
               />
               <div className="flex-auto">
                 <div className="font-semibold">{featuredTestimonial.author.name}</div>
@@ -102,7 +113,7 @@ export default function Testimonials() {
           </figure>
 
           {testimonials.map((columnGroup, columnGroupIdx) => (
-            <div key={columnGroupIdx} className="space-y-8 xl:contents xl:space-y-0 transition transform duration-300 hover:-translate-y-2">
+            <div key={columnGroupIdx} className="space-y-8 xl:contents xl:space-y-0">
               {columnGroup.map((column, columnIdx) => (
                 <div
                   key={columnIdx}
@@ -117,13 +128,13 @@ export default function Testimonials() {
                   {column.map((testimonial) => (
                     <figure
                       key={testimonial.author.handle}
-                      className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-[#004e64]/5"
+                      className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-[#004e64]/5 transition transform duration-300 hover:-translate-y-2"
                     >
-                      <blockquote className="text-[#004e64]">
+                      <blockquote className="text-[#004e64] font-semibold">
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img alt="" src={testimonial.author.imageUrl} className="size-10 rounded-full bg-gray-50" />
+                        <img alt="" src={testimonial.author.imageUrl} className="size-14 rounded-full bg-gray-50" />
                         <div>
                           <div className="font-semibold">{testimonial.author.name}</div>
                           <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>

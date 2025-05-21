@@ -5,6 +5,7 @@ import HomeRoute from './pages/HomeRoute';
 import ContactUsRoute from './pages/ContactUsRoute';
 import ProjectsRoute from './pages/ProjectsRoute';
 import StackRoute from './pages/StackRoute';
+import LoginRoute from './pages/LoginRoute';
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
       <main className="isolate">
         <Routes>
           <Route path='/' element={<HomeRoute/>}></Route>
+          <Route path='/login' element={<LoginRoute/>}></Route>
           <Route path='/projects' element={<ProjectsRoute/>}></Route>
           <Route path='/stack' element={<StackRoute/>}></Route>
           <Route path='/contact' element={<ContactUsRoute/>}></Route>
