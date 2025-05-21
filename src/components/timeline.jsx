@@ -1,24 +1,40 @@
-const stats = [
-  { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-  { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-  { id: 3, name: 'New users annually', value: '46,000' },
+// const stats = [
+//   { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
+//   { id: 2, name: 'Assets under holding', value: '$119 trillion' },
+//   { id: 3, name: 'New users annually', value: '46,000' },
+// ]
+
+const stats2 = [
+  { id: 1, name: 'Creators on the platform', value: '8,000+' },
+  { id: 2, name: 'Flat platform fee', value: '3%' },
+  { id: 3, name: 'Uptime guarantee', value: '99.9%' },
+  { id: 4, name: 'Paid out to creators', value: '$70M' },
 ]
 
 export default function Timeline() {
   return (
-    <div className="py-24 sm:py-32 bg-[#033649]">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-          {stats.map((stat) => (
-            <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
-
-              <dt className="text-base/7 text-white">{stat.name}</dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-gray-200 sm:text-5xl">{stat.value}</dd>
+    <>
+      <div className="bg-[#033649] py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:max-w-none">
+            <div className="text-center">
+              <h2 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+                Trusted by creators worldwide
+              </h2>
+              <p className="mt-4 text-lg/8 text-gray-300">Lorem ipsum dolor sit amet consect adipisicing possimus.</p>
             </div>
-          ))}
-        </dl>
+            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+              {stats2.map((stat) => (
+                <div key={stat.id} className="flex flex-col bg-white/5 p-8">
+                  <dt className="text-sm/6 font-semibold text-gray-300">{stat.name}</dt>
+                  <dd className="order-first text-3xl font-semibold tracking-tight text-white">{stat.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
