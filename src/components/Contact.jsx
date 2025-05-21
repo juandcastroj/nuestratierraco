@@ -4,48 +4,48 @@ import { Form } from './Form'
 export default function Contact() {
 
   return (
-    <div className="relative isolate">
+    <div className="relative isolate min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
 
         <div className="relative px-6 lg:static lg:px-8 py-16 lg:py-28">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg font-mono animate-fade-right">
-            <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-200 sm:text-5xl">
-              Get in touch
+          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg animate-fade-right">
+            <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
+              Contáctanos
             </h2>
 
-            <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-            I'd love to work together on anything related to my current tech stack—or dive into something new and exciting!
-            </p>
+            <p className="mt-6 text-lg/8 text-[#004e64]">
+              Con tu compra,apoyas el cuidado del planeta y ayudas a crear más iniciativas en beneficio de las comunidades.  <br/>
+              ¡Escríbenos para fabricartu producto o crear nuevas ideas! </p>
             <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <BuildingOffice2Icon aria-hidden="true" className="h-7 w-6 text-[#033649]" />
                 </dt>
-                <dd className='dark:text-gray-200'>
-                  Bogotá D.C, Colombia
+                <dd className='text-[#033649]'>
+                  Ciudad Bolivar, Bogotá D.C, Colombia.
                 </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
-                  <PhoneIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <PhoneIcon aria-hidden="true" className="h-7 w-6 text-[#033649]" />
                 </dt>
                 <dd>
-                  <a href="tel:+57 320 484 6725" className="hover:text-gray-900 dark:text-gray-200">
-                    +57 320 484 6725
+                  <a href="tel:+57 319 641 03 97" className="text-[#033649]">
+                    +57 319 641 03 97
                   </a>
                 </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
-                  <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-gray-400" />
+                  <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-[#033649]" />
                 </dt>
                 <dd>
-                  <a href="mailto:juandavid4130@gmail.com" className="hover:text-gray-900 dark:text-gray-200">
-                    juandavid4130@gmail.com
-                  </a>
+                  <a href="mailto:juandavid4130@gmail.com" className="text-[#033649]">
+                      nuestratierracorporación@gmail.com                  
+                    </a>
                 </dd>
               </div>
             </dl>

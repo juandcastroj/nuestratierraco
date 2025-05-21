@@ -1,6 +1,6 @@
 export default function Login() {
   return (
-    <>
+    <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       {/*
         This example requires updating your template:
 
@@ -45,7 +45,7 @@ export default function Login() {
                   Constraseña
                 </label>
                 <div className="text-sm">
-                  <a href="#" className="font-semibold text-blue-900 hover:text-blue-800">
+                  <a href="#" className="font-semibold text-text-[#033649]">
                     ¿Olvidaste la contraseña?
                   </a>
                 </div>
@@ -74,12 +74,12 @@ export default function Login() {
 
           <p className="mt-10 text-center text-sm/6 text-gray-500">
             Not a member?{' '}
-            <a href="#" className="font-semibold text-blue-800 hover:text-blue-600">
+            <a href="#" className="font-semibold text-[#033649] hover:text-[#204d5e]">
               Start a 14 day free trial
             </a>
           </p>
         </div>
       </div>
-    </>
+    </div>
   )
 }

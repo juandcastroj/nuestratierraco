@@ -3,15 +3,27 @@ import { projectsData } from "../constants/projects-portfolio";
 export default function Projects() {
 
   return (
+   <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
     <div className="py-20 md:py-28 animate-fade-down animate-duration-[1500ms] animate-delay-400">
-      <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 font-mono">
+      <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 ">
         <div className="text-center xl:col-span-2 mb-12">
-          <h2 className="text-4xl font-semibold tracking-tight text-green-900 dark:text-gray-100 sm:text-5xl">
-            Main projects
+          <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
+            Servicios
           </h2>
-            <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-200">
-            Below is a list of my completed works and collaborations for websites, including a mobile app developed over the past few years as a software developer using different technologies, since HTML and JavaScript vanilla to React, Vue js or Flutter for mobile development.        
-            </p>
+            <p className="mt-6 text-lg/8 text-[#004e64] leading-6">
+                  ¡Bienvenidos a un mundo donde la
+                  creatividad, la conciencia y el cambio se
+                  entrelazan para dar forma al mañana! En
+                  Nuestra Tierra, la innovación es nuestra
+                  brújula y el desarrollo sostenible es
+                  nuestro horizonte. Desde las
+                  profundidades de la investigación hasta
+                  las cimas de la acción, navegamos por
+                  mares de posibilidades, explorando
+                  territorios desconocidos en busca de
+                  soluciones que transformen nuestra
+                  realidad.      
+                </p>
         </div>
 
 
@@ -26,39 +38,22 @@ export default function Projects() {
                   <img
                     alt={company}
                     src={imageUrl}
-                    className="w-96 xl:w-[36rem] rounded-lg md:rounded-2xl"
+                    className="w-96 rounded-lg md:rounded-2xl"
                   />
 
                 <div className="max-w-xl flex-auto pt-2 lg:pt-6 text-justify">
                   <a href={url} target="_blank" rel="noopener noreferrer">
-                    <h3 className="text-xl font-semibold tracking-tight text-green-900 dark:text-blue-300">
+                    <h3 className="text-xl font-bold tracking-tight text-[#033649] dark:text-blue-300">
                       {company}
                     </h3>
-                    <p className="text-base/7 font-semibold text-gray-600 dark:text-gray-200">
+                    <p className="text-base/7 font-bold text-gray-500">
                       {role}
                     </p>
-                    <p className="mt-1 text-base/7 text-gray-600 dark:text-gray-200">
+                    <p className="mt-1 text-base/7 text-[#004e64]">
                       {description}
                     </p>
                   </a>
-                  <a
-                    href={repo}
-                    className="text-green-900 hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
-                  >
-                    <span className="sr-only">Repository</span>
-                    <svg
-                      fill="currentColor"
-                      viewBox="0 0 30 30"
-                      aria-hidden="true"
-                      className="mt-4 size-10"
-                    >
-                      <path
-                        d="M14.831,17c-.256,0-.512-.098-.707-.293-.391-.391-.391-1.023,0-1.414l2.583-2.583c.188-.189,.293-.44,.293-.708s-.104-.518-.293-.707l-2.583-2.584c-.391-.391-.391-1.024,0-1.414,.391-.391,1.023-.391,1.414,0l2.583,2.583c.566,.566,.879,1.32,.879,2.121s-.312,1.555-.879,2.122l-2.583,2.583c-.195,.195-.451,.293-.707,.293Zm-4.955-.298c.391-.391,.391-1.023,0-1.414l-2.583-2.583c-.189-.189-.293-.44-.293-.708s.104-.518,.293-.707l2.583-2.583c.391-.391,.391-1.023,0-1.414s-1.023-.391-1.414,0l-2.583,2.583c-.567,.567-.879,1.32-.879,2.122s.312,1.555,.879,2.122l2.583,2.583c.195,.195,.451,.293,.707,.293s.512-.098,.707-.293Zm14.124,2.298V5c0-2.757-2.243-5-5-5H5C2.243,0,0,2.243,0,5v14c0,2.757,2.243,5,5,5h14c2.757,0,5-2.243,5-5ZM19,2c1.654,0,3,1.346,3,3v14c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V5c0-1.654,1.346-3,3-3h14Z"
-                        clipRule="evenodd"
-                        fillRule="evenodd"
-                      />
-                    </svg>
-                  </a>
+              
                 </div>
               </li>
             ))
@@ -66,5 +61,6 @@ export default function Projects() {
         </ul>
       </div>
     </div>
+   </div>
   );
 }
