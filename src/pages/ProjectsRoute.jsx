@@ -1,4 +1,4 @@
-import Projects from "../components/projects";
+import Projects from "../components/Projects";
 
 export default function ProjectsRoute () {
     return (

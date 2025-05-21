@@ -11,7 +11,7 @@ const stats2 = [
   { id: 4, name: 'Paid out to creators', value: '$70M' },
 ]
 
-export default function Timeline() {
+export default function Stats() {
   return (
     <>
       <div className="bg-[#033649] py-24 sm:py-32">
