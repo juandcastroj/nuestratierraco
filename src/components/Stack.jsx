@@ -12,7 +12,7 @@ export default function Products() {
           </a>
         </div>
 
-        <div className="relative mt-8">
+        <div className="relative mt-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]">
           <div className="relative -mb-6 w-full overflow-x-auto pb-6">
             <ul
               role="list"
