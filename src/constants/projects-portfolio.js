@@ -23,12 +23,12 @@ export const projectsData = [
       // url: 'https://tahsinalwajiha.com/',
       // repo: '#'
     },
-    {
-      company: 'InnovaTerra',
-      role: 'InnovaTerra',
-      imageUrl: 'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/Screenshot+from+2025-05-21+16-41-59.png',
-      description: 'En nuestra línea de innovación y desarrollo, exploramos nuevas tecnologías y prácticas para abordar desafíos ambientales urgentes, como la recuperación y clasificación de plásticos. Nos comprometemos a encontrar soluciones innovadoras que promuevan el cuidado del medio ambiente y la sostenibilidad.',
-      // url: 'https://play.google.com/store/apps/details?id=com.coffeestrap.coffeestrap&hl=en&gl=US',
-      // repo: '#'
-    },
+    // {
+    //   company: 'InnovaTerra',
+    //   role: 'InnovaTerra',
+    //   imageUrl: 'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/Screenshot+from+2025-05-21+16-41-59.png',
+    //   description: 'En nuestra línea de innovación y desarrollo, exploramos nuevas tecnologías y prácticas para abordar desafíos ambientales urgentes, como la recuperación y clasificación de plásticos. Nos comprometemos a encontrar soluciones innovadoras que promuevan el cuidado del medio ambiente y la sostenibilidad.',
+    //   // url: 'https://play.google.com/store/apps/details?id=com.coffeestrap.coffeestrap&hl=en&gl=US',
+    //   // repo: '#'
+    // },
 ]
