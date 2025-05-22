@@ -1,9 +1,9 @@
-import Stack from "../components/Stack";
+import Products from "../components/Stack";
 
 export default function StackRoute () {
     return (
         <>
-            <Stack/>
+            <Products/>
         </>
     )
 }
