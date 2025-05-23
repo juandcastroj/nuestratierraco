@@ -1,9 +1,4 @@
-const stats2 = [
-  { id: 1, name: 'de residuos plásticos con la fabricación de un cuaderno.', value: '250 gr' },
-  { id: 2, name: 'de residuos plásticos con la fabricación de una libreta.', value: '125 gr' },
-  { id: 3, name: 'de residuos plásticos con la fabricación de una tabla legajadora.', value: '270 gr' },
-  { id: 4, name: 'de residuos plásticos con la fabricación de una repisa.', value: '850 gr' },
-]
+import { stats } from "../constants/stats";
 
 export default function Stats() {
   return (
@@ -22,7 +17,7 @@ export default function Stats() {
                 Recuperamos:</p>
             </div>
             <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-              {stats2.map((stat) => (
+              {stats.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-white/5 p-8">
                   <dt className="text-base font-semibold text-gray-300 leading-normal mt-3">{stat.name}</dt>
                   <dd className="order-first text-3xl font-semibold tracking-tight text-white">{stat.value}</dd>

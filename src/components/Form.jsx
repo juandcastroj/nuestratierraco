@@ -2,46 +2,46 @@ import { useState } from "react";
 
 export function Form() {
   
-  const [form, setForm] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    message: "",
-  });
-  const { firstName, lastName, email, message } = form;
-  const [error, setError] = useState(false);
+      const [form, setForm] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        message: "",
+      });
+      const { firstName, lastName, email, message } = form;
+      const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("submit click ");
-    // fast validation
-    if (
-      !firstName.trim() ||
-      !lastName.trim() ||
-      !email.trim() ||
-      !message.trim()
-    ) {
-      console.log("campos vacíos");
-      setError(true);
-      return;
-    } else {
-      setError(false);
-    }
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("submit click ");
+        // fast validation
+        if (
+          !firstName.trim() ||
+          !lastName.trim() ||
+          !email.trim() ||
+          !message.trim()
+        ) {
+          console.log("campos vacíos");
+          setError(true);
+          return;
+        } else {
+          setError(false);
+        }
 
-    console.log(firstName, lastName, email, message);
-    setForm({ firstName: "", lastName: "", email: "", message: "" });
-  };
+        console.log(firstName, lastName, email, message);
+        setForm({ firstName: "", lastName: "", email: "", message: "" });
+      };
 
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
+      const handleChange = (e) => {
+        setForm({
+          ...form,
+          [e.target.name]: e.target.value,
+        });
+      };
 
-  const ShowError = () => (
-    <div className="mx-6 text-red-600 my-2 font-semibold">Todos los campos son obligatorios.</div>
-  );
+      const ShowError = () => (
+        <div className="mx-6 text-red-600 my-2 font-semibold">Todos los campos son obligatorios.</div>
+      );
 
   return (
     <>
@@ -49,7 +49,6 @@ export function Form() {
         onSubmit={handleSubmit}
         className="px-6 lg:px-8 py-16 sm:py-20 lg:py-28 font-mono animate-fade-left"
       >
-        
         <div className="mx-auto max-w-xl lg:max-w-lg">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 export default function Hero() {
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -14,7 +13,6 @@ export default function Hero() {
             <p className="mt-8 text-pretty text-lg sm:text-xl font-medium text-[#004e64]  animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               JUNTOS SOMOS EL CAMBIO <br />
               JUNTOS SOMOS NUESTRA TIERRA. <br />
-              {/* <span className="text-[#004e64]">Transformamos el plástico en oportunidades.</span> */}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               <Link

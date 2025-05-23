@@ -3,10 +3,6 @@ import { navigation } from "../constants/footer";
 import { navBarItems } from "../constants/navbar";
 
 export default function Footer() {
-
-  // console.log(navigation);
-  
-  
   return (
     <footer className="bg-gray-900">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">

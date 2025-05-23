@@ -14,8 +14,8 @@ export default function Contact() {
             </h2>
 
             <p className="mt-6 text-lg/8 text-[#004e64]">
-              Con tu compra,apoyas el cuidado del planeta y ayudas a crear más iniciativas en beneficio de las comunidades.  <br/>
-              ¡Escríbenos para fabricartu producto o crear nuevas ideas! </p>
+              Con tu compra, apoyas el cuidado del planeta y ayudas a crear más iniciativas en beneficio de las comunidades.  <br/>
+              ¡Escríbenos para fabricar tu producto o crear nuevas ideas!</p>
             <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
@@ -43,7 +43,7 @@ export default function Contact() {
                   <EnvelopeIcon aria-hidden="true" className="h-7 w-6 text-[#033649]" />
                 </dt>
                 <dd>
-                  <a href="mailto:juandavid4130@gmail.com" className="text-[#033649]">
+                  <a href="mailto:nuestratierracorporación@gmail.com" className="text-[#033649]">
                       nuestratierracorporación@gmail.com                  
                     </a>
                 </dd>
