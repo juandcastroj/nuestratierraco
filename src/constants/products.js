@@ -55,6 +55,62 @@ const products = [
       { name: 'Chrome', colorBg: '#E5E7EB' },
     ],
   },
+   {
+    id: 5,
+    name: 'Cuaderno',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc: 'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/cuaderno.png',
+    imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#0e4d9b' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
+    {
+    id: 6,
+    name: 'Libreta',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc: 'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/libreta.png',
+    imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#0e9b1a' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
+    {
+    id: 7,
+    name: 'Portacelular',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc: 'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/portacelulares.png',
+    imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#ff8521' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
+    {
+    id: 8,
+    name: 'Repisa',
+    color: 'Black',
+    price: '$35',
+    href: '#',
+    imageSrc: 'https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/repisa.png',
+    imageAlt: 'Black machined steel pen with hexagonal grip and small white logo at top.',
+    availableColors: [
+      { name: 'Black', colorBg: '#111827' },
+      { name: 'Brass', colorBg: '#213aff' },
+      { name: 'Chrome', colorBg: '#E5E7EB' },
+    ],
+  },
   // More products...
 ]
 
