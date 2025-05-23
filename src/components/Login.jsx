@@ -1,16 +1,8 @@
 export default function Login() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-20 sm:py-32 lg:px-8">
-        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-20 sm:py-32 lg:px-8 ">
+        <div className="sm:mx-auto sm:w-full sm:max-w-sm animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
           <img
             alt="Your Company"
             src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=900"
@@ -22,7 +14,7 @@ export default function Login() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form action="#" method="POST" className="space-y-6">
+          <form action="#" method="POST" className="space-y-6 animate-fade-down animate-duration-[2500ms] animate-delay-[800ms]">
             <div>
               <label htmlFor="email" className="block text-sm/6 font-medium text-[#033649]">
                 Correo
@@ -34,7 +26,7 @@ export default function Login() {
                   type="email"
                   required
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-[#033649] outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-[#033649] outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-800 sm:text-sm/6"
                 />
               </div>
             </div>
@@ -57,7 +49,7 @@ export default function Login() {
                   type="password"
                   required
                   autoComplete="current-password"
-                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-[#033649] outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-[#033649] outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-800 sm:text-sm/6"
                 />
               </div>
             </div>
@@ -65,14 +57,14 @@ export default function Login() {
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-[#033649] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-[#358cac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full justify-center rounded-md bg-[#033649] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-[#358cac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800"
               >
                 Log in
               </button>
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm/6 text-gray-500">
+          <p className="mt-10 text-center text-sm/6 text-gray-500 animate-fade-down animate-duration-[2500ms] animate-delay-[1000ms]">
             ¿Aún no eres miembro?{' '}
             <a href="#" className="font-semibold text-[#033649] hover:text-[#204d5e]">
               Prueba gratis por 14 días.            
