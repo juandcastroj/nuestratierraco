@@ -73,9 +73,9 @@ export default function Login() {
           </form>
 
           <p className="mt-10 text-center text-sm/6 text-gray-500">
-            Not a member?{' '}
+            ¿Aún no eres miembro?{' '}
             <a href="#" className="font-semibold text-[#033649] hover:text-[#204d5e]">
-              Start a 14 day free trial
+              Prueba gratis por 14 días.            
             </a>
           </p>
         </div>
