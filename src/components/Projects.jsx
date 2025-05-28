@@ -1,4 +1,4 @@
-import { projectsData } from "../constants/projects-portfolio";
+import { projectsData } from "../constants/projects";
 
 export default function Projects() {
   return (
