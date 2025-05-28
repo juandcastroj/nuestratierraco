@@ -40,7 +40,7 @@ export function Form() {
       };
 
       const ShowError = () => (
-        <div className="mx-6 text-red-600 my-2 font-semibold">Todos los campos son obligatorios.</div>
+        <div className="mx-6 text-red-500 my-2 font-semibold">Todos los campos son obligatorios.</div>
       );
 
   return (

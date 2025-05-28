@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { navBarItems } from '../constants/navbar'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog, DialogPanel } from '@headlessui/react'
+import { navBarItems } from '../constants/navbar'
 import nuestraTierraLogo from '../assets/images/logo/logo.png'
 import nuestraTierraLogoMobile from '../assets/images/logo/logo.svg'
 
@@ -63,7 +63,7 @@ export default function Header() {
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <Link to="login" className="text-sm/6 font-semibold text-[#033649]">
-                Log in <span aria-hidden="true">&rarr;</span>
+                Mi Cuenta <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
           </nav>
@@ -110,7 +110,7 @@ export default function Header() {
                     onClick={handleMobileMenu}
                       className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-base/7 font-semibold text-[#033649] hover:text-[#336f85]"
                     >
-                      Log in
+                      Mi Cuenta  
                     </Link>
                   </div>
                 </div>

@@ -4,7 +4,7 @@ import { navBarItems } from "../constants/navbar";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900">
+    <footer className="bg-[#033649]">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">
         <nav aria-label="Footer" className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
           { navBarItems.map((item) => (
