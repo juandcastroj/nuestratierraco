@@ -1,5 +1,5 @@
-import BlogBlock from "../components/BlogBlock";
-import BlogGrid from "../components/BlogGrid";
+import BlogBlock from "../components/blog/BlogBlock";
+import BlogGrid from "../components/blog/BlogGrid";
 
 export default function BlogRoute() { 
     return (

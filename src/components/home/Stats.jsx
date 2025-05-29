@@ -1,4 +1,4 @@
-import { stats } from "../constants/stats";
+import { stats } from "../../constants/stats";
 
 export default function Stats() {
   return (

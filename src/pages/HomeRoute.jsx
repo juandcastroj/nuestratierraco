@@ -1,6 +1,6 @@
-import Hero from "../components/Hero";
-import Stats from "../components/Stats";
-import Testimonials from "../components/Testimonials";
+import Hero from "../components/home/Hero";
+import Stats from "../components/home/Stats";
+import Testimonials from "../components/home/Testimonials";
 
 export default function HomeRoute() {
     return (

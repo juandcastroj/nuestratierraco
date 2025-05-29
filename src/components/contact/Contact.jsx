@@ -5,7 +5,7 @@ export default function Contact() {
 
   return (
     <div className="relative isolate min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
 
         <div className="relative px-6 lg:static lg:px-8 py-16 lg:py-28">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg animate-fade-right">

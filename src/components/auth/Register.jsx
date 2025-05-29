@@ -1,22 +1,21 @@
 export default function Register() {
-
   return (
     <>
       <div className="flex min-h-full flex-1 bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-        <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+        <div className="flex flex-1 flex-col justify-center px-4 py-16 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
-              <h2 className="mt-8 text-2xl/9 font-bold tracking-tight text-gray-900">Crear tu cuenta</h2>
+              <h2 className="mt-8 text-2xl/9 font-bold tracking-tight text-gray-900 text-center">Crear tu cuenta</h2>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-6">
               <div>
-                <form action="#" method="POST" className="space-y-6">
+                <form action="#" method="POST" className="space-y-5">
                   <div>
                     <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
                       Correo
                     </label>
-                    <div className="mt-2">
+                    <div className="mt-1">
                       <input
                         id="email"
                         name="email"
@@ -32,7 +31,7 @@ export default function Register() {
                     <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
                       Contraseña
                     </label>
-                    <div className="mt-2">
+                    <div className="mt-1">
                       <input
                         id="password"
                         name="password"
@@ -48,7 +47,7 @@ export default function Register() {
                     <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
                       Confirma tu contraseña
                     </label>
-                    <div className="mt-2">
+                    <div className="mt-1">
                       <input
                         id="password"
                         name="password"

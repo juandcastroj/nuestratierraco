@@ -1,4 +1,4 @@
-import { posts } from "../constants/blog";
+import { posts } from "../../constants/blog";
 
 export default function BlogGrid() {
 

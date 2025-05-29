@@ -66,7 +66,7 @@ export default function Login() {
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm/6 text-gray-500 animate-fade-down animate-duration-[2500ms] animate-delay-[1000ms]">
+          <p className="mt-10 text-center text-sm/6 text-gray-500">
             ¿Aún no eres miembro?{' '}
             <Link to="/register" className="font-semibold text-[#033649] hover:text-[#204d5e]">
               Crea una cuenta gratis          

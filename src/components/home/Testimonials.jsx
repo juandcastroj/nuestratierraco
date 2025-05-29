@@ -1,4 +1,4 @@
-import { featuredTestimonial, testimonials } from "../constants/testimonials"
+import { featuredTestimonial, testimonials } from "../../constants/testimonials"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
