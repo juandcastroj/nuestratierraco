@@ -8,6 +8,7 @@ import StackRoute from './pages/StackRoute';
 import LoginRoute from './pages/LoginRoute';
 import Inscriptions from './components/Inscriptions';
 import BlogRoute from './pages/BlogRoute';
+import RegisterRoute from './pages/RegisterRoute';
 
 export default function App() {
 
@@ -18,6 +19,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<HomeRoute/>}></Route>
             <Route path='/login' element={<LoginRoute/>}></Route>
+            <Route path='/register' element={<RegisterRoute/>}></Route>
             <Route path='/projects' element={<ProjectsRoute/>}></Route>
             <Route path='/stack' element={<StackRoute/>}></Route>
             <Route path='/blog' element={<BlogRoute/>}></Route>

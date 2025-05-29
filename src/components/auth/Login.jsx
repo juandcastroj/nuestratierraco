@@ -4,7 +4,7 @@ export default function Login() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-20 sm:py-32 lg:px-8 ">
-        <div className="sm:mx-auto sm:w-full sm:max-w-sm animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
+        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           {/* <img
             alt="Your Company"
             src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=900"
@@ -16,7 +16,7 @@ export default function Login() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form action="#" method="POST" className="space-y-6 animate-fade-down animate-duration-[2500ms] animate-delay-[800ms]">
+          <form action="#" method="POST" className="space-y-6">
             <div>
               <label htmlFor="email" className="block text-sm/6 font-medium text-[#033649]">
                 Correo
@@ -68,7 +68,7 @@ export default function Login() {
 
           <p className="mt-10 text-center text-sm/6 text-gray-500 animate-fade-down animate-duration-[2500ms] animate-delay-[1000ms]">
             ¿Aún no eres miembro?{' '}
-            <Link to="/" className="font-semibold text-[#033649] hover:text-[#204d5e]">
+            <Link to="/register" className="font-semibold text-[#033649] hover:text-[#204d5e]">
               Crea una cuenta gratis          
             </Link>
           </p>
