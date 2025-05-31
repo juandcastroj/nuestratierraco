@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import planetPhoto from "../../assets/images/hero/planetaTierra.png";
 
 export default function Hero() {
   return (
@@ -32,14 +33,11 @@ export default function Hero() {
           </div>
         </div>
 
-
-
       </div>
-
          <img 
-            src="https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/planetaTierra.png" 
+            src={planetPhoto}
             alt="Planeta Tierra"
-            className="w-1/2 max-w-md hidden lg:block absolute bottom-0 lg:right-0 lg:mx-0 mx-auto"
+            className="w-1/2 max-w-md hidden lg:block absolute bottom-0 lg:right-0 lg:mx-0 mx-auto animate-fade-left animate-duration-[4000ms] animate-delay-[800ms]"
           />
     </div>
   )
