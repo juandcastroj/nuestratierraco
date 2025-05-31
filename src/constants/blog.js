@@ -7,11 +7,11 @@ export const posts = [
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
     imageUrl:
       'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-    date: 'Mar 16, 2024',
-    datetime: '2024-03-16',
+    date: 'Mar 16, 2025',
+    datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
     author: {
-      name: 'NUestra Tierra',
+      name: 'Nuestra Tierra',
       role: 'Co-Founder / CTO',
       href: '#',
       imageUrl:
@@ -26,8 +26,8 @@ export const posts = [
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
     imageUrl:
       'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-    date: 'Mar 16, 2024',
-    datetime: '2024-03-16',
+    date: 'Mar 16, 2025',
+    datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
     author: {
       name: 'NUestra Tierra',
@@ -45,8 +45,8 @@ export const posts = [
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
     imageUrl:
       'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
-    date: 'Mar 16, 2024',
-    datetime: '2024-03-16',
+    date: 'Mar 16, 2025',
+    datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
     author: {
       name: 'NUestra Tierra',

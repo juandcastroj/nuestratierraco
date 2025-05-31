@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
+    <div className="min-h-screen relative bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="relative isolate px-6 pt-14 lg:px-8">
+
         <div className="mx-auto max-w-2xl pt-32 pb-12 sm:py-32">
         
           <div className="text-center">
@@ -17,17 +18,29 @@ export default function Hero() {
             <div className="mt-10 flex items-center justify-center gap-x-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               <Link
                 to="/stack"
-                className="rounded-full bg-[#004e64] px-3.5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-[#317081] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-full bg-[#004e64] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#317081] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Productos
+                Productos 🛍️
               </Link>
-              <a href="#" className="text-base font-semibold text-[#004e64]">
-                Ver mas <span aria-hidden="true hover:animate-fade-right">→</span>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScJAYqcYVveiataKtLGgJrvs_wIxLc-08961UVv9sOmuuOH2w/viewform"
+                className="rounded-full bg-[#004e64] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#317081] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Haz parte del cambio
               </a>
             </div>
           </div>
         </div>
+
+
+
       </div>
+
+         <img 
+            src="https://f004.backblazeb2.com/file/Nuestra-Tierra-Co/planetaTierra.png" 
+            alt="Planeta Tierra"
+            className="w-1/2 max-w-md hidden lg:block absolute bottom-0 lg:right-0 lg:mx-0 mx-auto"
+          />
     </div>
   )
 }
