@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import planetPhoto from "../../assets/images/hero/planetaTierra.png";
+import planetPhoto from "../../assets/images/home/planetaTierra.png";
 
 export default function Hero() {
   return (
@@ -27,7 +27,7 @@ export default function Hero() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLScJAYqcYVveiataKtLGgJrvs_wIxLc-08961UVv9sOmuuOH2w/viewform"
                 className="rounded-full bg-[#004e64] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#317081] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Haz parte del cambio
+                Haz parte del cambio 👩‍🏫 📝
               </a>
             </div>
           </div>

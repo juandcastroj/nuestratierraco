@@ -66,10 +66,10 @@ export default function Login() {
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm/6 text-gray-500">
-            ¿Aún no eres miembro?{' '}
+          <p className="mt-10 text-center text-sm/6 text-gray-600">
+            ¿No tienes cuenta?{' '}
             <Link to="/register" className="font-semibold text-[#033649] hover:text-[#204d5e]">
-              Crea una cuenta gratis          
+              Crea una para redimir tus puntos.
             </Link>
           </p>
         </div>

@@ -4,33 +4,32 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-
 export default function Testimonials() {
   return (
-    <div className="relative isolate pb-32 pt-24 sm:pt-32  min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5] bg-fixed">
+    <div className="relative isolate pb-28 pt-24 sm:pt-32  min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5] bg-fixed">
   
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           {/* <h2 className="text-base/7 font-semibold text-[#004e64]">Testimonios</h2> */}
           <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-[#004e64] sm:text-5xl">
-            Mujeres NuestraTierra:
+            Mujeres NuestraTierra
           </p>
 
           <p className="mt-6 text-lg leading-2 text-[#004e64]">
             La iniciativa "Mujeres Nuestra
-              Tierra" es un testimonio de nuestro
-              compromiso con la equidad de
-              género y la inclusión. Trabajamos
-              para empoderar a las mujeres y
-              promover la igualdad de
-              oportunidades en todos los
-              aspectos de la sociedad.
-              </p>
+            Tierra" es un testimonio de nuestro
+            compromiso con la equidad de
+            género y la inclusión. Trabajamos
+            para empoderar a las mujeres y
+            promover la igualdad de
+            oportunidades en todos los
+            aspectos de la sociedad.
+            </p>
         </div>
         <div className="mx-auto animate-fade-up mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-[#004e64] sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
           
           <figure className="rounded-2xl bg-white shadow-lg transition transform duration-300 hover:-translate-y-2 ring-1 ring-[#004e64]/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-            <blockquote className="p-6 text-lg font-semibold tracking-tight text-[#004e64] sm:p-12 sm:text-xl/8">
+            <blockquote className="p-6 text-lg font-semibold tracking-tight text-[#004e64] sm:p-8 sm:text-xl/8">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
             <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-[#004e64]/10 px-6 py-4 sm:flex-nowrap">

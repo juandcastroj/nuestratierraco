@@ -1,12 +1,14 @@
+import blogPhoto from "../assets/images/home/blog.png";
+
 export const posts = [
   {
     id: 1,
     title: 'Save the world together',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      'Desde las profundidades de la investigación hasta las cimas de la acción, navegamos por mares de posibilidades, explorando territorios desconocidos en busca de soluciones que transformen nuestra realidad.',
     imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+      blogPhoto,
     date: 'Mar 16, 2025',
     datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
@@ -23,9 +25,9 @@ export const posts = [
     title: 'Save the world together',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      '¿El objetivo? Descubrir, diseñar y compartir soluciones que no solo preserven, sino que también enriquezcan nuestro planeta.',
     imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+      blogPhoto,
     date: 'Mar 16, 2025',
     datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
@@ -42,9 +44,9 @@ export const posts = [
     title: 'Save the world together',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      'Aquí, la imaginación, la ciencia y la comunidad convergen para tejer un futuro más prometedor, desafiando los límites establecidos para abordar los retos más apremiantes de nuestro tiempo.',
     imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80',
+      blogPhoto,
     date: 'Mar 16, 2025',
     datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
