@@ -12,7 +12,7 @@ export default function HomeRoute() {
             <Stats/>
             <History/>
             <BannerImage/>
-            <BannerText/>
+            {/* <BannerText/> */}
             <Testimonials/>
         </>
     )

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import planetPhoto from "../../assets/images/home/planetaTierra.png";
+import planetPhoto from "../../assets/images/home/planet.png";
 
 export default function Hero() {
   return (
@@ -16,7 +16,7 @@ export default function Hero() {
               JUNTOS SOMOS EL CAMBIO <br />
               JUNTOS SOMOS NUESTRA TIERRA. <br />
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
+            <div className="mt-10 flex flex-col gap-y-4 sm:flex-row items-center justify-center gap-x-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               <Link
                 to="/stack"
                 className="rounded-full bg-[#004e64] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#317081] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

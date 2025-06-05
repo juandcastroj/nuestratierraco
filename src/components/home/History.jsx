@@ -1,5 +1,5 @@
 import { InformationCircleIcon } from '@heroicons/react/20/solid'
-import historyPhoto from "../../assets/images/home/history.png";
+import historyPhoto from "../../assets/images/home/community.png";
 
 export default function History() {
   return (
@@ -68,7 +68,7 @@ export default function History() {
           />
           <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-text-blueText">
             <InformationCircleIcon aria-hidden="true" className="mt-0.5 size-5 flex-none" />
-            NuestraTierra co.
+            Un espacio para la comunidad, la innovación y el desarrollo sostenible.
           </figcaption>
         </figure>
 

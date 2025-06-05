@@ -1,4 +1,6 @@
-import blogPhoto from "../assets/images/home/blog.png";
+import blogPhoto from "../assets/images/blog/installation.png";
+import blogPhoto2 from "../assets/images/home/community.png";
+
 
 export const posts = [
   {
@@ -27,7 +29,7 @@ export const posts = [
     description:
       '¿El objetivo? Descubrir, diseñar y compartir soluciones que no solo preserven, sino que también enriquezcan nuestro planeta.',
     imageUrl:
-      blogPhoto,
+      blogPhoto2,
     date: 'Mar 16, 2025',
     datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },

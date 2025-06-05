@@ -1,6 +1,5 @@
-import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
-import bannerPhoto from "../../assets/images/home/banner2.png";
-
+import { InformationCircleIcon } from '@heroicons/react/20/solid'
+import banner from "../../assets/images/blog/installation.png";
 
 export default function BlogBlock() {
   return (
@@ -18,33 +17,6 @@ export default function BlogBlock() {
             Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
             sed turpis id.
           </p>
-
-
-          {/* <ul role="list" className="mt-8 max-w-xl space-y-8 text-gray-600">
-            <li className="flex gap-x-3">
-              <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-blueText" />
-              <span>
-                <strong className="font-semibold text-gray-900">Data types.</strong> Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                blanditiis ratione.
-              </span>
-            </li>
-            <li className="flex gap-x-3">
-              <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-blueText" />
-              <span>
-                <strong className="font-semibold text-gray-900">Loops.</strong> Anim aute id magna aliqua ad ad non
-                deserunt sunt. Qui irure qui lorem cupidatat commodo.
-              </span>
-            </li>
-            <li className="flex gap-x-3">
-              <CheckCircleIcon aria-hidden="true" className="mt-1 size-5 flex-none text-blueText" />
-              <span>
-                <strong className="font-semibold text-gray-900">Events.</strong> Ac tincidunt sapien vehicula erat
-                auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </span>
-            </li>
-          </ul> */}
-        
 
           <figure className="mt-10 border-l border-blueText pl-9">
             <blockquote className="font-semibold text-gray-900">
@@ -74,7 +46,7 @@ export default function BlogBlock() {
         <figure className="mt-16">
           <img
             alt=""
-            src={bannerPhoto}
+            src={banner}
             className="aspect-video rounded-xl bg-gray-50 object-cover"
           />
           <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-gray-500">
