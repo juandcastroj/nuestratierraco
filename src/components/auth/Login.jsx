@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
 export default function Login() {
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-20 sm:py-32 lg:px-8 ">
+    <div className="min-h-[80vh] sm:min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-8 py-32">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           {/* <img
             alt="Your Company"

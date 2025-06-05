@@ -21,7 +21,7 @@ export default function Hero() {
                 to="/stack"
                 className="rounded-full bg-[#004e64] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#317081] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Productos 🛍️
+                Nuestros productos 🛍️
               </Link>
               <Link
                 to="/inscriptions"

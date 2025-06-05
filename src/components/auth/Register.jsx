@@ -1,8 +1,8 @@
 export default function Register() {
   return (
     <>
-      <div className="flex min-h-full flex-1 bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-        <div className="flex flex-1 flex-col justify-center px-4 py-16 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+      <div className="flex min-h-[80vh] sm:min-h-screen flex-1 bg-gradient-to-b from-[#9effca] to-[#60cee5]">
+        <div className="flex flex-1 flex-col lg:flex-none justify-center px-4 sm:px-6 lg:px-20 xl:px-24 py-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
               <h2 className="mt-8 text-2xl/9 font-bold tracking-tight text-gray-900 text-center">Crear tu cuenta</h2>

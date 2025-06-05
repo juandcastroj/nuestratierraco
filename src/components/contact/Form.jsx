@@ -47,7 +47,7 @@ export function Form() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
+        className="hidden sm:block px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
       >
         <div className="mx-auto max-w-xl lg:max-w-lg">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
