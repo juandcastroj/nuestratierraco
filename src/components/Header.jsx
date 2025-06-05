@@ -56,7 +56,7 @@ export default function Header() {
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
               {navBarItems.map((item) => (
-                <Link key={item.name} to={item.to} className="text-sm/6 font-semibold text-[#033649] cursor-pointer hover:text-[#336f85]">
+                <Link key={item.name} to={item.to} className="text-sm/6 font-semibold text-blueText hover:text-[#336f85] cursor-pointer">
                   {item.name}
                 </Link>
               ))}

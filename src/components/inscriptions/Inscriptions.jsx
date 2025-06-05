@@ -1,9 +1,10 @@
 export default function Inscriptions() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-      <div className="mx-16 top-20 right-16 absolute">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJAYqcYVveiataKtLGgJrvs_wIxLc-08961UVv9sOmuuOH2w/viewform" className="text-base font-semibold text-[#033649] hover:text-[#336f85]">
-          Convocatoria Profes <span aria-hidden="true">&rarr;</span>
+      <div className="mx-16 top-20 right-16 absolute animate-fade-down animate-duration-[2000ms] animate-delay-[300ms]">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScJAYqcYVveiataKtLGgJrvs_wIxLc-08961UVv9sOmuuOH2w/viewform" 
+          className="text-lg font-semibold text-[#033649] hover:text-[#336f85]">
+          Convocatoria Profes 👩‍🏫 👨‍🏫<span className="w-4" aria-hidden="true">&rarr;</span>
         </a>
       </div>
 
