@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="relative isolate min-h-80 sm:min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="mx-auto grid max-w-5xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
 
-        <div className="relative px-6 lg:static lg:px-8 py-32">
+        <div className="relative px-6 lg:static lg:px-8 py-28">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg animate-fade-right">
             <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
               Contáctanos
