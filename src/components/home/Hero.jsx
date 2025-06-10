@@ -37,7 +37,7 @@ export default function Hero() {
          <img 
             src={planetPhoto}
             alt="Planeta Tierra"
-            className="w-1/2 max-w-md hidden lg:block absolute bottom-0 lg:right-0 lg:mx-0 mx-auto animate-fade-left animate-duration-[4000ms] animate-delay-[800ms]"
+            className="w-1/2 max-w-md hidden lg:block absolute bottom-0 lg:right-0 lg:mx-0 mx-auto animate-fade-left animate-duration-[2500ms] animate-delay-[1000ms]"
           />
     </div>
   )

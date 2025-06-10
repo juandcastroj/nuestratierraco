@@ -70,7 +70,7 @@ export default function Login() {
           <p className="mt-10 text-center text-sm/6 text-gray-600">
             ¿No tienes cuenta?{' '}
             <Link to="/register" className="font-semibold text-[#033649] hover:text-[#204d5e]">
-              Crea una para redimir tus puntos.
+              Crea una para redimir tus Petcoins.
             </Link>
           </p>
         </div>

@@ -1,13 +1,13 @@
-import { projectsData } from "../../constants/projects";
+import { strategicLines } from "../../constants/strategicLines";
 
-export default function Projects() {
+export default function StrategicLines() {
   return (
    <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
     <div className="py-12 md:py-28">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 ">
         <div className="text-center xl:col-span-2 mb-12 animate-fade-down animate-duration-[1500ms] animate-delay-[400ms]">
           <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
-              Nuestros Proyectos 📝 🗂️
+              Lineas estratégicas
           </h2>
             <p className="mt-6 text-lg/8 text-[#004e64] leading-6">
               ¡Bienvenidos a un mundo donde la
@@ -26,7 +26,7 @@ export default function Projects() {
         </div>
 
         <ul role="list" className="space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
-          {  projectsData.map(
+          {  strategicLines.map(
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}

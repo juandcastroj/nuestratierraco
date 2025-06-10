@@ -43,7 +43,8 @@ export default function BlogBlock() {
           </p>
         </div>
 
-        <figure className="mt-16">
+
+        <figure className="mt-16 flex flex-col">
           <img
             alt=""
             src={banner}
