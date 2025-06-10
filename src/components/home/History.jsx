@@ -6,10 +6,10 @@ export default function History() {
     <div className="px-6 py-32 lg:px-8 bg-gradient-to-b from-[#9effca] to-[#60cee5] bg-fixed">
       <div className="mx-auto text-justify max-w-3xl text-base/7 text-gray-700">
         <p className="text-base/7 font-semibold text-blueText">Historia</p>
-        <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-blueText sm:text-5xl">
-          ¿Quiénes somos?...
-        </h1>
-        <div className="mt-6 max-w-2xl">
+          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-blueText sm:text-5xl">
+            ¿Quiénes somos?...
+          </h1>
+        <div className="mt-6 max-w-5xl">
           <p>
             La historia de Nuestra Tierra se
             remonta al año 2021, cuando tres

@@ -11,9 +11,9 @@ export default function HomeRoute() {
             <Hero/>
             <Stats/>
             <History/>
-            <BannerImage/>
+            {/* <BannerImage/> */}
             {/* <BannerText/> */}
-            <Testimonials/>
+            {/* <Testimonials/> */}
         </>
     )
 }

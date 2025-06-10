@@ -1,10 +1,9 @@
 import { posts } from "../../constants/blog";
 
 export default function BlogGrid() {
-
     return (
     <div className="min-h-screen py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl">
             Novedades Nuestra Tierra Co

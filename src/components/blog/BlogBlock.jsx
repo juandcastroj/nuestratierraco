@@ -10,7 +10,7 @@ export default function BlogBlock() {
            Novedad...
         </h1>
 
-        <div className="mt-10 max-w-2xl">
+        <div className="mt-10">
           <p>
             Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
             sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.

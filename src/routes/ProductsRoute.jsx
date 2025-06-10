@@ -11,7 +11,7 @@ export default function ProductsRoute () {
             {/* <ImageCarouselKeen images={[earings, earingsPromo,earings, earingsPromo, earings]} /> */}
             <Products/>
             <BannerImage image={earings}/>
-            <BannerImage image={earingsPromo}/>
+            {/* <BannerImage image={earingsPromo}/> */}
         </>
     )
 }
