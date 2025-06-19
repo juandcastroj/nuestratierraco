@@ -1,8 +1,8 @@
 export const navBarItems = [
-    { name: '¿Quiénes somos?', to: '/' },
-    { name: 'Proyectos', to: '/projects' },
-    { name: 'Eco Catálogo', to: '/stack' },
-    { name: 'Inscripciones', to: '/inscriptions' },
+    { name: 'lineas Estratégicas', to: '/lineas-estrategicas' },
+    { name: 'Proyectos', to: '/proyectos' },
+    { name: 'Eco Catálogo', to: '/tienda' },
+    { name: 'Embajadores', to: '/embajadores' },
     { name: 'Blog', to: '/blog' },
-    { name: 'Contacto', to: '/contact' },
+    { name: 'Contacto', to: '/contacto' },
   ]

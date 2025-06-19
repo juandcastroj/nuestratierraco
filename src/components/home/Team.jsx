@@ -1,7 +1,7 @@
 const people = [
   {
     name: 'Leonard Krasner',
-    role: 'Senior Designer',
+    role: 'Humble worker',
     imageUrl:
       'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     xUrl: '#',
@@ -9,7 +9,7 @@ const people = [
   },
     {
     name: 'Leonard Krasner',
-    role: 'Senior Designer',
+    role: 'Humble worker',
     imageUrl:
       'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     xUrl: '#',
@@ -17,7 +17,7 @@ const people = [
   },
     {
     name: 'Leonard Krasner',
-    role: 'Senior Designer',
+    role: 'Humble worker',
     imageUrl:
       'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     xUrl: '#',
@@ -25,7 +25,7 @@ const people = [
   },
     {
     name: 'Leonard Krasner',
-    role: 'Senior Designer',
+    role: 'Humble worker',
     imageUrl:
       'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     xUrl: '#',
@@ -33,7 +33,7 @@ const people = [
   },
       {
     name: 'Leonard Krasner',
-    role: 'Senior Designer',
+    role: 'Humble worker',
     imageUrl:
       'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     xUrl: '#',
@@ -41,7 +41,7 @@ const people = [
   },
     {
     name: 'Leonard Krasner',
-    role: 'Senior Designer',
+    role: 'Humble worker',
     imageUrl:
       'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     xUrl: '#',
@@ -49,9 +49,10 @@ const people = [
   },
 ]
 
+
 export default function Team() {
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="bg-[#033649] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">Meet our team</h2>
@@ -64,8 +65,9 @@ export default function Team() {
           role="list"
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
+
           {people.map((person) => (
-            <li key={person.name} className="rounded-2xl bg-gray-800 px-8 py-10">
+            <li key={person.name} className="rounded-2xl bg-white/5 px-8 py-10">
               <img alt="" src={person.imageUrl} className="mx-auto size-48 rounded-full md:size-56" />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-white">{person.name}</h3>
               <p className="text-sm/6 text-gray-400">{person.role}</p>
