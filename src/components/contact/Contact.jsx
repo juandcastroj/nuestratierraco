@@ -2,9 +2,8 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/2
 import { Form } from './Form'
 
 export default function Contact() {
-
   return (
-    <div className="relative isolate min-h-80 sm:min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
+    <div className="relative isolate min-h-80 bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="mx-auto grid max-w-5xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
 
         <div className="relative px-6 lg:static lg:px-8 py-28">

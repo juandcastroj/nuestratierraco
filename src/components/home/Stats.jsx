@@ -3,7 +3,7 @@ import { stats } from "../../constants/stats";
 export default function Stats() {
   return (
     <>
-      <div className="bg-[#033649] py-24 sm:py-32">
+      <div className="bg-[#033649] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-7xl">
 
@@ -18,7 +18,7 @@ export default function Stats() {
                 Recuperamos:</p>
             </div>
 
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4 animate-fade-left animate-duration-[2500ms] animate-delay-[500ms]">
+            <dl className="mt-10 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4 animate-fade-left animate-duration-[2500ms] animate-delay-[500ms]">
               {stats.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-white/5 p-8">
                   <dt className="text-base font-semibold text-gray-300 leading-normal mt-3">{stat.name}</dt>

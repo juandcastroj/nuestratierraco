@@ -1,5 +1,5 @@
 export const navBarItems = [
-    { name: 'lineas Estratégicas', to: '/lineas-estrategicas' },
+    { name: 'Lineas Estratégicas', to: '/lineas-estrategicas' },
     { name: 'Proyectos', to: '/proyectos' },
     { name: 'Eco Catálogo', to: '/tienda' },
     { name: 'Embajadores', to: '/embajadores' },

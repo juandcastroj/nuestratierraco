@@ -3,7 +3,7 @@ import banner from "../../assets/images/blog/installation.png";
 
 export default function BlogBlock() {
   return (
-    <div className="px-6 py-32 lg:px-8">
+    <div className="px-6 pt-8 pb-32 lg:px-8">
       <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
         {/* <p className="text-base/7 font-semibold text-blueText">Introducing</p> */}
         <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-blueText sm:text-5xl">
