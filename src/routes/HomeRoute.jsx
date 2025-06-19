@@ -1,9 +1,11 @@
-import BannerText from "../components/home/BannerText";
 import Hero from "../components/home/Hero";
-import History from "../components/home/History";
-import PetCoinsBanner from "../components/home/PetCoinsBanner";
 import Stats from "../components/home/Stats";
-import StrategicLines from "../components/home/StrategicLines";
+
+import History from "../components/home/History";
+import Team from "../components/home/Team";
+import BannerPreciousPlastic from "../components/home/BannerPreciousPlastic";
+
+import PetCoinsBanner from "../components/home/PetCoinsBanner";
 
 export default function HomeRoute() {
     return (
@@ -11,9 +13,10 @@ export default function HomeRoute() {
             <Hero/>
             <PetCoinsBanner/>
             <Stats/>
+            
             <History/>
-            <BannerText/>
-            <StrategicLines/>
+            <Team/>
+            <BannerPreciousPlastic/>
         </>
     )
 }

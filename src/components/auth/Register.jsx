@@ -6,12 +6,13 @@ export default function Register() {
         <div className="flex justify-center px-4 sm:px-6 lg:px-20 xl:px-24 py-24">
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div>
-              <h2 className="mt-8 text-2xl/9 font-bold tracking-tight text-gray-900 text-center">Crear tu cuenta</h2>
+              <h2 className="mt-8 text-2xl font-bold tracking-tight text-gray-900 text-center">Crea tu nueva cuenta</h2>
             </div>
 
             <div className="mt-6">
               <div>
-                <form action="#" method="POST" className="space-y-5">
+
+                <form action="#" method="POST" className="space-y-4">
                   <div>
                     <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
                       Correo
@@ -44,7 +45,7 @@ export default function Register() {
                     </div>
                   </div>
 
-                        <div>
+                  <div>
                     <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
                       Confirma tu contraseña
                     </label>
@@ -63,7 +64,7 @@ export default function Register() {
                   <div>
                     <button
                       type="submit"
-                      className="flex w-full justify-center rounded-md bg-[#033649] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-[#376f83] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="flex w-full justify-center rounded-md bg-[#033649]  hover:bg-[#215163] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                       Crear cuenta
                     </button>
@@ -71,20 +72,20 @@ export default function Register() {
                 </form>
               </div>
 
-              <div className="mt-10">
+              <div className="mt-6">
                 <div className="relative">
                   <div aria-hidden="true" className="absolute inset-0 flex items-center">
                     <div className="w-full border-t border-gray-200" />
                   </div>
                   <div className="relative flex justify-center text-sm/6 font-medium">
-                    <span className="bg-white px-6 text-gray-900">O ingresa con</span>
+                    <span className="bg-white px-6 text-gray-900 border-2 rounded-2xl">O ingresa con</span>
                   </div>
                 </div>
 
                 <div className="mt-6 grid grid-cols-2 gap-4">
                   <a
                     href="#"
-                    className="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus-visible:ring-transparent"
+                    className="flex w-full items-center justify-center gap-3 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus-visible:ring-transparent"
                   >
                     <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
                       <path
@@ -109,7 +110,7 @@ export default function Register() {
 
                   <a
                     href="#"
-                    className="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus-visible:ring-transparent"
+                    className="flex w-full items-center justify-center gap-3 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus-visible:ring-transparent"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" className="size-7 fill-[#1877F2]">
                       <path d="M42,11.5v25c0,3.03-2.47,5.5-5.5,5.5H31V28h3.62c0.51,0,0.94-0.38,1-0.88l0.37-3c0.04-0.28-0.05-0.57-0.24-0.78 C35.56,23.12,35.29,23,35,23h-4v-3.5c0-1.1,0.9-2,2-2h2c0.55,0,1-0.45,1-1v-3.38c0-0.51-0.4-0.94-0.91-0.99 C35.03,12.12,33.62,12,31.83,12c-4.4,0-6.83,2.62-6.83,7.37V23h-4c-0.55,0-1,0.45-1,1v3c0,0.55,0.45,1,1,1h4v14H11.5 C8.47,42,6,39.53,6,36.5v-25C6,8.47,8.47,6,11.5,6h25C39.53,6,42,8.47,42,11.5z"></path>
@@ -118,6 +119,7 @@ export default function Register() {
                     <span className="text-sm/6 font-semibold">Facebook</span>
                   </a>
                 </div>
+
               </div>
             </div>
 

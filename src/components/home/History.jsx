@@ -7,7 +7,7 @@ export default function History() {
       <div className="mx-auto text-justify max-w-3xl text-base/7 text-gray-700">
         <p className="text-base/7 font-semibold text-blueText">Historia</p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-blueText sm:text-5xl">
-            ¿Quiénes somos?...
+            ¿Quiénes somos?... 🐢 🌎
           </h1>
         <div className="mt-6 max-w-5xl">
           <p>

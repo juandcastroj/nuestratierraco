@@ -1,6 +1,6 @@
 import BlogBlock from "../components/blog/BlogBlock";
 import BlogGrid from "../components/blog/BlogGrid";
-import BannerText from "../components/home/BannerText";
+import BannerText from "../components/home/BannerPreciousPlastic";
 
 export default function BlogRoute() { 
     return (

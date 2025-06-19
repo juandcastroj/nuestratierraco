@@ -9,6 +9,7 @@ import InscriptionsRoute from './routes/InscriptionsRoute';
 import LoginRoute from './routes/LoginRoute';
 import BlogRoute from './routes/BlogRoute';
 import RegisterRoute from './routes/RegisterRoute';
+import StrategicLinesRoute from './routes/StrategicLinesRoute';
 
 export default function App() {
 
@@ -18,13 +19,17 @@ export default function App() {
         <main className="isolate">
           <Routes>
             <Route path='/' element={<HomeRoute/>}></Route>
+
             <Route path='/login' element={<LoginRoute/>}></Route>
-            <Route path='/register' element={<RegisterRoute/>}></Route>
-            <Route path='/projects' element={<ProjectsRoute/>}></Route>
-            <Route path='/stack' element={<ProductsRoute/>}></Route>
+            <Route path='/registro' element={<RegisterRoute/>}></Route>
+
+            <Route path='/proyectos' element={<ProjectsRoute/>}></Route>
+            <Route path='/lineas-estrategicas' element={<StrategicLinesRoute/>}></Route>
+            <Route path='/tienda' element={<ProductsRoute/>}></Route>
             <Route path='/blog' element={<BlogRoute/>}></Route>
-            <Route path='/inscriptions' element={<InscriptionsRoute/>}></Route>
-            <Route path='/contact' element={<ContactUsRoute/>}></Route>
+            <Route path='/embajadores' element={<InscriptionsRoute/>}></Route>
+            <Route path='/contacto' element={<ContactUsRoute/>}></Route>
+
             <Route path='*' element={<HomeRoute/>}></Route>
           </Routes>
         </main>

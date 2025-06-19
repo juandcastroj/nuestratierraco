@@ -8,11 +8,11 @@ export const register = async (email, password) => {
   const uid = userCredential.user.uid;
 
   // Crear documento de usuario en Firestore
-  await setDoc(doc(db, "users", uid), {
-    email,
-    points: 0,
-    role: "user", // puedes cambiar a "admin" manualmente desde Firestore
-  });
+  // await setDoc(doc(db, "users", uid), {
+  //   email,
+  //   points: 0,
+  //   role: "user", // puedes cambiar a "admin" manualmente desde Firestore
+  // });
 
   return uid;
 };

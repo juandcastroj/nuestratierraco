@@ -1,4 +1,4 @@
-export default function BannerText() {
+export default function BannerPreciousPlastic () {
   return (
     <div className="relative isolate overflow-hidden bg-blueText">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

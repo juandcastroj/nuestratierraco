@@ -5,6 +5,8 @@ export default function Login() {
   return (
     <div className="min-h-[80vh] sm:min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="flex min-h-full flex-1 flex-col justify-center px-8 py-32">
+
+        
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           {/* <img
             alt="Your Company"
@@ -60,7 +62,7 @@ export default function Login() {
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-[#033649] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-[#358cac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800"
+                className="flex w-full justify-center rounded-md bg-[#033649] hover:bg-[#215163] px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-800"
               >
                 Log in
               </button>
