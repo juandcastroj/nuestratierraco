@@ -5,7 +5,7 @@ export default function BannerPreciousPlastic () {
     <div className="relative isolate overflow-hidden w-full h-[400px] bg-cover bg-center" 
         style={{ backgroundImage: `url(${preciousMachines})` }}>
 
-            <div className="absolute inset-0 bg-black bg-opacity-90"></div>
+            <div className="absolute inset-0 bg-[#033649] bg-opacity-90"></div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="mx-auto max-w-2xl py-16 sm:py-32 lg:px-12 text-center text-white">

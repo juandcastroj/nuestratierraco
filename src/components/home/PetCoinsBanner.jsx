@@ -15,7 +15,7 @@ export default function PetCoinsBanner() {
           </p>
           <Link
             to="/login"
-            className="flex-none rounded-full bg-[#004e64] px-3.5 py-1 text-base font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+            className="flex-none rounded-full bg-[#004e64] hover:bg-[#244d58] px-3.5 py-1 text-base font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           >
                 Conoce mas <span aria-hidden="true">&rarr;</span>
           </Link>
@@ -29,7 +29,7 @@ export default function PetCoinsBanner() {
                   banner.classList.add('max-h-0', 'opacity-0');
                   setTimeout(() => {
                     banner.classList.add('hidden');
-                  }, 500); // espera la duración de la animación
+                  }, 500); 
                 }
               }}
 
