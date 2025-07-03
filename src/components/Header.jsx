@@ -62,7 +62,7 @@ export default function Header() {
               ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <Link to="login" className="text-sm/6 font-semibold text-[#033649]">
+              <Link to="auth" className="text-sm/6 font-semibold text-[#033649]">
                 Mi Cuenta <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
@@ -106,7 +106,7 @@ export default function Header() {
                   </div>
                   <div className="py-6">
                     <Link
-                      to="/login"
+                      to="/auth"
                     onClick={handleMobileMenu}
                       className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-base/7 font-semibold text-[#033649] hover:text-[#336f85]"
                     >
