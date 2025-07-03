@@ -1,4 +1,3 @@
-// src/components/AdminPanel.jsx
 import { useState } from "react";
 import { addPointsToUser } from "../services/admin";
 import { useAuth } from "../hooks/useAuth";

@@ -15,8 +15,8 @@ export default function Footer() {
         </nav>
 
         <div className="mt-16 flex justify-center gap-x-10">
-          {navigation.map((item) => (            
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300">
+          { navigation.map((item) => (            
+            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-300" target="_blank">
               <span className="sr-only">{item.name}</span>
               <item.icon aria-hidden="true" className="size-8" />
             </a>

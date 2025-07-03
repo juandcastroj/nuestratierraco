@@ -18,7 +18,7 @@ export default function BannerPreciousPlastic () {
             </span> 
                 <br/>
             <span className="mt-12">
-            ¡ Trabajando de la mano de <a href="https://www.preciousplastic.com/" about="blank" className="font-bold">Precious Plastic</a>  !
+            ¡ Trabajando de la mano de <a href="https://www.preciousplastic.com/" target="_blank" className="font-bold">Precious Plastic</a>  !
             </span>
           </div>
         </div>
