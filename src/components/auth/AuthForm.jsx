@@ -31,11 +31,12 @@ export default function AuthForm() {
 
     try {
       if (isRegistering) {
-        await register(email, password);
-        setMsg("Usuario registrado correctamente");
+        const registerResponse = await register(email, password);
+        setMsg(registerResponse);
+
       } else {
-        await login(email, password);
-        setMsg("Inicio de sesión exitoso");
+        const loginResponse = await login(email, password);
+        setMsg(loginResponse);
       }
     } catch (err) {
       setMsg(err.message);
@@ -88,8 +89,8 @@ export default function AuthForm() {
             </button>
           </p>
 
-          {/* GOOGLE AND FACEBOOK */}
 
+          {/* GOOGLE AND FACEBOOK */}
           <div className="mt-6">
             <div className="relative">
               <div aria-hidden="true" className="absolute inset-0 flex items-center">
@@ -140,11 +141,13 @@ export default function AuthForm() {
 
           </div>
 
-          {msg && (
+
+          {  msg && (
             <div className="mt-4 text-center text-sm font-semibold text-red-600">
               {msg}
             </div>
           )}
+
         </div>
       </div>
     </div>
