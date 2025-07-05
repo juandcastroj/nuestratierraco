@@ -10,6 +10,7 @@ import InscriptionsRoute from './routes/InscriptionsRoute';
 import BlogRoute from './routes/BlogRoute';
 import StrategicLinesRoute from './routes/StrategicLinesRoute';
 import AuthRoute from './routes/AuthRoute';
+import ProfileRoute from './routes/ProfileRoute';
 
 export default function App() {
 
@@ -20,10 +21,8 @@ export default function App() {
           <Routes>
             <Route path='/' element={<HomeRoute/>}></Route>
 
-            {/* <Route path='/login' element={<LoginRoute/>}></Route>
-            <Route path='/registro' element={<RegisterRoute/>}></Route> */}
-
             <Route path='/auth' element={<AuthRoute/>}></Route>
+            <Route path='/account' element={<ProfileRoute/>}></Route>
 
             <Route path='/proyectos' element={<ProjectsRoute/>}></Route>
             <Route path='/lineas-estrategicas' element={<StrategicLinesRoute/>}></Route>

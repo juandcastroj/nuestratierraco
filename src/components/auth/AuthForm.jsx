@@ -57,7 +57,7 @@ export default function AuthForm() {
               placeholder="Correo"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border rounded focus:border-[#033649] focus:outline-none"
+              className="w-full p-2 border-2 rounded focus:border-[#033649] focus:outline-none"
               required
             />
             <input
@@ -65,11 +65,11 @@ export default function AuthForm() {
               placeholder="Contraseña"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border rounded focus:border-[#033649] focus:outline-none"
+              className="w-full p-2 border-2 rounded focus:border-[#033649] focus:outline-none"
               required
             />
             <button
-              type="submit"
+              type="submit"    
               className="w-full bg-[#033649] hover:bg-[#1f333a] text-white p-2 rounded transition"
             >
               {isRegistering ? "Registrarse" : "Iniciar Sesión"}

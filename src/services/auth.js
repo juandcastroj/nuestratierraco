@@ -1,4 +1,3 @@
-// src/services/auth.js
 import { createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword } from "firebase/auth";
 import { auth, db } from "../firebase";
 import { doc, setDoc } from "firebase/firestore";
@@ -20,7 +19,6 @@ export const register = async (email, password) => {
     console.error("Error al registrar:", error.message);
     return error.message;
   }
-  
 
   // Crear documento de usuario en Firestore
   // await setDoc(doc(db, "users", uid), {
