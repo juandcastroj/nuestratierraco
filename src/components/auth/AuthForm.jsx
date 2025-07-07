@@ -1,12 +1,15 @@
 import { useState } from "react";
-import { register, login } from "../../services/auth";
+import { useNavigate } from "react-router-dom";
+import { register, login, loginWithGoogle } from "../../services/auth";
 
 export default function AuthForm() {
+  const navigate = useNavigate();
 
   const [isRegistering, setIsRegistering] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
+
 
   const validateForm = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -40,6 +43,17 @@ export default function AuthForm() {
       }
     } catch (err) {
       setMsg(err.message);
+    }
+  };
+
+    const handleGoogleLogin = async () => {
+    try {
+      const user = await loginWithGoogle();
+      if (user) {
+        navigate("/account"); 
+      }
+    } catch (error) {
+      alert("Error al iniciar sesión con Google.");
     }
   };
 
@@ -102,9 +116,9 @@ export default function AuthForm() {
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-4">
-              <a
-                href="#"
+              <button
                 className="flex w-full items-center justify-center gap-3 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus-visible:ring-transparent"
+                onClick={handleGoogleLogin}
               >
                 <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
                   <path
@@ -125,7 +139,7 @@ export default function AuthForm() {
                   />
                 </svg>
                 <span className="text-sm/6 font-semibold">Google</span>
-              </a>
+              </button>
 
               <a
                 href="#"

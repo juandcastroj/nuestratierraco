@@ -1,6 +1,6 @@
-import { createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword } from "firebase/auth";
-import { auth, db } from "../firebase";
-import { doc, setDoc } from "firebase/firestore";
+import { createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { auth, db, googleProvider } from "../firebase";
+// import { doc, setDoc } from "firebase/firestore";
 
 export const register = async (email, password) => {
   
@@ -41,5 +41,27 @@ export const login = async (email, password) => {
   } catch (error) {
     console.error("Error al iniciar sesión:", error.message);
     return error.message;
+  }
+};
+
+export const loginWithGoogle = async () => {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+    console.log("Usuario con Google:", user);
+    return user;
+  } catch (error) {
+    console.error("Error al iniciar sesión con Google:", error);
+    throw error;
+  }
+};
+
+export const logout = async () => {
+  try {
+    await signOut(auth);
+    console.log("Usuario desconectado");
+    // Puedes redirigir o limpiar el estado global aquí
+  } catch (error) {
+    console.error("Error al cerrar sesión:", error);
   }
 };
