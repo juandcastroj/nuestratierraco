@@ -1,4 +1,8 @@
-import { createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword,
+         sendEmailVerification,
+         signInWithEmailAndPassword,
+         signInWithPopup,
+         signOut } from "firebase/auth";
 import { auth, db, googleProvider } from "../firebase";
 // import { doc, setDoc } from "firebase/firestore";
 

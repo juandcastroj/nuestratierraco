@@ -10,7 +10,6 @@ export default function AuthForm() {
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
 
-
   const validateForm = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -37,6 +36,10 @@ export default function AuthForm() {
         const registerResponse = await register(email, password);
         setMsg(registerResponse);
 
+        //need error management here
+        // if (registerResponse === "Verificación enviada. Revisa tu correo.")
+        // navigate("/account"); 
+
       } else {
         const loginResponse = await login(email, password);
         setMsg(loginResponse);
@@ -46,15 +49,15 @@ export default function AuthForm() {
     }
   };
 
-    const handleGoogleLogin = async () => {
-    try {
-      const user = await loginWithGoogle();
-      if (user) {
-        navigate("/account"); 
-      }
-    } catch (error) {
-      alert("Error al iniciar sesión con Google.");
+  const handleGoogleLogin = async () => {
+  try {
+    const user = await loginWithGoogle();
+    if (user) {
+      navigate("/account"); 
     }
+  } catch (error) {
+    alert("Error al iniciar sesión con Google.");
+  }
   };
 
   return (
@@ -141,20 +144,18 @@ export default function AuthForm() {
                 <span className="text-sm/6 font-semibold">Google</span>
               </button>
 
-              <a
-                href="#"
-                className="flex w-full items-center justify-center gap-3 rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus-visible:ring-transparent"
-              >
+              <button
+                className="flex w-full items-center justify-center gap-3 rounded-xl bg-white opacity-60 px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus-visible:ring-transparent"
+                disabled>
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" className="size-7 fill-[#1877F2]">
                   <path d="M42,11.5v25c0,3.03-2.47,5.5-5.5,5.5H31V28h3.62c0.51,0,0.94-0.38,1-0.88l0.37-3c0.04-0.28-0.05-0.57-0.24-0.78 C35.56,23.12,35.29,23,35,23h-4v-3.5c0-1.1,0.9-2,2-2h2c0.55,0,1-0.45,1-1v-3.38c0-0.51-0.4-0.94-0.91-0.99 C35.03,12.12,33.62,12,31.83,12c-4.4,0-6.83,2.62-6.83,7.37V23h-4c-0.55,0-1,0.45-1,1v3c0,0.55,0.45,1,1,1h4v14H11.5 C8.47,42,6,39.53,6,36.5v-25C6,8.47,8.47,6,11.5,6h25C39.53,6,42,8.47,42,11.5z"></path>
                 </svg>
 
                 <span className="text-sm/6 font-semibold">Facebook</span>
-              </a>
+              </button>
             </div>
 
           </div>
-
 
           {  msg && (
             <div className="mt-4 text-center text-sm font-semibold text-red-600">
