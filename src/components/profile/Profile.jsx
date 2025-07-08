@@ -1,9 +1,14 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../contexts/AuthContext";
 import { logout } from "../../services/auth";
 import Breadcrumbs from "./Breadcrumbs";
 
 export default function Profile() {
     const navigate = useNavigate();
+    const { user } = useContext(AuthContext);
+    
+      if (!user) return <p className="text-center pt-28">Cargando...</p>;
 
     const handleLogout = async () => {
       await logout();
@@ -18,25 +23,13 @@ export default function Profile() {
         <form>
           <div className="space-y-6">
             <div>
-              <h1 className="text-lg/6 font-medium text-gray-900">Hola, <span>" "</span>.</h1>
-              <h1 className="text-lg/6 mt-2 font-medium text-gray-900">Tienes <span>" "</span> PetCoins 🪙</h1>
-              <p className="mt-1 text-sm text-gray-500">
-                Canjea tus Petcoins acumulados por nuestros productos, cuantos mas PetCoins tengas, mejores productos podrás tener.
-              </p>
-            </div>
-
-            <div>
-              <label htmlFor="tags" className="block text-sm/6 font-medium text-gray-900">
-                Categorías
-              </label>
-              <div className="mt-2">
-                <input
-                  id="tags"
-                  name="tags"
-                  type="text"
-                  className="block w-full rounded-md border-2 border-blueText bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 outline-sky-600 sm:text-sm/6"
-                />
-              </div>
+              <h1 className="text-lg/6 font-medium text-gray-900">Hola, <span>{user.displayName}</span>.</h1>
+               <img src={user.photoURL} alt="Foto de perfil" style={{ borderRadius: "50%", width: 100 }} />
+                <p className="mt-1 text-sm text-gray-500">
+                  {user.email}
+                </p>
+              <h1 className="text-lg/6 mt-2 font-medium text-gray-900">Tienes <span>0</span> PetCoins 🪙</h1>
+          
             </div>
 
             <div className="flex justify-end gap-x-3">
