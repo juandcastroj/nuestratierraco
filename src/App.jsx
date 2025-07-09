@@ -22,7 +22,7 @@ export default function App() {
             <Route path='/' element={<HomeRoute/>}></Route>
 
             <Route path='/auth' element={<AuthRoute/>}></Route>
-            <Route path='/account' element={<ProfileRoute/>}></Route>
+            <Route path='/mi-cuenta' element={<ProfileRoute/>}></Route>
 
             <Route path='/proyectos' element={<ProjectsRoute/>}></Route>
             <Route path='/lineas-estrategicas' element={<StrategicLinesRoute/>}></Route>

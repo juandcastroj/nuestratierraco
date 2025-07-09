@@ -6,9 +6,11 @@ import Breadcrumbs from "./Breadcrumbs";
 
 export default function Profile() {
     const navigate = useNavigate();
-    const { user } = useContext(AuthContext);
     
-      if (!user) return <p className="text-center pt-28">Cargando...</p>;
+       const { firebaseUser, userData, loading } = useContext(AuthContext);
+
+        if (loading) return <p>Cargando datos del usuario...</p>;
+        if (!firebaseUser) return <p>No has iniciado sesión.</p>;
 
     const handleLogout = async () => {
       await logout();
@@ -19,16 +21,25 @@ export default function Profile() {
     <>
       <Breadcrumbs />
 
-      <main className="mx-auto max-w-lg px-4 pt-10 pb-12 lg:pb-16">
+      <main className="mx-auto max-w-lg px-4 pt-16 pb-12 lg:pb-20">
         <form>
           <div className="space-y-6">
             <div>
-              <h1 className="text-lg/6 font-medium text-gray-900">Hola, <span>{user.displayName}</span>.</h1>
-               <img src={user.photoURL} alt="Foto de perfil" style={{ borderRadius: "50%", width: 100 }} />
-                <p className="mt-1 text-sm text-gray-500">
-                  {user.email}
+              <h1 className="text-lg/6 font-medium text-gray-900">Hola, <span>{userData?.name || firebaseUser.displayName}</span>.</h1>
+                 
+                  {firebaseUser.photoURL && (
+                      <img
+                        src={firebaseUser.photoURL}
+                        alt="Foto de perfil"
+                        className="mt-3 mb-4"
+                        style={{ width: 100, borderRadius: "50%" }}
+                      />
+                    )}
+
+                <p className="mt-3 text-sm text-gray-500">
+                   <span className="font-semibold">Email: </span> {firebaseUser.email}
                 </p>
-              <h1 className="text-lg/6 mt-2 font-medium text-gray-900">Tienes <span>0</span> PetCoins 🪙</h1>
+              <h1 className="text-lg/6 mt-4 font-medium text-gray-900">Tienes: <span>{userData?.petcoins ?? "Cargando..."}</span> PetCoins 🪙</h1>
           
             </div>
 

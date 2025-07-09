@@ -53,7 +53,7 @@ export default function AuthForm() {
   try {
     const user = await loginWithGoogle();
     if (user) {
-      navigate("/account"); 
+      navigate("/mi-cuenta"); 
     }
   } catch (error) {
     alert("Error al iniciar sesión con Google.");

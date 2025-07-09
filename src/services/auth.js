@@ -4,6 +4,7 @@ import { createUserWithEmailAndPassword,
          signInWithPopup,
          signOut } from "firebase/auth";
 import { auth, db, googleProvider } from "../firebase";
+import saveUserInFirestore from "./saveUserInFirestore";
 // import { doc, setDoc } from "firebase/firestore";
 
 export const register = async (email, password) => {
@@ -52,8 +53,11 @@ export const loginWithGoogle = async () => {
   try {
     const result = await signInWithPopup(auth, googleProvider);
     const user = result.user;
-    console.log("Usuario con Google:", user);
+        console.log("Usuario con Google:", user);
+
+    await saveUserInFirestore(user);
     return user;
+
   } catch (error) {
     console.error("Error al iniciar sesión con Google:", error);
     throw error;
