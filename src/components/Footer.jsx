@@ -23,7 +23,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="mt-10 text-center text-sm/6 text-gray-400">&copy; 2025 Nuestra Tierra Co.</p>
+        <p className="mt-10 text-center text-sm/6 text-gray-400">&copy; 2025 Nuestra Tierra co.</p>
       </div>
     </footer>
   )

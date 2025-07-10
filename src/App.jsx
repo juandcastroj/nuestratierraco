@@ -11,6 +11,7 @@ import BlogRoute from './routes/BlogRoute';
 import StrategicLinesRoute from './routes/StrategicLinesRoute';
 import AuthRoute from './routes/AuthRoute';
 import ProfileRoute from './routes/ProfileRoute';
+import PetCoinsInfoRoute from './routes/PetCoinsInfoRoute';
 
 export default function App() {
 
@@ -30,6 +31,7 @@ export default function App() {
             <Route path='/blog' element={<BlogRoute/>}></Route>
             <Route path='/embajadores' element={<InscriptionsRoute/>}></Route>
             <Route path='/contacto' element={<ContactUsRoute/>}></Route>
+            <Route path='/petcoins' element={<PetCoinsInfoRoute/>}></Route>
 
             <Route path='*' element={<HomeRoute/>}></Route>
           </Routes>

@@ -35,7 +35,6 @@ export default function AuthForm() {
       if (isRegistering) {
         const registerResponse = await register(email, password);
         setMsg(registerResponse);
-
         //need error management here
         // if (registerResponse === "Verificación enviada. Revisa tu correo.")
         // navigate("/account"); 
@@ -63,7 +62,7 @@ export default function AuthForm() {
   return (
     <div className="min-h-[80vh] bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="flex min-h-full flex-1 flex-col justify-center px-8 py-24">
-        <div className="max-w-md mx-auto p-12 border border-white rounded-xl shadow-md mt-10">
+        <div className="max-w-md mx-auto p-12 rounded-2xl mt-10 bg-white/20 shadow-md">
           <h2 className="text-2xl font-bold mb-4 text-center text-[#033649]">
             {isRegistering ? "Crear Cuenta Nueva" : "Iniciar Sesión"}
           </h2>
@@ -74,7 +73,7 @@ export default function AuthForm() {
               placeholder="Correo"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border-2 rounded focus:border-[#033649] focus:outline-none"
+              className="w-full p-2 border-2 rounded-xl focus:border-[#033649] focus:outline-none"
               required
             />
             <input
@@ -82,12 +81,12 @@ export default function AuthForm() {
               placeholder="Contraseña"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border-2 rounded focus:border-[#033649] focus:outline-none"
+              className="w-full p-2 border-2 rounded-xl focus:border-[#033649] focus:outline-none"
               required
             />
             <button
               type="submit"    
-              className="w-full bg-[#033649] hover:bg-[#1f333a] text-white p-2 rounded transition"
+              className="w-full bg-[#033649] hover:bg-[#1f333a] text-white p-2 rounded-xl transition"
             >
               {isRegistering ? "Registrarse" : "Iniciar Sesión"}
             </button>

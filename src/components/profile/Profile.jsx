@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 import { logout } from "../../services/auth";
 import Breadcrumbs from "./Breadcrumbs";
+import DefaultUserImage from "../../assets/images/petcoins/default-user.jpg";
 
 export default function Profile() {
     const navigate = useNavigate();
@@ -27,14 +28,19 @@ export default function Profile() {
             <div>
               <h1 className="text-lg/6 font-medium text-gray-900">Hola, <span>{userData?.name || firebaseUser.displayName}</span>.</h1>
                  
-                  {firebaseUser.photoURL && (
+                  {firebaseUser.photoURL ? (
                       <img
                         src={firebaseUser.photoURL}
                         alt="Foto de perfil"
                         className="mt-3 mb-4"
                         style={{ width: 100, borderRadius: "50%" }}
                       />
-                    )}
+                    )
+                    :  <img
+                        src={firebaseUser.photoURL}
+                        alt="avatar usuario"
+                        className="mt-3 mb-4 rounded-full w-[100px]"
+                      /> } 
 
                 <p className="mt-3 text-sm text-gray-500">
                    <span className="font-semibold">Email: </span> {firebaseUser.email}
@@ -44,12 +50,12 @@ export default function Profile() {
             </div>
 
             <div className="flex justify-end gap-x-3">
-              <button
-                type="submit"
+              <Link
+                to="/tienda"
                 className="rounded-md bg-sky-500 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-sky-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500"
               >
                 Canjea tus puntos 
-              </button>
+              </Link>
               <button
                 onClick={handleLogout}
                 type="button"

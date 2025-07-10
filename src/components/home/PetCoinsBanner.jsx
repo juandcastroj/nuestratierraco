@@ -14,7 +14,7 @@ export default function PetCoinsBanner() {
             ¡Usalos para canjear tu reciclaje por nuestros productos!
           </p>
           <Link
-            to="/login"
+            to="/petcoins"
             className="flex-none rounded-full bg-[#004e64] hover:bg-[#244d58] px-3.5 py-1 text-base font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           >
                 Conoce mas <span aria-hidden="true">&rarr;</span>
