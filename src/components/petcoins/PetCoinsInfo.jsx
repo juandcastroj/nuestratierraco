@@ -14,7 +14,7 @@ export default function PetCoinsInfo() {
         </div>
         <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-gray-900">Our mission</h2>
+            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#49acc0]">Our mission</h2>
             <p className="mt-6 text-base/7 text-gray-600">
               Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
               vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque

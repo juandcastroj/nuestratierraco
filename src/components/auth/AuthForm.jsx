@@ -60,15 +60,17 @@ export default function AuthForm() {
   };
 
   return (
-    <div className="min-h-[80vh] bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-      <div className="flex min-h-full flex-1 flex-col justify-center px-8 py-24">
-        <div className="max-w-md mx-auto p-12 rounded-2xl mt-10 bg-white/20 shadow-md">
-          <h2 className="text-2xl font-bold mb-4 text-center text-[#033649]">
-            {isRegistering ? "Crear Cuenta Nueva" : "Iniciar Sesión"}
-          </h2>
+    <div className="flex min-h-[60vh] bg-gradient-to-b from-[#9effca] to-[#60cee5]">
+
+      <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+             <div className="flex min-h-full flex-1 flex-col justify-center px-8 py-12">
+         <div className="max-w-md mx-auto p-12 rounded-2xl mt-10 bg-white/20 shadow-md">
+           <h2 className="text-2xl font-bold mb-4 text-center text-[#033649]">
+             {isRegistering ? "Crear Cuenta Nueva" : "Iniciar Sesión"}
+           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            <input
+             <input
               type="email"
               placeholder="Correo"
               value={email}
@@ -164,6 +166,13 @@ export default function AuthForm() {
 
         </div>
       </div>
+      </div>
+
+      <div className="relative hidden w-0 flex-1 lg:block">
+        <img alt="login image" src="https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1908&amp;q=80" 
+          className="absolute inset-0 size-full object-cover"/>
+       </div>
+
     </div>
   );
 }
