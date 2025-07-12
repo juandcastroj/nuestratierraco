@@ -1,4 +1,4 @@
-export default function BannerImage({ image }) {
+export default function ProductBanner({ image }) {
   return (
     <div className="w-full">
       <img

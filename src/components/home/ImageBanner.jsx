@@ -1,6 +1,6 @@
 import bannerProduct from "../../assets/images/home/banner.png";
 
-export default function BannerImage() {
+export default function ImageBanner() {
   return (
     <div className="w-full">
       <img

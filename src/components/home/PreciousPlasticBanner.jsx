@@ -1,6 +1,6 @@
 import preciousMachines from "../../assets/images/home/preciousMachines.png";
 
-export default function BannerPreciousPlastic () {
+export default function PreciousPlasticBanner () {
   return (
     <div className="relative isolate overflow-hidden w-full h-[400px] bg-cover bg-center" 
         style={{ backgroundImage: `url(${preciousMachines})` }}>

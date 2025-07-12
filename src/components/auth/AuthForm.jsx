@@ -63,7 +63,7 @@ export default function AuthForm() {
     <div className="flex min-h-[60vh] bg-gradient-to-b from-[#9effca] to-[#60cee5]">
 
       <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
-             <div className="flex min-h-full flex-1 flex-col justify-center px-8 py-12">
+             <div className="flex min-h-full flex-1 flex-col justify-center px-4 sm:px-8 py-12">
          <div className="max-w-md mx-auto p-12 rounded-2xl mt-10 bg-white/20 shadow-md">
            <h2 className="text-2xl font-bold mb-4 text-center text-[#033649]">
              {isRegistering ? "Crear Cuenta Nueva" : "Iniciar Sesión"}

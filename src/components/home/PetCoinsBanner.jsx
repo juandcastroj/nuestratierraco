@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function PetCoinsBanner() {
   return (
     <>
-      <div id="PetcoinsBanner" className="sticky bottom-0 start-0 z-50 isolate flex items-center gap-x-6 overflow-hidden bg-[#25a18e] px-6 py-5 sm:px-5 sm:before:flex-1  transition-all duration-500 ease-in-out max-h-40 animate-flip-up">
+      <div id="PetcoinsBanner" className="sticky bottom-0 start-0 z-30 isolate flex items-center gap-x-6 overflow-hidden bg-[#25a18e] px-6 py-3 sm:px-5 sm:before:flex-1  transition-all duration-500 ease-in-out max-h-40 animate-flip-up">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
           <p className="text-base text-white font-semibold">
             <strong>PetCoins 🪙</strong>
