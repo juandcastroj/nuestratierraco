@@ -15,7 +15,6 @@ export default function Team() {
           role="list"
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
-
           {people.map((person, index) => (
             <li key={index} className="rounded-2xl bg-white/5 px-8 py-10 animate-rotate-y animate-delay-[800ms]">
               <img alt="" src={person.imageUrl} className="mx-auto size-48 rounded-full md:size-56" />

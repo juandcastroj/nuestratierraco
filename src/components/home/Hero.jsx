@@ -18,7 +18,7 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex flex-col gap-y-4 sm:flex-row items-center justify-center gap-x-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               <Link
-                to="/stack"
+                to="/tienda"
                 className="rounded-full bg-[#004e64] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Nuestros productos 🛍️

@@ -4,7 +4,7 @@ import { AuthContext } from "../../contexts/AuthContext";
 import { logout } from "../../services/auth";
 import Breadcrumbs from "./Breadcrumbs";
 import Loading from "../loading/Loading";
-import bgProfileImage from "../../assets/images/petcoins/bg-profile-card.png";
+import bgImg from "../../assets/images/petcoins/bg-profile-card.png";
 
 export default function Profile() {
 
@@ -26,7 +26,7 @@ export default function Profile() {
         <div className="max-w-sm w-full mx-auto my-16 sm:my-10 bg-white/20 shadow-md rounded-lg overflow-hidden relative">
           <div className="bg-white px-6 pt-6 sm:px-10">
             <img
-              src={bgProfileImage}
+              src={bgImg}
               alt="Shoes"
               className="rounded-xl mx-auto w-full max-w-[250px] sm:max-w-none"
             />
@@ -48,8 +48,9 @@ export default function Profile() {
 
             <p className="text-gray-600 text-sm mb-4">
               Tienes:  
-              <span className="text-gray-800 text-base font-semibold mb-4">{" " + userData?.petcoins + " " ?? "0 "}</span>
-                PetCoins 🪙
+              <span className="text-gray-800 text-base font-semibold mb-4">
+                {userData?.petcoins ?? "0"} PetCoins 🪙
+              </span>
             </p>
 
             <div className="flex justify-end gap-x-3">
