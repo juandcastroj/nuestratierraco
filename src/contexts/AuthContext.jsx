@@ -11,8 +11,12 @@ export const AuthProvider = ({ children }) => {
   const [userData, setUserData] = useState(null); // datos desde Firestore
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+    // Escucha cambios en el estado de autenticación
+    // y obtiene los datos del usuario desde Firestore
+    // Almacena el usuario de Firebase y sus datos en el contexto
+    // Muestra un loading mientras se verifica el estado de autenticación
 
+    useEffect(() => {
       const unsub = onAuthStateChanged(auth, async (user) => {
       setFirebaseUser(user);
 
@@ -31,11 +35,11 @@ export const AuthProvider = ({ children }) => {
         setUserData(null);
       }
 
-      setLoading(false);
-    });
+        setLoading(false);
+      });
 
-    return () => unsub();
-  }, []);
+      return () => unsub();
+    }, []);
 
   return (
     <AuthContext.Provider value={{ firebaseUser, userData, loading }}>
