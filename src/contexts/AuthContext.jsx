@@ -1,49 +1,67 @@
-import { createContext, useEffect, useState } from "react";
-import { onAuthStateChanged } from "firebase/auth";
+import { createContext, useContext, useEffect, useState } from "react";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
 import { auth, db } from "../firebase";
 
-export const AuthContext = createContext();
+const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
 
-  const [firebaseUser, setFirebaseUser] = useState(null); // usuario de Firebase auth
-  const [userData, setUserData] = useState(null); // datos desde Firestore
+  const [firebaseUser, setFirebaseUser] = useState(null);
+  const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(true);
 
-    // Escucha cambios en el estado de autenticación
-    // y obtiene los datos del usuario desde Firestore
-    // Almacena el usuario de Firebase y sus datos en el contexto
-    // Muestra un loading mientras se verifica el estado de autenticación
+  const logout = async () => {
+    try {
+      await signOut(auth);
+      console.log("Sesión cerrada exitosamente.");
+      setFirebaseUser(null);
+      setUserData(null);
+    } catch (error) {
+      console.error("Error al cerrar sesión:", error.message);
+    }
+  };
 
-    useEffect(() => {
-      const unsub = onAuthStateChanged(auth, async (user) => {
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setFirebaseUser(user);
 
       if (user) {
-        // Search firestore user data
-        const userRef = doc(db, "users", user.uid);
-        const docSnap = await getDoc(userRef);
+        try {
+          const userRef = doc(db, "usuarios", user.uid);
+          const snap = await getDoc(userRef);
 
-        if (docSnap.exists()) {
-          setUserData(docSnap.data());
-        } else {
-          console.warn("El documento del usuario no existe en Firestore.");
+          if (snap.exists()) {
+            const data = snap.data();
+            setUserData(data);
+          } else {
+            console.warn("El usuario no existe en Firestore.");
+            setUserData(null);
+          }
+        } catch (error) {
+          console.error("Error al obtener el usuario desde Firestore:", error);
           setUserData(null);
         }
       } else {
         setUserData(null);
       }
 
-        setLoading(false);
-      });
+      setLoading(false);
+    });
 
-      return () => unsub();
-    }, []);
+    return () => unsubscribe();
+  }, [firebaseUser]);
+
+  // Derivar firstName desde userData.name
+  const firstName = userData?.name?.split(" ")[0] || "";
 
   return (
-    <AuthContext.Provider value={{ firebaseUser, userData, loading }}>
+    <AuthContext.Provider
+      value={{ firebaseUser, userData, firstName, loading, logout }}
+    >
       {children}
     </AuthContext.Provider>
   );
 };
+
+export const useAuth = () => useContext(AuthContext);

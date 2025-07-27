@@ -1,7 +1,5 @@
-import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../contexts/AuthContext";
-import { logout } from "../../services/auth";
+import { useAuth } from "../../contexts/AuthContext";
 import Breadcrumbs from "./Breadcrumbs";
 import Loading from "../loading/Loading";
 import bgImg from "../../assets/images/petcoins/bg-profile-card.png";
@@ -9,13 +7,13 @@ import bgImg from "../../assets/images/petcoins/bg-profile-card.png";
 export default function Profile() {
 
     const navigate = useNavigate();
-    const { firebaseUser, userData, loading } = useContext(AuthContext);
+    const { firebaseUser, userData, loading, logout } = useAuth();
 
     if (loading) return <Loading />;
     // if (!firebaseUser) return <p>No has iniciado sesión.</p>;
 
     const handleLogout = async () => {
-      await logout();
+      await  logout();
       navigate("/auth");
     };
 

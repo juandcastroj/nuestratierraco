@@ -1,24 +1,27 @@
-import { doc, setDoc, getDoc } from "firebase/firestore";
-import { db } from "../firebase";
-
 const saveUserInFirestore = async (user) => {
-
-  const userRef = doc(db, "users", user.uid);
+  const userRef = doc(db, "usuarios", user.uid);
   const docSnap = await getDoc(userRef);
 
   if (!docSnap.exists()) {
+    const capitalizedName = capitalizeName(user.displayName || "");
+
     await setDoc(userRef, {
       uid: user.uid,
-      name: user.displayName || "", // Puede estar vacío si es email/pass
+      name: capitalizedName || "Sin Nombre",
       email: user.email,
-      photoURL: user.photoURL || "",  // Puede estar vacío si es email/pass
-      petcoins: 0,      // Valor inicial personalizado
-      createdAt: new Date()
+      photoURL: user.photoURL || "",
+      petcoins: 0,
+      createdAt: new Date(),
     });
-    console.log("Usuario guardado en Firestore");
+
+    console.log("✅ Usuario guardado en Firestore");
   } else {
-    console.log("Usuario ya existía en Firestore");
+    console.log("ℹ️ Usuario ya existía en Firestore");
   }
+
+  // 🔁 Siempre devolvemos el documento actualizado
+  const updatedSnap = await getDoc(userRef);
+  return updatedSnap.data();
 };
 
 export default saveUserInFirestore;

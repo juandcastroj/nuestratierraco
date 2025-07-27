@@ -5,9 +5,12 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { navBarItems } from '../constants/navbar'
 import nuestraTierraLogo from '../assets/images/logo/logo.png'
 import nuestraTierraLogoMobile from '../assets/images/logo/logo.svg'
+import { useAuth } from '../contexts/AuthContext'
 
 export default function Header() {
 
+    const { firstName } = useAuth();
+  
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [hasBackground, setHasBackground] = useState(false);
 
@@ -62,10 +65,17 @@ export default function Header() {
               </Link>
             ))}
           </div>
+
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link to="auth" className="text-sm/6 font-semibold text-[#033649]">
-              Mi Cuenta <span aria-hidden="true">&rarr;</span>
-            </Link>
+            { firstName ? (
+              <Link to="mi-cuenta" className="text-sm/6 font-semibold text-[#033649]">
+                Hola, {firstName} 👋 
+              </Link>
+              ) : (
+              <Link to="auth" className="text-sm/6 font-semibold text-[#033649]">
+                Mi Cuenta <span aria-hidden="true">&rarr;</span>
+              </Link>
+              )}
           </div>
         </nav>
 

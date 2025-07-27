@@ -3,13 +3,16 @@ import { createRoot } from 'react-dom/client'
 import './assets/css/tailwind.css'
 import App from './App.jsx'
 import { AuthProvider } from './contexts/AuthContext.jsx'
+import { BrowserRouter } from 'react-router-dom'
 
 
 createRoot(document.getElementById('root')).render(
   
   <StrictMode>
-    <AuthProvider>
-      <App/>
-    </AuthProvider>
+    <BrowserRouter>
+      <AuthProvider>
+        <App/>
+      </AuthProvider>
+    </BrowserRouter>
   </StrictMode>,
 )
