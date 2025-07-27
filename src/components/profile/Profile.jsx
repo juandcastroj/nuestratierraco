@@ -21,7 +21,7 @@ export default function Profile() {
     <>
       <Breadcrumbs />
 
-        <div className="max-w-sm w-full mx-auto my-16 sm:my-10 bg-white/20 shadow-md rounded-lg overflow-hidden relative">
+        <div className="max-w-sm w-full mx-auto my-24 sm:my-10 bg-white/20 shadow-md rounded-lg overflow-hidden relative">
           <div className="bg-white px-6 pt-6 sm:px-10">
             <img
               src={bgImg}

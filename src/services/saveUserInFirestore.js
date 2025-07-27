@@ -3,7 +3,7 @@ const saveUserInFirestore = async (user) => {
   const docSnap = await getDoc(userRef);
 
   if (!docSnap.exists()) {
-    const capitalizedName = capitalizeName(user.displayName || "");
+    const capitalizedName = capitalizedName(user.displayName || "");
 
     await setDoc(userRef, {
       uid: user.uid,
