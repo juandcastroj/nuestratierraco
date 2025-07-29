@@ -1,6 +1,7 @@
 import preciousMachines from "../../assets/images/home/preciousMachines.png";
 
 export default function PreciousPlasticBanner () {
+  
   return (
     <div className="relative isolate overflow-hidden w-full h-[400px] bg-cover bg-center" 
         style={{ backgroundImage: `url(${preciousMachines})` }}>
@@ -18,7 +19,7 @@ export default function PreciousPlasticBanner () {
             </span> 
                 <br/>
             <span className="mt-12">
-            ¡ Trabajando de la mano de <a href="https://www.preciousplastic.com/" target="_blank" className="font-bold">Precious Plastic</a>  !
+            ¡ Trabajando de la mano de <a href="https://www.preciousplastic.com/" target="_blank" rel="noopener noreferrer" className="font-bold">Precious Plastic</a>  !
             </span>
           </div>
         </div>

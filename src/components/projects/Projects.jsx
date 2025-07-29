@@ -30,8 +30,8 @@ export default function Projects() {
             ({ company, role, imageUrl, description, url, repo }, index) => (
               <li
                 key={index}
-                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-3 bg-transparent
-                           rounded-3xl ring-1 ring-slate-300 hover:shadow-md hover:bg-white/10 hover:backdrop-blur-md cursor-pointer" >
+                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-6 lg:p-3 xl:pr-12 rounded-3xl cursor-pointer
+                           hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md" >
                   <img
                     alt={company}
                     src={imageUrl}

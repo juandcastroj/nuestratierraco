@@ -5,9 +5,9 @@ export default function StrategicLines() {
    <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
     <div className="py-12 md:py-28">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 ">
-        <div className="text-center xl:col-span-2 mb-12 animate-fade-down animate-duration-[1500ms] animate-delay-[400ms]">
+        <div className="text-center mx-auto max-w-4xl xl:col-span-2 mb-12 animate-fade-down animate-duration-[1500ms] animate-delay-[400ms]">
           <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
-              Lineas estratégicas
+              Lineas estratégicas 💡
           </h2>
             <p className="mt-6 text-lg/8 text-[#004e64] leading-6">
               ¡Bienvenidos a un mundo donde la
@@ -27,11 +27,11 @@ export default function StrategicLines() {
 
         <ul role="list" className="space-y-8 xl:col-span-3 animate-fade-down animate-duration-[1500ms] animate-delay-500">
           {  strategicLines.map(
-            ({ company, role, imageUrl, description, url, repo }, index) => (
+            ({ company, role, imageUrl, description, url }, index) => (
               <li
                 key={index}
-                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-3 bg-transparent
-                           rounded-3xl hover:shadow-md hover:bg-white/10  hover:backdrop-blur-md cursor-pointer" >
+                className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-6 lg:p-3 xl:pr-12 rounded-3xl cursor-pointer
+                           hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md" >
                   <img
                     alt={company}
                     src={imageUrl}
