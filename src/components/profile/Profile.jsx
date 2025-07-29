@@ -19,13 +19,14 @@ export default function Profile() {
 
   return (
     <>
-      <Breadcrumbs />
+      <div className="min-h-full bg-gradient-to-b from-[#9effca] to-[#60cee5] pb-8">
+        <Breadcrumbs />
 
-        <div className="max-w-sm w-full mx-auto my-24 sm:my-10 bg-white/20 shadow-md rounded-lg overflow-hidden relative">
-          <div className="bg-white px-6 pt-6 sm:px-10">
+        <div className="max-w-sm w-full mx-auto my-24 sm:my-10 bg-white/40 shadow-md rounded-lg overflow-hidden relative">        
+          <div className="bg-transparent px-6 pt-6 sm:px-10">
             <img
               src={bgImg}
-              alt="Shoes"
+              alt="Sección de perfil"
               className="rounded-xl mx-auto w-full max-w-[250px] sm:max-w-none"
             />
           </div>
@@ -45,8 +46,8 @@ export default function Profile() {
             </p>
 
             <p className="text-gray-600 text-sm mb-4">
-              Tienes:  
-              <span className="text-gray-800 text-base font-semibold mb-4">
+              Tienes:   
+              <span className="text-gray-800 text-base font-semibold mx-2">
                 {userData?.petcoins ?? "0"} PetCoins 🪙
               </span>
             </p>
@@ -69,6 +70,7 @@ export default function Profile() {
 
           </div>
         </div>
+      </div>
     </>
   )
 }

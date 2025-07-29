@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { navBarItems } from '../constants/navbar'
@@ -9,6 +9,7 @@ import { useAuth } from '../contexts/AuthContext'
 
 export default function Header() {
 
+    const location = useLocation();
     const { firstName } = useAuth();
   
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -67,15 +68,18 @@ export default function Header() {
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            { firstName ? (
-              <Link to="mi-cuenta" className="text-sm/6 font-semibold text-[#033649]">
-                Hola, {firstName} 👋 
-              </Link>
-              ) : (
-              <Link to="auth" className="text-sm/6 font-semibold text-[#033649]">
-                Mi Cuenta <span aria-hidden="true">&rarr;</span>
-              </Link>
-              )}
+            { firstName  ? 
+              ( <Link to="mi-cuenta" className="text-sm/6 font-semibold text-[#033649]">
+                  Hola, {firstName} 👋 
+                </Link>
+                ) :
+              ( location.pathname !== "/auth" && (
+                  <Link to="auth" className="text-sm/6 font-semibold text-[#033649]">
+                    Mi Cuenta <span aria-hidden="true">&rarr;</span>
+                  </Link>
+                )
+              )
+            }
           </div>
         </nav>
 
@@ -118,7 +122,7 @@ export default function Header() {
                 <div className="py-6">
                   <Link
                     to="/auth"
-                  onClick={handleMobileMenu}
+                    onClick={handleMobileMenu}
                     className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-base/7 font-semibold text-[#033649] hover:text-[#336f85]"
                   >
                     Mi Cuenta  

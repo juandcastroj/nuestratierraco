@@ -1,28 +1,35 @@
-const saveUserInFirestore = async (user) => {
-  
+import { db } from "../firebase";
+import { doc, getDoc, setDoc, serverTimestamp } from "firebase/firestore";
+
+export default async function saveUserInFirestore(user) {
   const userRef = doc(db, "usuarios", user.uid);
   const docSnap = await getDoc(userRef);
 
   if (!docSnap.exists()) {
-    const capitalizedName = capitalizedName(user.displayName || "");
+    const name = capitalizedName(user.displayName || "");
 
     await setDoc(userRef, {
       uid: user.uid,
-      name: capitalizedName || "Sin Nombre",
+      name: name || "Sin Nombre",
       email: user.email,
       photoURL: user.photoURL || "",
       petcoins: 0,
-      createdAt: new Date(),
+      createdAt: serverTimestamp(),
     });
 
     console.log("✅ Usuario guardado en Firestore");
   } else {
-    console.log("ℹ️ Usuario ya existía en Firestore");
+    console.log("📋 Usuario ya existía en Firestore");
   }
 
-  // 🔁 Siempre devolvemos el documento actualizado
   const updatedSnap = await getDoc(userRef);
   return updatedSnap.data();
-};
+}
 
-export default saveUserInFirestore;
+function capitalizedName(name) {
+  if (!name) return "";
+  return name
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+}

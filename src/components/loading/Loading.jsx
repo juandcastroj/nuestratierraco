@@ -5,7 +5,7 @@ export default function Loading() {
         <div className="text-center">
           <p className="text-4xl">⏳</p>
           <h1 className="mt-4 text-2xl font-semibold tracking-tight text-balance text-blueText sm:text-3xl">
-            Cargando...
+            Cargando
           </h1>
           <p className="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
             Preparando info...

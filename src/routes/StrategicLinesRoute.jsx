@@ -1,4 +1,4 @@
-import StrategicLines from "../components/home/StrategicLines";
+import StrategicLines from "../components/strategicLines/StrategicLines";
 
 export default function StrategicLinesRoute () {
     return (
