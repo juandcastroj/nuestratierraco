@@ -6,7 +6,7 @@ export default function BlogGrid() {
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl">
-            Nuestro Blog
+            Blog
           </h2>
           <p className="mt-2 text-lg/8 text">Noticias, novedades, artículos, todo tipo de publicación...</p>
         </div>
