@@ -19,7 +19,7 @@ export default function Profile() {
 
   return (
     <>
-      <div className="min-h-full bg-gradient-to-b from-[#9effca] to-[#60cee5] pb-8">
+      <div className="min-h-full py-8 sm:pb-8 bg-gradient-to-b from-[#9effca] to-[#60cee5] pb-8">
         <Breadcrumbs />
 
         <div className="max-w-sm w-full mx-auto my-24 sm:my-10 bg-white/40 shadow-md rounded-lg overflow-hidden relative">        

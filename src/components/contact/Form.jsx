@@ -1,47 +1,4 @@
-import { useState } from "react";
-
-export function Form() {
-  
-      const [form, setForm] = useState({
-        firstName: "",
-        lastName: "",
-        email: "",
-        message: "",
-      });
-      const { firstName, lastName, email, message } = form;
-      const [error, setError] = useState(false);
-
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("submit click ");
-        // fast validation
-        if (
-          !firstName.trim() ||
-          !lastName.trim() ||
-          !email.trim() ||
-          !message.trim()
-        ) {
-          console.log("campos vacíos");
-          setError(true);
-          return;
-        } else {
-          setError(false);
-        }
-
-        console.log(firstName, lastName, email, message);
-        setForm({ firstName: "", lastName: "", email: "", message: "" });
-      };
-
-      const handleChange = (e) => {
-        setForm({
-          ...form,
-          [e.target.name]: e.target.value,
-        });
-      };
-
-      const ShowError = () => (
-        <div className="mx-6 text-red-500 my-2 font-semibold">Todos los campos son obligatorios.</div>
-      );
+export function Form({ handleSubmit, handleChange, firstName, lastName, email, message, error, ShowError }) {
 
   return (
     <>
