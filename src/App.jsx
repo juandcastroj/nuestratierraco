@@ -11,8 +11,8 @@ import StrategicLinesRoute from './routes/StrategicLinesRoute';
 import AuthRoute from './routes/AuthRoute';
 import PetCoinsInfoRoute from './routes/PetCoinsInfoRoute';
 import AccountRoute from './routes/AccountRoute';
-import { AuthPrivateRoute } from './routes/AuthPrivateRoute';
-import { ProfilePrivateRoute } from './routes/ProfilePrivateRoute';
+import { AuthPrivateRoute } from './routes/private-routes/AuthPrivateRoute';
+import { ProfilePrivateRoute } from './routes/private-routes/ProfilePrivateRoute';
 
 export default function App() {
 

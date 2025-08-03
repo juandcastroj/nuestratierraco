@@ -1,7 +1,7 @@
 
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
-import Loading from '../components/loading/Loading';
+import { useAuth } from '../../contexts/AuthContext';
+import Loading from '../../components/loading/Loading';
 
 export const ProfilePrivateRoute = ({ children }) => {
   const { firebaseUser, loading } = useAuth();

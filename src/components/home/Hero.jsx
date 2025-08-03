@@ -24,7 +24,7 @@ export default function Hero() {
                 Nuestros productos 🛍️
               </Link>
               <Link
-                to="/inscriptions"
+                to="/embajadores"
                 className="rounded-full bg-[#004e64] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Haz parte del cambio 👩‍🏫 📝
