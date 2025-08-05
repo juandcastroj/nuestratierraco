@@ -14,6 +14,7 @@ import AccountRoute from './routes/AccountRoute';
 import { AuthPrivateRoute } from './routes/private-routes/AuthPrivateRoute';
 import { ProfilePrivateRoute } from './routes/private-routes/ProfilePrivateRoute';
 import EmailSentRoute from './routes/EmailSentRoute';
+import TeamRoute from './routes/TeamRoute';
 
 export default function App() {
 
@@ -23,7 +24,6 @@ export default function App() {
         {/* <main className="isolate"> */}
           <Routes>
             <Route path='/' element={<HomeRoute/>}></Route>
-
             {/* <Route path='/auth' element={<AuthRoute/>}></Route> */}
 
             {/* Rutas protegidas */}
@@ -40,6 +40,7 @@ export default function App() {
 
             <Route path='/proyectos' element={<ProjectsRoute/>}></Route>
             <Route path='/lineas-estrategicas' element={<StrategicLinesRoute/>}></Route>
+            <Route path='/equipo' element={<TeamRoute/>}></Route>
             <Route path='/tienda' element={<ProductsRoute/>}></Route>
             <Route path='/blog' element={<BlogRoute/>}></Route>
             <Route path='/embajadores' element={<InscriptionsRoute/>}></Route>
