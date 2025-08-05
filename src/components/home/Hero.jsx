@@ -10,7 +10,7 @@ export default function Hero() {
         
           <div className="text-center">
             <h1 className="text-balance text-5xl sm:text-7xl font-extrabold text-[#033649] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
-              Corporación Nuestra Tierra
+              Corporación NuestraTierra
             </h1>
             <p className="mt-8 text-pretty text-lg sm:text-xl font-medium text-[#004e64]  animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               JUNTOS SOMOS EL CAMBIO <br />

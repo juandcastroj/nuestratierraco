@@ -13,6 +13,7 @@ import PetCoinsInfoRoute from './routes/PetCoinsInfoRoute';
 import AccountRoute from './routes/AccountRoute';
 import { AuthPrivateRoute } from './routes/private-routes/AuthPrivateRoute';
 import { ProfilePrivateRoute } from './routes/private-routes/ProfilePrivateRoute';
+import EmailSentRoute from './routes/EmailSentRoute';
 
 export default function App() {
 
@@ -44,6 +45,7 @@ export default function App() {
             <Route path='/embajadores' element={<InscriptionsRoute/>}></Route>
             <Route path='/contacto' element={<ContactUsRoute/>}></Route>
             <Route path='/petcoins' element={<PetCoinsInfoRoute/>}></Route>
+            <Route path='/email-sent' element={<EmailSentRoute/>}></Route>
 
             <Route path='*' element={<HomeRoute/>}></Route>
           </Routes>

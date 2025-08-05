@@ -1,11 +1,15 @@
-export function Form({ handleSubmit, handleChange, firstName, lastName, email, message, error, ShowError }) {
-
+export function Form({ firstName, lastName, email, message, handleChange, error, ShowError }) {
   return (
     <>
       <form
-        onSubmit={handleSubmit}
+        action="https://formsubmit.co/juandavid4130@gmail.com"
+        method="POST"
         className="hidden sm:block px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
       >
+        {/* Config extra para seguridad */}
+        <input type="hidden" name="_next" value="http://localhost:5173/email-sent" />
+        <input type="hidden" name="_captcha" value="false" />
+
         <div className="mx-auto max-w-xl lg:max-w-lg">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -23,6 +27,7 @@ export function Form({ handleSubmit, handleChange, firstName, lastName, email, m
                   autoComplete="given-name"
                   value={firstName}
                   onChange={handleChange}
+                  required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#033649]"
                 />
               </div>
@@ -32,7 +37,7 @@ export function Form({ handleSubmit, handleChange, firstName, lastName, email, m
                 htmlFor="last-name"
                 className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
               >
-               Apellido
+                Apellido
               </label>
               <div className="mt-2.5">
                 <input
@@ -42,6 +47,7 @@ export function Form({ handleSubmit, handleChange, firstName, lastName, email, m
                   autoComplete="family-name"
                   value={lastName}
                   onChange={handleChange}
+                  required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#033649]"
                 />
               </div>
@@ -61,6 +67,7 @@ export function Form({ handleSubmit, handleChange, firstName, lastName, email, m
                   autoComplete="email"
                   value={email}
                   onChange={handleChange}
+                  required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#033649]"
                 />
               </div>
@@ -79,6 +86,7 @@ export function Form({ handleSubmit, handleChange, firstName, lastName, email, m
                   rows={4}
                   value={message}
                   onChange={handleChange}
+                  required
                   className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-[#033649]"
                 />
               </div>
