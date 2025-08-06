@@ -28,12 +28,12 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                             }`}>
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
-                    <span className="sr-only">NuestraTierraLogoCo</span>
-                    <img
-                        alt=""
-                        src={nuestraTierraLogo}
-                        className="h-14 w-auto rounded-full"
-                    />
+                        <span className="sr-only">NuestraTierraLogoCo</span>
+                        <img
+                            alt=""
+                            src={nuestraTierraLogo}
+                            className="h-16 w-auto rounded-full"
+                        />
                     </a>
                 </div>
                 <div className="flex lg:hidden">

@@ -1,10 +1,9 @@
 import { Dialog, DialogPanel } from '@headlessui/react'
-import nuestraTierraLogoMobile from '../../assets/images/logo/logo.svg'
+import nuestraTierraLogoMobile from '../../assets/images/logo/logo.png'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 
 export default function NavbarMobile({ navigationItems, handleMobileMenu, mobileMenuOpen, setMobileMenuOpen }) {
-
 
     return(
         <>

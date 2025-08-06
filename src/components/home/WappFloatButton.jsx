@@ -1,6 +1,6 @@
 export default function WappFloatButton() {
   return (
-      <div className="fixed bottom-16 right-6 z-50 group">
+      <div className="hidden sm:block fixed bottom-16 right-6 z-50 group">
         <div className="absolute bottom-full right-0 mb-2 px-3 py-2 bg-white text-gray-800 text-sm rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 pointer-events-none">
           Comunícate con nosotros
           <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-white"></div>
