@@ -2,11 +2,11 @@ import { people } from "../../constants/team";
 
 export default function Team() {
   return (
-    <div className="bg-[#033649] py-24 sm:py-32">
+    <div className="bg-gradient-to-b from-[#9effca] to-[#60cee5] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
-          <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">Our Team  𖠋𐦂𖨆𖠋</h2>
-          <p className="mt-6 text-lg/8 text-gray-400 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
+          <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">Nuestro Equipo</h2>
+          <p className="mt-6 text-lg/8 text-blueText animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
             We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
             best results for our clients.
           </p>
@@ -16,13 +16,13 @@ export default function Team() {
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
           {people.map((person, index) => (
-            <li key={index} className="rounded-2xl bg-white/5 px-8 py-10 animate-rotate-y animate-delay-[800ms]">
+            <li key={index} className="rounded-2xl hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md px-8 py-10 animate-rotate-y animate-delay-[800ms]">
               <img alt="" src={person.imageUrl} className="mx-auto size-48 rounded-full md:size-56" />
-              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-white">{person.name}</h3>
-              <p className="text-sm/6 text-gray-400">{person.role}</p>
+              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{person.name}</h3>
+              <p className="text-sm/6 text-blueText">{person.role}</p>
               <ul role="list" className="mt-6 flex justify-center gap-x-6">
                 <li>
-                  <a href={person.xUrl} className="text-gray-400 hover:text-gray-300">
+                  <a href={person.xUrl} className="text-blueText">
                     <span className="sr-only">X</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" className="size-5">
                       <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
@@ -30,7 +30,7 @@ export default function Team() {
                   </a>
                 </li>
                 <li>
-                  <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-300">
+                  <a href={person.linkedinUrl} className="text-blueText">
                     <span className="sr-only">LinkedIn</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" className="size-5">
                       <path

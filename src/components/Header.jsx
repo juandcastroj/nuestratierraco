@@ -1,8 +1,5 @@
-import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { Bars3Icon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
 import { navBarItems } from '../constants/navbar'
-import { useAuth } from '../contexts/AuthContext'
 import NavbarDesktop from './navbar/NavbarDesktop'
 import NavbarMobile from './navbar/NavbarMobile'
 

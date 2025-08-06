@@ -9,8 +9,8 @@ export default function HomeRoute() {
     return (
         <>
             <Hero/>
-            <Stats/>
             <PartnersBanner/>
+            <Stats/>
             <History/>
             <PreciousPlasticBanner/>
             <PetCoinsBanner/>

@@ -15,7 +15,7 @@ export const posts = [
     datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
     author: {
-      name: 'Nuestra Tierra',
+      name: 'NuestraTierra',
       role: 'Co-Founder / CTO',
       href: '#',
       imageUrl:
@@ -34,7 +34,7 @@ export const posts = [
     datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
     author: {
-      name: 'NUestra Tierra',
+      name: 'NuestraTierra',
       role: 'Co-Founder / CTO',
       href: '#',
       imageUrl:
@@ -53,7 +53,7 @@ export const posts = [
     datetime: '2025-03-16',
     category: { title: 'Marketing', href: '#' },
     author: {
-      name: 'NUestra Tierra',
+      name: 'NuestraTierra',
       role: 'Co-Founder / CTO',
       href: '#',
       imageUrl:

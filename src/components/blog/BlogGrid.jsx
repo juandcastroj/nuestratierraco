@@ -20,9 +20,8 @@ export default function BlogGrid() {
                   <img
                     alt=""
                     src={post.imageUrl}
-                    className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
+                    className="aspect-video w-full rounded-lg bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
                   />
-                  <div className="absolute inset-0 rounded-2xl ring-1 ring-blue_text/10 ring-inset" />
                 </div>
                 <div className="max-w-xl">
                   <div className="mt-8 flex items-center gap-x-4 text-xs">
