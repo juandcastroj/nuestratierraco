@@ -2,11 +2,11 @@ import { people } from "../../constants/team";
 
 export default function Team() {
   return (
-    <div className="bg-gradient-to-b from-[#9effca] to-[#60cee5] py-24 sm:py-32">
+    <div className="bg-gradient-to-t from-[#9effca] to-[#60cee5] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
-          <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">Nuestro Equipo</h2>
-          <p className="mt-6 text-lg/8 text-blueText animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
+          <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl">Nuestro Equipo</h2>
+          <p className="mt-6 text-lg/8 text-blueText">
             We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
             best results for our clients.
           </p>

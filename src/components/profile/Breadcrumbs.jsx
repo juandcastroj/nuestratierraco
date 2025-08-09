@@ -8,8 +8,8 @@ const breadcrumbs = [
 export default function Breadcrumbs() {
     return (
         <>
-            <nav aria-label="Breadcrumb" className="hidden mt-20 border-b border-t border-gray-200 bg-gray-50 sm:flex">
-                <ol role="list" className="mx-auto flex w-full max-w-(--breakpoint-xl) space-x-4 px-4 sm:px-6 lg:px-8">
+            <nav aria-label="Breadcrumb" className="hidden mt-20 border-b border-t border-gray-200 sm:flex">
+                <ol role="list" className="mx-auto flex w-full max-w-(--breakpoint-xl) space-x-4 px-4 sm:px-6 lg:px-8 fixed top-[78px] z-50 bg-gray-100">
                     <li className="flex">
                         <div className="flex items-center">
                             <a href="#" className="text-gray-400 hover:text-gray-500">

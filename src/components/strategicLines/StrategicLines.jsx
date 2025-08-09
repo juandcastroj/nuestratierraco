@@ -3,8 +3,8 @@ import { strategicLines } from "../../constants/strategicLines";
 export default function StrategicLines() {
   
   return (
-   <div className="min-h-screen bg-gradient-to-b from-[#60cee5] to-[#9effca]">
-    <div className="py-12 md:py-28">
+   <div className="min-h-screen bg-gradient-to-r from-[#60cee5] to-[#9effca]">
+    <div className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 ">
         <div className="text-center mx-auto max-w-4xl xl:col-span-2 mb-12 animate-fade-down animate-duration-[1500ms] animate-delay-[400ms]">
           <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
