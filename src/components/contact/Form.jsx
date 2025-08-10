@@ -2,9 +2,9 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
   return (
     <>
       <form
-        action="https://formsubmit.co/juandavid4130@gmail.com"
+        action="https://formsubmit.co/nuestratierracorporación@gmail.com"
         method="POST"
-        className="hidden sm:block px-6 lg:px-8 py-16 sm:py-20 lg:py-28 animate-fade-left"
+        className="px-6 lg:px-8 py-4 sm:py-20 lg:py-28 animate-fade-down sm:animate-fade-left"
       >
         {/* Config extra para seguridad */}
         <input type="hidden" name="_next" value="http://localhost:5173/email-sent" />
