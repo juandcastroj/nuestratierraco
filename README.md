@@ -1,5 +1,5 @@
-# Nuestra Tierra Co 🐢 🌎
+# NuestraTierra Co 🐢 🌎
 
-Corporación Nuestra Tierra website.
+Corporación NuestraTierra website.
 
-🧠 Fully designed & developed by [Juan David](https://www.linkedin.com/in/juan-david-jaramillo-025749a6/) 💡
+🧠 Fully designed & developed with love by [Juan David](https://www.linkedin.com/in/juan-david-jaramillo-025749a6/) 💡
