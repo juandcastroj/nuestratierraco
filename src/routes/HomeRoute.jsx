@@ -4,6 +4,7 @@ import History from "../components/home/History";
 import PetCoinsBanner from "../components/home/PetCoinsBanner";
 import PartnersBanner from "../components/home/PartnersBanner";
 import PreciousPlasticBanner from "../components/home/PreciousPlasticBanner";
+import Map from "../components/home/Map";
 
 export default function HomeRoute() {
     return (
@@ -13,6 +14,7 @@ export default function HomeRoute() {
             <Stats/>
             <History/>
             <PreciousPlasticBanner/>
+            <Map/>
             <PetCoinsBanner/>
         </>
     )
