@@ -21,11 +21,15 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
 
     return (
         <>
-            <nav aria-label="Global" className={`flex items-center justify-between py-2 px-6 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
-                            ${
-                                hasBackground ? "bg-white/30 shadow-md backdrop-blur-sm" 
-                                : "bg-transparent"
-                            }`}>
+            <nav aria-label="Global" 
+                 className={`flex items-center justify-between py-2 px-6 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
+                    ${
+                    location.pathname === "/mi-cuenta"
+                        ? "bg-white shadow-md backdrop-blur-sm"
+                        : hasBackground
+                        ? "bg-white/30 shadow-md backdrop-blur-sm"
+                        : "bg-transparent"
+                    }`}>
                 <div className="flex lg:flex-1">
                     <a href="/" className="-m-1.5 p-1.5">
                         <span className="sr-only">NuestraTierraLogoCo</span>

@@ -27,7 +27,7 @@ export default function Profile() {
             <img
               src={bgImg}
               alt="Sección de perfil"
-              className="rounded-xl mx-auto w-full max-w-[250px] sm:max-w-none"
+              className="rounded-xl mx-auto w-full max-w-[250px] sm:max-w-none brightness-75"
             />
           </div>
 
