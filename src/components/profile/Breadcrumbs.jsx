@@ -1,4 +1,5 @@
 import { HomeIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 const breadcrumbs = [
   { name: 'Mi Cuenta', href: '#', current: false },
@@ -12,10 +13,10 @@ export default function Breadcrumbs() {
                 <ol role="list" className="mx-auto flex w-full max-w-(--breakpoint-xl) space-x-4 px-4 sm:px-6 lg:px-8 fixed top-[78px] z-50 bg-gray-100">
                     <li className="flex">
                         <div className="flex items-center">
-                            <a href="#" className="text-gray-400 hover:text-gray-500">
+                            <Link to="/" className="text-gray-400 hover:text-gray-500">
                                 <HomeIcon aria-hidden="true" className="size-5 shrink-0" />
                                 <span className="sr-only">Home</span>
-                            </a>
+                            </Link>
                         </div>
                     </li>
                 {breadcrumbs.map((item) => (

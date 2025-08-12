@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="min-h-[75vh] sm:min-h-screen relative bg-gradient-to-r to-[#9effca] from-[#60cee5]">
       <div className="relative isolate px-6 pt-14 lg:px-8">
 
-        <div className="mx-auto max-w-2xl pt-32 pb-12 sm:py-32">
+        <div className="mx-auto max-w-2xl py-12 sm:py-32">
         
           <div className="text-center">
             <h1 className="text-balance text-5xl sm:text-7xl font-extrabold text-[#033649] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
@@ -37,7 +37,7 @@ export default function Hero() {
          <img 
             src={planetPhoto}
             alt="Planeta Tierra"
-            className="w-1/2 max-w-md hidden lg:block absolute bottom-0 lg:right-0 lg:mx-0 mx-auto animate-fade-left animate-duration-[2500ms] animate-delay-[1000ms]"
+            className="w-1/2 max-w-md absolute bottom-0 right-0 lg:mx-0 mx-auto sm:animate-fade-left animate-duration-[2500ms] animate-delay-[1000ms]"
           />
     </div>
   )

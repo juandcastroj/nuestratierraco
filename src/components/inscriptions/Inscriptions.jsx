@@ -8,7 +8,7 @@ export default function Inscriptions() {
           <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
              Nuestros Embajadores 
           </h2>
-            <p className="mt-6 text-lg/8 text-[#004e64] leading-6">
+            <p className="mt-6 text-base sm:text-lg/8 text-[#004e64] leading-6">
               ¡Bienvenidos a un mundo donde la
               creatividad, la conciencia y el cambio se
               entrelazan para dar forma al mañana! En
@@ -25,7 +25,7 @@ export default function Inscriptions() {
         </div>
 
         <div className="flex min-h-full max-w-full justify-center px-0 lg:px-auto">
-          <iframe className="h-[44rem] sm:h-[32rem] w-96 sm:w-[48rem] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms] rounded-xl" src="https://docs.google.com/forms/d/e/1FAIpQLSfay4GANdACNPtd1QEER4TzjqNL9sqJxdWx1VXL26KwfZ_j7g/viewform"></iframe>
+          <iframe className="h-[44rem] sm:h-[32rem] w-96 sm:w-[48rem] md:w-[54rem] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms] rounded-xl" src="https://docs.google.com/forms/d/e/1FAIpQLSfay4GANdACNPtd1QEER4TzjqNL9sqJxdWx1VXL26KwfZ_j7g/viewform"></iframe>
         </div>
 
       </div>
