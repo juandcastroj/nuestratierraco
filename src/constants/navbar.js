@@ -3,6 +3,7 @@ export const navBarItems = [
     { name: 'Proyectos', to: '/proyectos' },
     { name: 'Equipo', to: '/equipo' },
     { name: 'Eco Catálogo', to: '/tienda' },
+    { name: 'PetCoins', to: '/petcoins' },
     { name: 'Embajadores', to: '/embajadores' },
     { name: 'Blog', to: '/blog' },
     { name: 'Contacto', to: '/contacto' },

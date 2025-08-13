@@ -1,49 +1,58 @@
+import LuisaImg from '../assets/images/team/luisa.png'
+import MichelleImg from '../assets/images/team/michelle.png'
+import KellyImg from '../assets/images/team/kelly.png'
+import DavidImg from '../assets/images/team/david.png'
+import LeonardImg from '../assets/images/team/leonard.png'
+import JuanDImg from '../assets/images/team/juandavid.png'
+
+
+
 export const people = [
   {
-    name: 'Leonard Krasner',
-    role: 'Humble worker',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    name: 'Luisa Maria',
+    role: 'Team member',
+    imageUrl: LuisaImg,
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
     xUrl: '#',
     linkedinUrl: '#',
   },
     {
-    name: 'Leonard Krasner',
-    role: 'Humble worker',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    name: 'Michelle',
+    role: 'Team member',
+    imageUrl: MichelleImg,
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
     xUrl: '#',
     linkedinUrl: '#',
   },
     {
-    name: 'Leonard Krasner',
-    role: 'Humble worker',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    name: 'Kelly',
+    role: 'Team member',
+    imageUrl: KellyImg,
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
     xUrl: '#',
     linkedinUrl: '#',
   },
     {
-    name: 'Leonard Krasner',
-    role: 'Humble worker',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    name: 'David',
+    role: 'Team member',
+    imageUrl: DavidImg,
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
     xUrl: '#',
     linkedinUrl: '#',
   },
       {
     name: 'Leonard Krasner',
-    role: 'Humble worker',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'Team member',
+    imageUrl: LeonardImg,
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   ',
     xUrl: '#',
     linkedinUrl: '#',
   },
     {
-    name: 'Leonard Krasner',
-    role: 'Humble worker',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    name: 'Juan David',
+    role: 'Team member',
+    imageUrl: JuanDImg,
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
     xUrl: '#',
     linkedinUrl: '#',
   },
