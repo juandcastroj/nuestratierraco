@@ -51,11 +51,19 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                     </button>
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
-                    { navigationItems.map((item) => (
-                    <Link key={item.name} to={item.to} className="text-sm/6 font-semibold text-blueText hover:text-[#336f85] cursor-pointer">
-                        {item.name}
-                    </Link>
-                    ))}
+                    {navigationItems.map(item => {
+                        const isActive = location.pathname === item.to;
+                        return (
+                        <Link
+                            key={item.name}
+                            to={item.to}
+                            className={`text-sm/6 font-semibold cursor-pointer
+                            ${isActive ? "text-[#458ea8]" : "text-blueText hover:text-[#458ea8]"}`}
+                        >
+                            {item.name}
+                        </Link>
+                        );
+                    })}
                 </div>
 
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
