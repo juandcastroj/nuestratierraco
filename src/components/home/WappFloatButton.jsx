@@ -10,7 +10,7 @@ export default function WappFloatButton() {
           href="https://wa.me/+573196410397"
           target="_blank"
           rel="noopener noreferrer"
-          className="block bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+          className="block bg-[#25a18e] hover:bg-[#36d4bd] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
           aria-label="Contact us on WhatsApp"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
