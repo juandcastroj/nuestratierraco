@@ -4,7 +4,7 @@ import planetPhoto from "../../assets/images/home/planet.png";
 export default function Hero() {
   return (
     <div className="min-h-[75vh] sm:min-h-screen relative bg-gradient-to-r to-[#9effca] from-[#60cee5]">
-      <div className="relative isolate px-6 py-28 lg:px-8">
+      <div className="relative isolate px-6 py-28 sm:py-16 lg:px-8">
 
         <div className="mx-auto max-w-2xl py-12 sm:py-32">
         
