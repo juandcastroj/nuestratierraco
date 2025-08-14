@@ -3,7 +3,7 @@ import { stats } from "../../constants/stats";
 export default function Stats() {
   return (
     <>
-      <div className="bg-[#033649] py-20 sm:py-24">
+      <div className="bg-[#033649]  opacity-95 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-7xl">
 
