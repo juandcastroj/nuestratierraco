@@ -39,7 +39,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                                     key={item.name}
                                     to={item.to}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`-mx-3 block rounded-lg px-6 py-3 text-sm font-semibold
+                                    className={`-mx-3 block rounded-lg px-6 py-3 text-base/7 font-bold
                                     ${isActive ? "text-[#458ea8]" : "text-blueText hover:text-[#458ea8]"}`}
                                 >
                                     {item.name}
