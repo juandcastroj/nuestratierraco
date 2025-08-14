@@ -17,7 +17,7 @@ export default function Team() {
   };
 
   return (
-    <div className="bg-gradient-to-t from-[#9effca] to-[#60cee5] py-24 sm:py-32">
+    <div className="bg-gradient-to-t from-[#60cee5] to-[#9effca] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl">Nuestro Equipo</h2>
