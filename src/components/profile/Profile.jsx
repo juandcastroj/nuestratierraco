@@ -33,7 +33,7 @@ export default function Profile() {
 
           <div className="absolute top-[150px] sm:top-[170px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
             <img
-              src={firebaseUser.photoURL}
+              src={firebaseUser.photoURL || "https://media.istockphoto.com/id/1130884625/vector/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-app-in-circle-design.jpg?s=612x612&w=0&k=20&c=1ky-gNHiS2iyLsUPQkxAtPBWH1BZt0PKBB1WBtxQJRE="}
               alt="foto de perfil"
               className="w-24 rounded-full border-4 border-white shadow-lg"
             />
