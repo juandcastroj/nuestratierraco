@@ -14,7 +14,7 @@ export default function EmailSent() {
           <h1 className="mt-4 text-3xl sm:text-7xl font-semibold text-white ">
             Tu correo ha sido enviado
           </h1>
-          <p className="mt-6 text-lg font-medium text-pretty text-white/70 sm:text-xl/8">
+          <p className="mt-6 text-lg font-semibold text-pretty text-white sm:text-xl/8">
             Nos pondremos en contacto contigo lo antes posible. <br />
             ¡Gracias por tu interés en NuestraTierra!
           </p>

@@ -34,7 +34,15 @@ export default function AuthForm() {
     try {
       if (isRegistering) {
         const registerResponse = await register(email, password);
-        setMsg(registerResponse);
+
+        if (registerResponse === "Firebase: Error (auth/email-already-in-use).") {
+           setMsg("El correo ya está en uso. Intenta con otro.");
+           return;
+        }
+
+        // setMsg(registerResponse);
+        // console.log(registerResponse);
+        
         //need error management here
         // if (registerResponse === "Verificación enviada. Revisa tu correo.")
         // navigate("/account"); 
@@ -49,63 +57,65 @@ export default function AuthForm() {
   };
 
   const handleGoogleLogin = async () => {
-  try {
-    const user = await loginWithGoogle();
-    if (user) {
-      navigate("/mi-cuenta"); 
+    try {
+      const user = await loginWithGoogle();
+      if (user) {
+        navigate("/mi-cuenta"); 
+      }
+    } catch (error) {
+      alert("Error al iniciar sesión con Google.");
     }
-  } catch (error) {
-    alert("Error al iniciar sesión con Google.");
-  }
   };
 
   return (
     <div className="flex min-h-[60vh] bg-gradient-to-b from-[#9effca] to-[#60cee5]">
 
       <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
-             <div className="flex min-h-full flex-1 flex-col justify-center px-4 sm:px-8 py-12">
-         <div className="max-w-md mx-auto p-12 rounded-2xl mt-10 bg-white/20 shadow-md">
+        <div className="flex min-h-full flex-1 flex-col justify-center px-4 sm:px-8 py-12">
+          <div className={`max-w-md mx-auto p-12 rounded-2xl mt-10 shadow-md backdrop-blur-sm border-2${isRegistering ? " bg-white/40" : " bg-white/20"}`}>
+
+
            <h2 className="text-2xl font-bold mb-4 text-center text-[#033649]">
              {isRegistering ? "Crear Cuenta Nueva" : "Iniciar Sesión"}
            </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-             <input
-              type="email"
-              placeholder="Correo"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border-2 rounded-xl focus:border-[#033649] focus:outline-none"
-              required
-            />
-            <input
-              type="password"
-              placeholder="Contraseña"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border-2 rounded-xl focus:border-[#033649] focus:outline-none"
-              required
-            />
-            <button
-              type="submit"    
-              className="w-full bg-[#033649] hover:bg-[#1f333a] text-white p-2 rounded-xl transition"
-            >
-              {isRegistering ? "Registrarse" : "Iniciar Sesión"}
-            </button>
-          </form>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <input
+                type="email"
+                placeholder="Correo"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full p-2 border-2 rounded-xl focus:border-[#033649] focus:outline-none"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Contraseña"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full p-2 border-2 rounded-xl focus:border-[#033649] focus:outline-none"
+                required
+              />
+              <button
+                type="submit"    
+                className="w-full bg-[#033649] hover:bg-[#1f333a] text-white p-2 rounded-xl transition"
+              >
+                {isRegistering ? "Registrarse" : "Iniciar Sesión"}
+              </button>
+            </form>
 
-          <p className="mt-4 text-center text-sm text-gray-600">
-            {isRegistering ? "¿Ya tienes cuenta?" : "¿No tienes cuenta?"}
-            <button
-              onClick={() => {
-                setIsRegistering(!isRegistering);
-                setMsg("");
-              }}
-              className="text-[#033649] ml-2 underline font-semibold"
-            >
-              {isRegistering ? "Inicia sesión" : "Regístrate"}
-            </button>
-          </p>
+            <p className="mt-4 text-center text-sm text-gray-600">
+              {isRegistering ? "¿Ya tienes cuenta?" : "¿No tienes cuenta?"}
+              <button
+                onClick={() => {
+                  setIsRegistering(!isRegistering);
+                  setMsg("");
+                }}
+                className="text-[#033649] ml-2 underline font-semibold"
+              >
+                {isRegistering ? "Inicia sesión" : "Regístrate"}
+              </button>
+            </p>
 
 
           {/* GOOGLE AND FACEBOOK */}
@@ -164,14 +174,14 @@ export default function AuthForm() {
             </div>
           )}
 
+          </div>
         </div>
-      </div>
       </div>
 
       <div className="relative hidden w-0 flex-1 lg:block">
-        <img alt="login image" src="https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1908&amp;q=80" 
+        <img alt="login image" src="https://cdn.shortpixel.ai/spai/q_lossless+w_998+to_auto+ret_img/independent-photo.com/wp-content/uploads/2022/03/Karen-Pape-1800x1200.jpeg" 
           className="absolute inset-0 size-full object-cover"/>
-       </div>
+      </div>
 
     </div>
   );

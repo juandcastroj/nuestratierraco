@@ -14,9 +14,10 @@ export const AuthProvider = ({ children }) => {
   const logout = async () => {
     try {
       await signOut(auth);
-      console.log("Sesión cerrada exitosamente.");
+      //console.log("Sesión cerrada exitosamente.");
       setFirebaseUser(null);
       setUserData(null);
+      alert("Sesión cerrada exitosamente.");
     } catch (error) {
       console.error("Error al cerrar sesión:", error.message);
     }
