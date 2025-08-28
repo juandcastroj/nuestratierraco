@@ -79,7 +79,7 @@ export default function Profile() {
             </div>
           </div>
 
-          <div className="relative hidden w-0 flex-1 lg:block">
+          <div className="relative hidden w-0 flex-1 md:block">
             <img alt="login image" src="https://wallpapers.com/images/featured/mountain-landscape-background-rg7kvv47l0ovwv5y.jpg" 
               className="absolute inset-0 size-full object-cover"/>
           </div>
