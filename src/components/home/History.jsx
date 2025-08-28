@@ -5,7 +5,7 @@ export default function History() {
   return (
     <div className="px-6 py-32 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#9effca]  bg-fixed">
       <div className="mx-auto text-justify max-w-3xl text-base/7 text-gray-700">
-        <p className="text-base/7 font-semibold text-blueText">Historia  🐢 </p>
+        <p className="text-base/7 font-bold text-blueText">Historia </p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-blueText sm:text-5xl">
             ¿Quiénes somos?...
           </h1>
@@ -36,7 +36,7 @@ export default function History() {
               el crecimiento personal.
           </p>
 
-          <figure className="mt-10 border-l border-blueText pl-9">
+          <figure className="mt-10 border-l border-blueText pl-9 hover:animate-fade-right animate-duration-[2000ms] animate-delay-[500ms]">
             <blockquote className="font-semibold text-gray-900">
               <p>
                 “¡Bienvenidos a un mundo donde la
