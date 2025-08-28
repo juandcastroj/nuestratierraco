@@ -49,7 +49,13 @@ export default function AuthForm() {
 
       } else {
         const loginResponse = await login(email, password);
-        setMsg(loginResponse);
+
+        if (loginResponse === "Firebase: Error (auth/invalid-credential).") {
+           setMsg("La cuenta no existe. Revisa las credenciales.");
+           return;
+        }
+
+        //setMsg(loginResponse);
       }
     } catch (err) {
       setMsg(err.message);
@@ -178,7 +184,7 @@ export default function AuthForm() {
         </div>
       </div>
 
-      <div className="relative hidden w-0 flex-1 lg:block">
+      <div className="relative hidden w-0 flex-1 md:block">
         <img alt="login image" src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg" 
           className="absolute inset-0 size-full object-cover"/>
       </div>

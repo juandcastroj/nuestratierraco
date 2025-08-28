@@ -39,7 +39,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                                     key={item.name}
                                     to={item.to}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`-mx-3 block rounded-lg px-6 py-3 text-base/7 font-bold
+                                    className={`-mx-3 block rounded-lg px-6 py-3 text-2xl font-semibold animate-jump-in
                                     ${isActive ? "text-[#458ea8]" : "text-blueText hover:text-[#458ea8]"}`}
                                 >
                                     {item.name}
@@ -47,14 +47,15 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                                 );
                             })}
                         </div>
-                        <div className="py-6">
-                        <Link
-                            to="/auth"
-                            onClick={handleMobileMenu}
-                            className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-base/7 font-semibold text-[#033649] hover:text-[#336f85]"
-                        >
-                            Mi Cuenta  
-                        </Link>
+
+                        <div className="py-20">
+                            <Link
+                                to="/auth"
+                                onClick={handleMobileMenu}
+                                className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-2xl font-semibold text-black hover:text-[#336f85] border-2 border-white hover:bg-white/80"
+                            >
+                                Mi Cuenta  
+                            </Link>
                         </div>
                     </div>
                     </div>

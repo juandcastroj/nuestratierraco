@@ -14,7 +14,7 @@ export const register = async (email, password) => {
     console.log(user);
 
     await sendEmailVerification(user);
-    alert("Verificación enviada. Revisa tu correo.");
+    // alert("Verificación enviada. Revisa tu correo.");
     // return alert("Verificación enviada. Revisa tu correo.");;
 
   } catch (error) {
