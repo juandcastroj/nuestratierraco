@@ -68,7 +68,7 @@ export default function AuthForm() {
   };
 
   return (
-    <div className="flex min-h-[60vh] bg-gradient-to-b from-[#9effca] to-[#60cee5]">
+    <div className="flex min-h-[60vh] bg-gradient-to-b from-[#60cee5] to-[#9effca]">
 
       <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div className="flex min-h-full flex-1 flex-col justify-center px-4 sm:px-8 py-12">
@@ -179,7 +179,7 @@ export default function AuthForm() {
       </div>
 
       <div className="relative hidden w-0 flex-1 lg:block">
-        <img alt="login image" src="https://cdn.shortpixel.ai/spai/q_lossless+w_998+to_auto+ret_img/independent-photo.com/wp-content/uploads/2022/03/Karen-Pape-1800x1200.jpeg" 
+        <img alt="login image" src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg" 
           className="absolute inset-0 size-full object-cover"/>
       </div>
 

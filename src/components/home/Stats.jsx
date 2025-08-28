@@ -20,9 +20,9 @@ export default function Stats() {
 
             <dl className="mt-10 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4 animate-fade-left animate-duration-[2500ms] animate-delay-[500ms]">
               {stats.map((stat) => (
-                <div key={stat.id} className="flex flex-col bg-white/5 p-8">
-                  <dt className="text-base font-semibold text-gray-300 leading-normal mt-3">{stat.name}</dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-white">{stat.value}</dd>
+                <div key={stat.id} className="flex flex-col bg-white/10 p-8">
+                  <dt className="text-base font-bold text-gray-300 leading-normal mt-3">{stat.name}</dt>
+                  <dd className="order-first text-3xl font-bold text-yellow-400">{stat.value}</dd>
                 </div>
               ))}
             </dl>

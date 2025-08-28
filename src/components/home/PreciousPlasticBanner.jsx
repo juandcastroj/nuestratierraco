@@ -9,7 +9,7 @@ export default function PreciousPlasticBanner () {
             <div className="absolute inset-0 bg-[#00222fe6] bg-opacity-90"></div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="mx-auto max-w-2xl py-16 sm:py-32 lg:px-12 text-center text-white">
+        <div className="mx-auto max-w-2xl py-16 sm:py-32 lg:px-12 text-center text-white hover:animate-shake animate-duration-[3000ms] animate-delay-[200ms]">
           <h1 className="text-4xl font-semibold tracking-tight text-pretty sm:text-5xl animate-flip-up">
             Nuestra Tecnología 🛠
           </h1>
