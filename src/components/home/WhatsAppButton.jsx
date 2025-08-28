@@ -1,4 +1,4 @@
-export default function WappFloatButton() {
+export default function WhatsAppButton() {
   return (
       <div className="hidden sm:block fixed bottom-16 right-6 z-50 group">
         <div className="absolute bottom-full right-0 mb-2 px-3 py-2 bg-white text-gray-800 text-sm rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 pointer-events-none">
@@ -10,7 +10,7 @@ export default function WappFloatButton() {
           href="https://wa.me/+573196410397"
           target="_blank"
           rel="noopener noreferrer"
-          className="block bg-[#25a18e] hover:bg-[#36d4bd] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
+          className="block bg-[#1bac57] hover:bg-[#36d4bd] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
           aria-label="Contact us on WhatsApp"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">

@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { navigation } from "../constants/footer";
 import { navBarItems } from "../constants/navbar";
-import WappFloatButton from "./home/WappFloatButton";
+import WhatsAppButton from "./home/WhatsAppButton";
 
 export default function Footer() {
   return (
       <>
-        <WappFloatButton />
+        <WhatsAppButton />
 
         <footer className="bg-[#01222e]">
           <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">

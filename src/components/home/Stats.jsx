@@ -22,7 +22,7 @@ export default function Stats() {
               {stats.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-white/10 p-8">
                   <dt className="text-base font-bold text-gray-300 leading-normal mt-3">{stat.name}</dt>
-                  <dd className="order-first text-3xl font-bold text-yellow-400">{stat.value}</dd>
+                  <dd className="order-first text-4xl font-bold text-yellow-400">{stat.value}</dd>
                 </div>
               ))}
             </dl>
