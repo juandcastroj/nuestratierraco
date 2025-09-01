@@ -11,17 +11,13 @@ export const register = async (email, password) => {
   try {
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
-    console.log(user);
-
+    //console.log(user);
     await sendEmailVerification(user);
-    // alert("Verificación enviada. Revisa tu correo.");
-    // return alert("Verificación enviada. Revisa tu correo.");;
 
   } catch (error) {
     console.error("Error al registrar:", error.message);
     return error.message;
   }
-
   //return uid;
 };
 
@@ -30,7 +26,7 @@ export const login = async (email, password) => {
   try {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
-    console.log(user);
+    await saveUserInFirestore(user);
     return "Sesión iniciada correctamente";
 
   } catch (error) {
