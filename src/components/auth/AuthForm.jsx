@@ -40,13 +40,6 @@ export default function AuthForm() {
            return;
         }
 
-        // setMsg(registerResponse);
-        // console.log(registerResponse);
-        
-        //need error management here
-        // if (registerResponse === "Verificación enviada. Revisa tu correo.")
-        // navigate("/account"); 
-
       } else {
         const loginResponse = await login(email, password);
 
@@ -54,8 +47,6 @@ export default function AuthForm() {
            setMsg("La cuenta no existe. Revisa las credenciales.");
            return;
         }
-
-        //setMsg(loginResponse);
       }
     } catch (err) {
       setMsg(err.message);

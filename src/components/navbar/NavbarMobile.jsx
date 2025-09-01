@@ -17,13 +17,13 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                             <img
                             alt="logo corpo"
                             src={nuestraTierraLogoMobile}
-                            className="h-14 w-auto rounded-full"
+                            className="h-20 w-auto rounded-full"
                             />
                         </Link>
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="-m-2.5 rounded-md p-2.5 text-gray-100 hover:bg-gray-100/10"
+                            className="-m-2.5 rounded-md p-2.5 text-blueText hover:bg-gray-100/10"
                         >
                             <span className="sr-only">Close menu</span>
                             <XMarkIcon aria-hidden="true" className="size-10" />
@@ -48,7 +48,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                                 })}
                             </div>
 
-                            <div className="py-20">
+                            <div className="py-12 sm:py-20">
                                 <Link
                                     to="/auth"
                                     onClick={handleMobileMenu}
