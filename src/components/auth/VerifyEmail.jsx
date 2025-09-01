@@ -25,7 +25,7 @@ export default function VerifyEmail() {
 
   return (
 
-      <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
+      <div className="flex items-center justify-center min-h-[70vh] bg-gray-100 px-4 sm:pt-24 sm:pb-12">
         <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md text-center">
           <h2 className="text-2xl font-bold text-blueText mb-4">
             Verifica tu correo electrónico
@@ -42,10 +42,10 @@ export default function VerifyEmail() {
           <button
             onClick={handleResendVerification}
             disabled={loading}
-            className={`w-full py-2 px-4 rounded-lg font-medium transition 
+            className={`w-full py-2 px-4 rounded-lg font-medium text-white transition 
               ${loading 
-                ? "bg-gray-400 cursor-not-allowed text-white" 
-                : "bg-blueButton hover:bg-blue-800 text-white"}`}
+                ? "bg-gray-400 cursor-not-allowed" 
+                : "bg-blueButton hover:bg-blue-950"}`}
           >
             {loading ? "Enviando..." : "Reenviar correo de verificación"}
           </button>
@@ -54,16 +54,15 @@ export default function VerifyEmail() {
             <p className="mt-4 text-sm text-green-600">{message}</p>
           )}
 
-          <p className="mt-6 text-sm text-gray-500">
-            ¿Prefieres ingresar con otra cuenta?{" "}
-            <Link to="/auth" className="text-blueText hover:underline font-medium">
-              Inicia sesión aquí
+          {/* <div className="mt-4">
+            <Link to="/auth" className="text-blueText hover:underline font-semibold text-sm">
+             ¿Quieres ingresar con otra cuenta?{" "}
             </Link> 
-          </p>
+          </div> */}
 
           <p className="mt-2 text-sm text-gray-500">
             Si ya verificaste tu correo{" "}
-            <p onClick={() => {location.reload()}} className="text-blueText hover:underline font-medium cursor-pointer">
+            <p onClick={() => {location.reload()}} className="text-blueText hover:underline font-semibold cursor-pointer">
               Ve a tu cuenta
             </p>
           </p>

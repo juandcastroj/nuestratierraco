@@ -10,7 +10,7 @@ export default async function saveUserInFirestore(user) {
 
     await setDoc(userRef, {
       uid: user.uid,
-      name: name || "Sin Nombre",
+      name: name || "Username",
       email: user.email,
       photoURL: user.photoURL || "",
       petcoins: 0,
