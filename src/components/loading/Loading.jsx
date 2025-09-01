@@ -1,18 +1,33 @@
-export default function Loading() {
+
+export default function LoadingInline({ size = "md", className = "" }) {
+  const sizeMap = {
+    sm: "w-10 h-10",
+    md: "w-16 h-16",
+    lg: "w-24 h-24",
+  };
+  const s = sizeMap[size] || sizeMap.md;
+
   return (
-    <>
-      <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="text-center">
-          <p className="text-4xl">⏳</p>
-          <h1 className="mt-4 text-2xl font-semibold tracking-tight text-balance text-blueText sm:text-3xl">
-            Cargando
-          </h1>
-          <p className="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-            Preparando info...
-          </p>
-    
+    <div className="w-full flex justify-center items-center py-60">
+      <div className={`relative ${s} ${className}`} aria-label="Cargando">
+        {/* Outer faint ring */}
+        <div className="absolute inset-0 rounded-full border-4 border-gray-200 opacity-80 animate-spin"></div>
+
+        {/* Colored accent ring */}
+        <div className="absolute inset-1/6 rounded-full border-4 border-t-blue-500 border-gray-200"></div>
+
+        {/* Orbiting dot */}
+        <div className="absolute inset-0 rounded-full">
+          <div className="absolute inset-0 animate-spin">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-blue-500 shadow-md"></div>
+          </div>
         </div>
-      </main>
-    </>
-  )
+
+        {/* Center hub */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-white border-2 border-gray-200" />
+
+        <span className="sr-only">Cargando...</span>
+      </div>
+    </div>
+  );
 }

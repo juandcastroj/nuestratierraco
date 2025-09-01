@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import { navigation } from "../constants/footer";
 import { navBarItems } from "../constants/navbar";
-import WappFloatButton from "./home/WappFloatButton";
+import WhatsAppButton from "./home/WhatsAppButton";
 
 export default function Footer() {
   return (
       <>
-        <WappFloatButton />
+        <WhatsAppButton />
 
-        <footer className="bg-[#033649]">
+        <footer className="bg-[#01222e]">
           <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">
             <nav aria-label="Footer" className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
               { navBarItems.map((item) => (
-                <Link key={item.name} to={item.to} className="text-gray-400 hover:text-white">
+                <Link key={item.name} to={item.to} className="text-gray-400 hover:text-white font-semibold">
                   {item.name}
                 </Link>
               ))}
@@ -27,7 +27,7 @@ export default function Footer() {
               ))}
             </div>
 
-            <p className="mt-10 text-center font-semibold text-sm/6 text-gray-400">&copy; 2025   @nuestratierraco</p>
+            <p className="mt-10 text-center font-bold text-sm/6 text-gray-400">&copy; 2025   nuestratierraco</p>
           </div>
         </footer>
       </>
