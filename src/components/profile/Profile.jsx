@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import Breadcrumbs from "./Breadcrumbs";
 import Loading from "../loading/Loading";
-import bgImg from "../../assets/images/petcoins/bg-profile-card.png";
+import bgProfileImage from "../../assets/images/account/bg-profile-card.png";
 
 export default function Profile() {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ export default function Profile() {
               <div className="flex flex-1 flex-col justify-center px-4 sm:px-6 lg:flex-none max-w-sm w-full mx-auto my-20 sm:my-8 bg-white/90 shadow-md rounded-lg overflow-hidden relative">
                 <div className="bg-transparent p-6">
                   <img
-                    src={bgImg}
+                    src={bgProfileImage}
                     alt="Sección de perfil"
                     className="rounded-xl mx-auto w-full max-w-[250px] sm:max-w-none brightness-75"
                   />
