@@ -3,7 +3,7 @@ import { colors } from "../../constants/colors";
 export default function Combinations () {
 
   return (
-    <section className="max-w-5xl mx-auto px-12 py-16">
+    <section className="max-w-6xl mx-auto px-12 py-16">
       {/* Franja superior */}
       <div className="bg-teal-600 text-white text-center py-3 rounded-lg shadow-md mb-10">
         <p className="text-base md:text-lg font-semibold">
