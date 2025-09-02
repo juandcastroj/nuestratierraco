@@ -69,7 +69,11 @@ export default function AuthForm() {
 
       <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
              <div className="flex min-h-full flex-1 flex-col justify-center px-4 sm:px-8 py-12">
-         <div className="max-w-md mx-auto p-4 sm:p-12 rounded-2xl mt-10 bg-white/20 shadow-md">
+              <div
+                className={`max-w-md mx-auto p-4 sm:p-12 rounded-2xl mt-10 shadow-md ${
+                  isRegistering ? "bg-white/40" : "bg-white/20"
+                }`}
+              >
            <h2 className="text-2xl font-bold mb-4 text-center text-[#033649]">
              {isRegistering ? "Crear Cuenta Nueva" : "Iniciar Sesión"}
            </h2>
@@ -93,7 +97,7 @@ export default function AuthForm() {
               />
               <button
                 type="submit"    
-                className="w-full bg-[#033649] hover:bg-[#1f333a] text-white p-2 rounded-xl transition"
+                className="w-full bg-[#033649] hover:bg-[#1f333a] text-white font-bold p-2 rounded-xl transition"
               >
                 {isRegistering ? "Registrarse" : "Iniciar Sesión"}
               </button>
@@ -106,7 +110,7 @@ export default function AuthForm() {
                   setIsRegistering(!isRegistering);
                   setMsg("");
                 }}
-                className="text-[#033649] ml-2 underline font-semibold"
+                className="text-[#033649] ml-2 underline font-bold"
               >
                 {isRegistering ? "Inicia sesión" : "Regístrate"}
               </button>
@@ -153,7 +157,8 @@ export default function AuthForm() {
               <button
                 className="flex w-full items-center justify-center gap-3 rounded-xl bg-white opacity-60 px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus-visible:ring-transparent"
                 disabled>
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" className="size-7 fill-[#1877F2]">
+
+                <svg viewBox="0 0 48 48" className="h-7 fill-[#1877F2]">
                   <path d="M42,11.5v25c0,3.03-2.47,5.5-5.5,5.5H31V28h3.62c0.51,0,0.94-0.38,1-0.88l0.37-3c0.04-0.28-0.05-0.57-0.24-0.78 C35.56,23.12,35.29,23,35,23h-4v-3.5c0-1.1,0.9-2,2-2h2c0.55,0,1-0.45,1-1v-3.38c0-0.51-0.4-0.94-0.91-0.99 C35.03,12.12,33.62,12,31.83,12c-4.4,0-6.83,2.62-6.83,7.37V23h-4c-0.55,0-1,0.45-1,1v3c0,0.55,0.45,1,1,1h4v14H11.5 C8.47,42,6,39.53,6,36.5v-25C6,8.47,8.47,6,11.5,6h25C39.53,6,42,8.47,42,11.5z"></path>
                 </svg>
 
