@@ -11,7 +11,6 @@ export default function ProductsRoute () {
             <Products/>
             <ProductCarousel/>
             <Combinations/>
-            <ProductBanner image={combinations}/>
             <ProductBanner image={earings}/>
         </>
     )
