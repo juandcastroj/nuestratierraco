@@ -45,7 +45,7 @@ export default function Projects() {
                     <p className="text-base/7 font-bold text-gray-500">
                       {role}
                     </p>
-                    <p className="mt-1 text-base/7 text-[#004e64]">
+                    <p className="mt-1 text-base/7 text-[#004e64] font-medium">
                       {description}
                     </p>
                   </a>

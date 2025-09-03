@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { register, login, loginWithGoogle } from "../../services/auth";
+import bgImage from "../../assets/images/account/auth-form-bg.jpg"
 
 export default function AuthForm() {
   const navigate = useNavigate();
@@ -179,7 +180,7 @@ export default function AuthForm() {
       </div>
 
       <div className="relative hidden w-0 flex-1 md:block">
-        <img alt="login image" src="https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg" 
+        <img alt="ice blue landscape" src={bgImage}
           className="absolute inset-0 size-full object-cover"/>
       </div>
 
