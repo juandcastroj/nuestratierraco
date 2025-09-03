@@ -1,6 +1,6 @@
 import { HomeIcon } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom'
-import LogoutButton from '../products/LogoutButton'
+import LogoutButton from './LogoutButton'
 
 const breadcrumbs = [
   { name: 'Cuenta', href: '#', current: false },
@@ -57,11 +57,6 @@ export default function Breadcrumbs() {
                         </li>
                     </div>
                 </ol>
-
-
-                
-                  
-
             </nav>
         </>
     )

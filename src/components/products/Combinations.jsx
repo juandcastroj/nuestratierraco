@@ -3,9 +3,9 @@ import { colors } from "../../constants/colors";
 export default function Combinations () {
 
   return (
-    <section className="max-w-6xl mx-auto px-12 py-16">
+    <section className="max-w-6xl mx-auto px-12 pb-16 py-0">
       {/* Franja superior */}
-      <div className="bg-teal-600 text-white text-center py-3 rounded-lg shadow-md mb-10">
+      <div className="bg-teal-600 max-w-5xl text-white text-center py-3 rounded-full shadow-md mb-10">
         <p className="text-base md:text-lg font-semibold">
           Los colores de nuestros productos rinden tributo a la riqueza natural de Colombia
         </p>
