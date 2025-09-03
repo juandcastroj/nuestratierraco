@@ -1,15 +1,16 @@
+import { Link } from 'react-router-dom'
 import products from '../../constants/products'
 
 export default function Products() {
   return (
     <div className="bg-white">
       <div className="py-16 sm:py-24 lg:mx-auto lg:max-w-7xl lg:px-8">
-        <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0 text-blueText animate-fade-down animate-duration-[2000ms] animate-delay-[300ms]">
+        <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0 text-blueText hover:text-blue-700 animate-fade-down animate-duration-[2000ms] animate-delay-[300ms]">
           <h2 className="text-2xl font-bold">Productos destacados</h2>
-          <a href="#" className="hidden text-lg font-semibold sm:block">
+          <Link to="https://co.mitienda.la/nuestratierra" className="hidden text-lg font-semibold sm:block">
             Ver todos
             <span aria-hidden="true"> &rarr;</span>
-          </a>
+          </Link>
         </div>
 
         <div className="relative mt-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]">

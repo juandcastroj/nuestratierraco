@@ -16,7 +16,7 @@ export default function Map() {
                     Visítanos
                     </h2>
 
-                    <p className="mt-6 text-base text-[#004e64]">
+                    <p className="mt-6 text-base font-semibold text-[#004e64]">
                     Conoce nuestras instalaciones y cómo ayudamos a crear más iniciativas en beneficio de la comunidad.  <br/>
                     ¡Escríbenos para programar tu visita! </p>
                     <dl className="mt-10 space-y-4 text-base/7 text-gray-600">

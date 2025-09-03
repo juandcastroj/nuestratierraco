@@ -9,7 +9,7 @@ export default function History() {
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-blueText sm:text-5xl">
             ¿Quiénes somos?...
           </h1>
-        <div className="mt-6 max-w-5xl">
+        <div className="mt-6 max-w-5xl font-medium">
           <p>
             La historia de Nuestra Tierra se
             remonta al año 2021, cuando tres
@@ -72,8 +72,8 @@ export default function History() {
           </figcaption>
         </figure>
 
-        <div className="mt-16 max-w-5xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-pretty text-gray-900">
+        <div className="mt-16 max-w-5xl font-semibold">
+          <h2 className="text-3xl tracking-tight text-pretty text-gray-900">
             Misión
           </h2>
           <p className="mt-4">
@@ -89,7 +89,7 @@ export default function History() {
             proyectos comunitarios hasta
             investigaciones sobre sostenibilidad.
           </p>
-           <h2 className="mt-12 text-3xl font-semibold tracking-tight text-pretty text-gray-900">
+           <h2 className="mt-12 text-3xl tracking-tight text-pretty text-gray-900">
             Visión
           </h2>
           <p className="mt-4">

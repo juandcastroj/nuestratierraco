@@ -13,21 +13,21 @@ export default function Hero() {
               Corporación NuestraTierra
             </h1>
             <p className="mt-8 text-pretty text-lg sm:text-xl font-medium text-[#023246]  animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
-              JUNTOS SOMOS EL CAMBIO <br />
-              JUNTOS SOMOS NUESTRA TIERRA <br />
+              Juntos somos el cambio <br />
+              Juntos somos nuestra tierra. <br />
             </p>
             <div className="mt-10 flex flex-col gap-y-4 sm:flex-row items-center justify-center gap-x-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               <Link
-                to="/tienda"
+                to="/productos"
                 className="rounded-full bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Nuestros productos 🛍️
+                Nuestros productos 
               </Link>
               <Link
                 to="/embajadores"
                 className="rounded-full bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Haz parte del cambio 👩‍🏫 📝
+                Haz parte del cambio 
               </Link>
             </div>
           </div>

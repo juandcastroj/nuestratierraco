@@ -8,8 +8,8 @@ export default function Contact() {
       <div className="mx-auto grid max-w-4xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
 
         <div className="relative px-6 lg:static lg:px-8 py-24 sm:py-16 lg:py-28">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg animate-fade-right">
-            <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
+          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg font-semibold  animate-fade-right">
+            <h2 className="text-4xl tracking-tight text-[#033649] sm:text-5xl">
               Contáctanos 
             </h2>
 
