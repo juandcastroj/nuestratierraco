@@ -74,7 +74,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                         ) :
                     ( location.pathname !== "/auth" && (
                         <Link to="auth" className="text-sm/6 font-semibold text-[#033649]">
-                            Mi Cuenta <span aria-hidden="true">&rarr;</span>
+                            Mi Cuenta
                         </Link>
                         )
                     )

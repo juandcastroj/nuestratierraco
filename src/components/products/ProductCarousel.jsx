@@ -2,21 +2,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
+import { productsCarousel } from "../../constants/productsCarousel";
+import { Link } from "react-router-dom";
 
-const products = [
-  { id: 1, name: "Producto 1", img: "https://via.placeholder.com/200x200?text=Prod+1", link: "https://tu-tienda.com/producto/1" },
-  { id: 2, name: "Producto 2", img: "https://via.placeholder.com/200x200?text=Prod+2", link: "https://tu-tienda.com/producto/2" },
-  { id: 3, name: "Producto 3", img: "https://via.placeholder.com/200x200?text=Prod+3", link: "https://tu-tienda.com/producto/3" },
-  { id: 4, name: "Producto 4", img: "https://via.placeholder.com/200x200?text=Prod+4", link: "https://tu-tienda.com/producto/4" },
-  { id: 5, name: "Producto 5", img: "https://via.placeholder.com/200x200?text=Prod+5", link: "https://tu-tienda.com/producto/5" },
-  { id: 6, name: "Producto 6", img: "https://via.placeholder.com/200x200?text=Prod+6", link: "https://tu-tienda.com/producto/6" },
-  { id: 7, name: "Producto 7", img: "https://via.placeholder.com/200x200?text=Prod+7", link: "https://tu-tienda.com/producto/7" },
-  { id: 8, name: "Producto 8", img: "https://via.placeholder.com/200x200?text=Prod+8", link: "https://tu-tienda.com/producto/8" },
-];
 
 export default function ProductCarousel() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4">
+    <div className="w-full py-16 sm:py-24 lg:mx-auto lg:max-w-6xl lg:px-8">
+
+        <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
+          <h2 className="text-2xl font-bold text-blueText">📢 Productos destacados</h2>
+          <Link to="https://co.mitienda.la/nuestratierra" className="block text-lg font-semibold text-blueText hover:text-[#458ea8]">
+            Ver todos
+            <span aria-hidden="true"> &rarr;</span>
+          </Link>
+        </div>
+
+
       <Swiper
         modules={[Navigation, Autoplay]}
         spaceBetween={20}
@@ -33,8 +35,8 @@ export default function ProductCarousel() {
           1024: { slidesPerView: 4 },  // pantallas grandes
         }}
       >
-        {products.map((product) => (
-          <SwiperSlide key={product.id}>
+        {productsCarousel.map((product) => (
+          <SwiperSlide key={product.id} className="mt-12">
             <a
               href={product.link}
               target="_blank"
@@ -45,12 +47,19 @@ export default function ProductCarousel() {
                 <img
                   src={product.img}
                   alt={product.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 sm:h-80 object-contain sm:object-cover"
                 />
                 <div className="p-3 text-center">
-                  <h3 className="text-sm font-semibold text-gray-800">
-                    {product.name}
-                  </h3>
+                    <div className="mt-6">
+                      <p className="text-sm text-gray-500">{product.color}</p>
+                      <h3 className="mt-1 font-semibold text-teal-600">
+                        <a href={product.href}>
+                          <span className="absolute inset-0" />
+                          {product.name}
+                        </a>
+                      </h3>
+                      <p className="mt-1 text-teal-600 font-bold">{product.price}</p>
+                    </div>
                 </div>
               </div>
             </a>
