@@ -8,16 +8,15 @@ import { Link } from "react-router-dom";
 
 export default function ProductCarousel() {
   return (
-    <div className="w-full py-16 sm:py-24 lg:mx-auto lg:max-w-6xl lg:px-8">
+    <div className="w-full pt-28 sm:pt-24 pb-16 sm:pb-24 lg:mx-auto lg:max-w-6xl lg:px-8">
 
         <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
-          <h2 className="text-2xl font-bold text-blueText">📢 Productos destacados</h2>
+          <h2 className="text-2xl font-bold text-blueText"> Productos destacados</h2>
           <Link to="https://co.mitienda.la/nuestratierra" className="block text-lg font-semibold text-blueText hover:text-[#458ea8]">
             Ver todos
             <span aria-hidden="true"> &rarr;</span>
           </Link>
         </div>
-
 
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -25,7 +24,7 @@ export default function ProductCarousel() {
         navigation
         loop={true}
         autoplay={{
-          delay: 3000, // ⏳ 3 segundos
+          delay: 2500, // ⏳ 2.5 segundos
           disableOnInteraction: false, // sigue aunque el usuario toque
         }}
         breakpoints={{
@@ -47,16 +46,13 @@ export default function ProductCarousel() {
                 <img
                   src={product.img}
                   alt={product.name}
-                  className="w-full h-48 sm:h-80 object-contain sm:object-cover"
+                  className="w-full h-72 sm:h-80 object-contain sm:object-cover"
                 />
                 <div className="p-3 text-center">
-                    <div className="mt-6">
-                      <p className="text-sm text-gray-500">{product.color}</p>
-                      <h3 className="mt-1 font-semibold text-teal-600">
-                        <a href={product.href}>
+                    <div className="mt-6 text-2xl sm:text-lg">
+                      <h3 className="mt-1 text-teal-600 font-semibold">
                           <span className="absolute inset-0" />
                           {product.name}
-                        </a>
                       </h3>
                       <p className="mt-1 text-teal-600 font-bold">{product.price}</p>
                     </div>
