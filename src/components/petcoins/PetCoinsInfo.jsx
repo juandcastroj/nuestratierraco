@@ -1,27 +1,27 @@
 export default function PetCoinsInfo() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-[#9fffcb] py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
-          <p className="text-base/7 font-semibold text-[#49acc0]">About PetCoins</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+          <p className="text-base/7 font-semibold text-[#004e64]">About PetCoins</p>
+          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-[#004e64] sm:text-5xl">
             On a mission to empower reciclyng and sustainability
           </h1>
-          <p className="mt-6 text-xl/8 text-balance text-gray-700">
+          <p className="mt-6 text-xl/8 text-balance text-[#004e64]">
             Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget
             aliquam. Quisque id at vitae feugiat egestas.
           </p>
         </div>
         <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#49acc0]">Our mission</h2>
-            <p className="mt-6 text-base/7 text-gray-600">
+            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#004e64]">Our mission</h2>
+            <p className="mt-6 text-base/7 text-[#004e64]">
               Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
               vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
               erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper
               sed amet vitae sed turpis id.
             </p>
-            <p className="mt-8 text-base/7 text-gray-600">
+            <p className="mt-8 text-base/7 text-[#004e64]">
               Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
               fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
               adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
@@ -64,25 +64,25 @@ export default function PetCoinsInfo() {
             <hr className="mt-6 border-t border-gray-200" />
             <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
               <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-                <dt className="text-sm/6 text-gray-600">Raised</dt>
+                <dt className="text-sm/6 text-[#004e64]">Raised</dt>
                 <dd className="order-first text-6xl font-semibold tracking-tight">
                   $<span>150</span>M
                 </dd>
               </div>
               <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-                <dt className="text-sm/6 text-gray-600">Products</dt>
+                <dt className="text-sm/6 text-[#004e64]">Products</dt>
                 <dd className="order-first text-6xl font-semibold tracking-tight">
                   <span>30</span>
                 </dd>
               </div>
               <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-                <dt className="text-sm/6 text-gray-600">Deals Closed</dt>
+                <dt className="text-sm/6 text-[#004e64]">Deals Closed</dt>
                 <dd className="order-first text-6xl font-semibold tracking-tight">
                   <span>1.5</span>M
                 </dd>
               </div>
               <div className="flex flex-col gap-y-2">
-                <dt className="text-sm/6 text-gray-600">Leads Generated</dt>
+                <dt className="text-sm/6 text-[#004e64]">Leads Generated</dt>
                 <dd className="order-first text-6xl font-semibold tracking-tight">
                   <span>200</span>M
                 </dd>

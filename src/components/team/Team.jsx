@@ -16,10 +16,11 @@ export default function Team() {
     setSelectedMember(null);
   };
 
+  
   return (
-    <div className="bg-gradient-to-t from-[#60cee5] to-[#9effca] py-24 sm:py-32">
+    <div className="bg-[#60cee5] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-2xl animate-fade-down animate-delay-[700ms]">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl">Nuestro Equipo</h2>
           <p className="mt-6 text-lg/8 text-blueText">
             We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
@@ -34,7 +35,7 @@ export default function Team() {
             people.map((member, index) => (
             <li key={index}
                 onClick={() => openModal(member)}
-                className="cursor-pointer rounded-2xl hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md px-8 py-10 animate-rotate-y animate-delay-[800ms]">
+                className="cursor-pointer rounded-2xl hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md px-8 py-10 animate-fade-down animate-delay-[1200ms]">
               <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-full md:size-56" />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.name}</h3>
               <p className="text-sm/6 text-blueText">{member.role}</p>

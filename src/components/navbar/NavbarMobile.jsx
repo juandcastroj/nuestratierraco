@@ -23,7 +23,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="-m-2.5 rounded-md p-2.5 text-white hover:text-gray-100"
+                            className="-m-2.5 rounded-md p-2.5 text-[#9fffcb] hover:text-gray-100"
                         >
                             <span className="sr-only">Close menu</span>
                             <XMarkIcon aria-hidden="true" className="size-10" />
@@ -39,8 +39,8 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                                         key={item.name}
                                         to={item.to}
                                         onClick={() => setMobileMenuOpen(false)}
-                                        className={`-mx-3 block rounded-lg px-6 py-2 text-xl font-semibold animate-jump-in
-                                        ${isActive ? "text-[#458ea8]" : "text-white hover:text-[#458ea8]"}`}
+                                        className={`-mx-3 block rounded-lg px-6 py-2 text-xl font-semibold
+                                        ${isActive ? "text-white" : "text-[#9fffcb] hover:text-white"}`}
                                     >
                                         {item.name}
                                     </Link>
@@ -52,7 +52,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                                 <Link
                                     to="/auth"
                                     onClick={handleMobileMenu}
-                                    className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-xl font-semibold text-white border-2 border-gray-200 hover:border-[#458ea8] hover:text-[#458ea8] animate-jump-in"
+                                    className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-xl font-semibold text-[#9fffcb] border-2 border-gray-200 hover:border-[#458ea8] hover:text-white animate-jump-in"
                                 >
                                     Mi Cuenta  
                                 </Link>
