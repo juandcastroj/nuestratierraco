@@ -2,7 +2,7 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/2
 
 export default function Map() {
     return (
-    <div className="bg-gradient-to-t from-[#9effca] to-[#60cee5] py-8 sm:py-12">
+    <div className="bg-[#9effca] py-8 sm:py-12">
       <div className="mx-auto grid max-w-5xl reve grid-cols-1 lg:grid-cols-2 gap-9 lg:py-12">
 
             <div className="flex justify-center">
@@ -19,7 +19,7 @@ export default function Map() {
                     <p className="mt-6 text-base font-semibold text-[#004e64]">
                     Conoce nuestras instalaciones y cómo ayudamos a crear más iniciativas en beneficio de la comunidad.  <br/>
                     ¡Escríbenos para programar tu visita! </p>
-                    <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
+                    <dl className="mt-4 space-y-6 text-base/7 text-gray-600">
 
                     <div className="flex gap-x-4">
                         <dt className="flex-none">

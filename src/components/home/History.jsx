@@ -3,10 +3,10 @@ import historyPhoto from "../../assets/images/home/community.png";
 
 export default function History() {
   return (
-    <div className="px-6 py-32 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#9effca]  bg-fixed">
-      <div className="mx-auto text-justify max-w-3xl text-base/7 text-gray-700">
-        <p className="text-base/7 font-bold text-blueText">Historia </p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-blueText sm:text-5xl">
+    <div className="px-6 py-32 lg:px-8 bg-[#9effca]">
+      <div className="mx-auto text-justify max-w-3xl text-base/7 text-blueText">
+        <p className="text-base/7 font-bold">Historia </p>
+          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
             ¿Quiénes somos?...
           </h1>
         <div className="mt-6 max-w-5xl font-medium">
@@ -37,7 +37,7 @@ export default function History() {
           </p>
 
           <figure className="mt-10 border-l border-blueText pl-9 hover:animate-fade-right animate-duration-[2000ms] animate-delay-[500ms]">
-            <blockquote className="font-semibold text-gray-900">
+            <blockquote className="font-semibold">
               <p>
                 “¡Bienvenidos a un mundo donde la
                   creatividad, la conciencia y el cambio se
@@ -54,7 +54,7 @@ export default function History() {
                 className="size-6 flex-none rounded-full bg-gray-50"
               />
               <div className="text-sm/6">
-                <strong className="font-semibold text-gray-900">NuestraTierraCo</strong> – Co fundadora
+                <strong className="font-semibold">NuestraTierraCo</strong> – Co fundadora
               </div>
             </figcaption>
           </figure>

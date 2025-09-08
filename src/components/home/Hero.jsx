@@ -3,7 +3,7 @@ import planetPhoto from "../../assets/images/home/planet.png";
 
 export default function Hero() {
   return (
-    <div className="min-h-[75vh] sm:min-h-screen flex items-center justify-center relative bg-gradient-to-r to-[#9effca] from-[#60cee5]">
+    <div className="min-h-[75vh] sm:min-h-screen flex items-center justify-center relative bg-gradient-to-b to-[#60cee5] from-[#9effca]">
       <div className="relative isolate px-6 py-28 sm:py-0 lg:px-8">
 
         <div className="mx-auto max-w-2xl py-12 sm:py-32">
@@ -19,13 +19,13 @@ export default function Hero() {
             <div className="mt-10 flex flex-col gap-y-4 sm:flex-row items-center justify-center gap-x-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               <Link
                 to="/productos"
-                className="rounded-full bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-full bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-[#9fffcb] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Nuestros productos 
               </Link>
               <Link
                 to="/embajadores"
-                className="rounded-full bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-full bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-[#9fffcb] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Haz parte del cambio 
               </Link>

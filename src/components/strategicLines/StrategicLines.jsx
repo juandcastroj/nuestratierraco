@@ -3,7 +3,7 @@ import { strategicLines } from "../../constants/strategicLines";
 export default function StrategicLines() {
   
   return (
-   <div className="min-h-screen bg-gradient-to-r from-[#60cee5] to-[#9effca]">
+   <div className="min-h-screen bg-[#9effca]">
     <div className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 ">
         <div className="text-center mx-auto max-w-4xl xl:col-span-2 mb-12 animate-fade-down animate-duration-[1500ms] animate-delay-[400ms]">
@@ -32,7 +32,7 @@ export default function StrategicLines() {
               <li
                 key={index}
                 className="flex flex-col gap-4 lg:gap-10 lg:flex-row p-6 lg:p-3 xl:pr-12 rounded-3xl cursor-pointer
-                           hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md" >
+                           hover:shadow-md bg-white/40 hover:bg-white/30 hover:backdrop-blur-md" >
                   <img
                     alt={company}
                     src={imageUrl}
