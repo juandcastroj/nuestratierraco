@@ -3,10 +3,10 @@ import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/2
 export default function Map() {
     return (
     <div className="bg-[#9effca] py-8 sm:py-12">
-      <div className="mx-auto grid max-w-5xl reve grid-cols-1 lg:grid-cols-2 gap-9 lg:py-12">
+      <div className="mx-auto grid max-w-5xl reve grid-cols-1 lg:grid-cols-2 gap-9">
 
             <div className="flex justify-center">
-                <iframe className="h-[12rem] sm:h-[20rem] w-96 sm:w-[44rem] shadow-xl animate-fade-down sm:animate-fade-right animate-duration-[2500ms] animate-delay-[500ms] rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.039278757389!2d-74.17086522589385!3d4.5869731426347835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f636a3c355b%3A0x7947f055e40ee9cd!2sCorporaci%C3%B3n%20NuestraTierra!5e0!3m2!1ses!2sco!4v1754932394108!5m2!1ses!2sco" 
+                <iframe className="h-[12rem] sm:h-[20rem] w-96 sm:w-[44rem] hover:border-4 border-blueText shadow-xl animate-fade-down sm:animate-fade-right animate-duration-[2500ms] animate-delay-[500ms] rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.039278757389!2d-74.17086522589385!3d4.5869731426347835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f636a3c355b%3A0x7947f055e40ee9cd!2sCorporaci%C3%B3n%20NuestraTierra!5e0!3m2!1ses!2sco!4v1754932394108!5m2!1ses!2sco" 
                      allowFullScreen="" loading="eager" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
 

@@ -19,13 +19,13 @@ export default function Hero() {
             <div className="mt-10 flex flex-col gap-y-4 sm:flex-row items-center justify-center gap-x-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
               <Link
                 to="/productos"
-                className="rounded-full bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-[#9fffcb] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-2xl bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-[#9fffcb] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Nuestros productos 
               </Link>
               <Link
                 to="/embajadores"
-                className="rounded-full bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-[#9fffcb] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-2xl bg-transparent border-2 border-blueText px-4 py-3 text-base font-semibold text-[#023246] hover:text-[#096288] shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Haz parte del cambio 
               </Link>

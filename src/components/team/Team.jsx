@@ -18,7 +18,7 @@ export default function Team() {
 
   
   return (
-    <div className="bg-[#60cee5] py-24 sm:py-32">
+    <div className="bg-[#79e3f8] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl animate-fade-down animate-delay-[700ms]">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl">Nuestro Equipo</h2>
