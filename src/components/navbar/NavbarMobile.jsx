@@ -1,66 +1,105 @@
-import { Dialog, DialogPanel } from '@headlessui/react'
+import { Dialog, DialogPanel, Disclosure } from '@headlessui/react'
 import nuestraTierraLogoMobile from '../../assets/images/logo/logo.png'
-import { XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom'
+import { XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function NavbarMobile({ navigationItems, handleMobileMenu, mobileMenuOpen, setMobileMenuOpen }) {
+  const location = useLocation();
 
-    return(
-        <>
-            <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-                <div className="fixed inset-0 z-50" />
+  return (
+    <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+      <div className="fixed inset-0 z-50 bg-black/50" /> {/* backdrop */}
 
-                <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-blueText px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-[#033649]/10">
-                    <div className="flex items-center justify-between">
-                        <Link to="/" onClick={() => setMobileMenuOpen(false)} className="-m-1.5 p-1.5">
-                            <span className="sr-only">NuestraTierra logo</span>
-                            <img
-                            alt="logo corpo"
-                            src={nuestraTierraLogoMobile}
-                            className="h-20 w-auto rounded-full"
+      <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-blueText px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-[#033649]/10">
+        {/* Header */}
+        <div className="flex items-center justify-between">
+          <Link to="/" onClick={() => setMobileMenuOpen(false)} className="-m-1.5 p-1.5">
+            <span className="sr-only">NuestraTierra logo</span>
+            <img
+              alt="logo corpo"
+              src={nuestraTierraLogoMobile}
+              className="h-20 w-auto rounded-full"
+            />
+          </Link>
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(false)}
+            className="-m-2.5 rounded-md p-2.5 text-[#9fffcb] hover:text-gray-100"
+          >
+            <span className="sr-only">Close menu</span>
+            <XMarkIcon aria-hidden="true" className="size-10" />
+          </button>
+        </div>
+
+        {/* Navigation */}
+        <div className="mt-6 flow-root">
+          <div className="text-center sm:text-left -my-6 divide-y divide-gray-500/10">
+            <div className="space-y-2 py-6">
+              {navigationItems.map(item => {
+                const isActive = location.pathname === item.to;
+
+                // Caso con subItems → Acordeón
+                if (item.subItems) {
+                  return (
+                    <Disclosure key={item.name} as="div" className="px-3">
+                      {({ open }) => (
+                        <>
+                          <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 text-xl font-semibold text-[#9fffcb] hover:text-white">
+                            {item.name}
+                            <ChevronDownIcon
+                              className={`h-6 w-6 transition-transform ${open ? "rotate-180" : ""}`}
                             />
-                        </Link>
-                        <button
-                            type="button"
-                            onClick={() => setMobileMenuOpen(false)}
-                            className="-m-2.5 rounded-md p-2.5 text-[#9fffcb] hover:text-gray-100"
-                        >
-                            <span className="sr-only">Close menu</span>
-                            <XMarkIcon aria-hidden="true" className="size-10" />
-                        </button>
-                    </div>
-                    <div className="mt-6 flow-root">
-                        <div className="text-center sm:text-left -my-6 divide-y divide-gray-500/10">
-                            <div className="space-y-2 py-6">
-                                {navigationItems.map(item => {
-                                    const isActive = location.pathname === item.to;
-                                    return (
-                                    <Link
-                                        key={item.name}
-                                        to={item.to}
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        className={`-mx-3 block rounded-lg px-6 py-2 text-xl font-semibold
-                                        ${isActive ? "text-white" : "text-[#9fffcb] hover:text-white"}`}
-                                    >
-                                        {item.name}
-                                    </Link>
-                                    );
-                                })}
-                            </div>
-
-                            <div className="py-10">
+                          </Disclosure.Button>
+                          <Disclosure.Panel className="ml-4 mt-2 space-y-2">
+                            {item.subItems.map(sub => {
+                              const isSubActive = location.pathname === sub.to;
+                              return (
                                 <Link
-                                    to="/auth"
-                                    onClick={handleMobileMenu}
-                                    className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-xl font-semibold text-[#9fffcb] border-2 border-gray-200 hover:border-[#458ea8] hover:text-white animate-jump-in"
+                                  key={sub.name}
+                                  to={sub.to}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                  className={`block rounded-lg px-4 py-2 text-lg font-medium
+                                    ${isSubActive ? "text-white" : "text-[#9fffcb] hover:text-white"}`}
                                 >
-                                    Mi Cuenta  
+                                  {sub.name}
                                 </Link>
-                            </div>
-                        </div>
-                    </div>
-                </DialogPanel>
-            </Dialog>
-        </>
-    )
+                              );
+                            })}
+                          </Disclosure.Panel>
+                        </>
+                      )}
+                    </Disclosure>
+                  );
+                }
+
+                // Caso normal → Link directo
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.to}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`-mx-3 block rounded-lg px-6 py-2 text-xl font-semibold
+                      ${isActive ? "text-white" : "text-[#9fffcb] hover:text-white"}`}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
+            </div>
+
+            {/* Cuenta */}
+            <div className="py-10">
+              <Link
+                to="/auth"
+                onClick={handleMobileMenu}
+                className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-xl font-semibold text-[#9fffcb] border-2 border-gray-200 hover:border-[#458ea8] hover:text-white animate-jump-in"
+              >
+                Mi Cuenta
+              </Link>
+            </div>
+          </div>
+        </div>
+      </DialogPanel>
+    </Dialog>
+  )
 }
