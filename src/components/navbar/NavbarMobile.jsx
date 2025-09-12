@@ -45,7 +45,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                     <Disclosure key={item.name} as="div" className="px-3 py-2">
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className="flex w-full items-center justify-center rounded-lg py-2 text-xl font-semibold text-[#9fffcb] hover:text-white">
+                          <Disclosure.Button className="flex w-full items-center justify-center sm:justify-start rounded-lg py-2 text-xl font-semibold text-[#9fffcb] hover:text-white">
                             {item.name}
                             <ChevronDownIcon
                               className={`h-6 w-6 mx-1 transition-transform ${open ? "rotate-180" : ""}`}
