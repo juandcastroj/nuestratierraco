@@ -37,7 +37,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
       aria-label="Global"
       className={`flex items-center justify-between py-2 px-6 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
         ${
-          location.pathname === "/mi-cuenta"
+          location.pathname === "/account"
             ? "bg-white shadow-md backdrop-blur-sm"
             : hasBackground
             ? "bg-white/30 shadow-md backdrop-blur-sm"
@@ -75,17 +75,18 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
             <div key={item.name} className="relative">
               <button
                 onClick={() => toggleDropdown(item.name)}
-                className="flex items-center gap-1 text-sm/6 font-semibold cursor-pointer text-blueText">
+                className="flex items-center gap-1 text-sm font-semibold cursor-pointer text-blueText">
                 {item.name}
-                <ChevronDownIcon className="w-4 h-4" />
+                <ChevronDownIcon className="w-4 h-4" stroke-width="2.5"/>
               </button>
               {openDropdown === item.name && (
-                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white/50 ring-1 ring-gray-200 z-20">
+                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white/50 border-2 border-blueText ring-1 ring-gray-200 z-20">
                   {item.subItems.map((sub) => (
                     <Link
                       key={sub.name}
                       to={sub.to}
-                      className="block px-4 py-2 text-sm text-blueText hover:bg-white/70"
+                      onClick={() => toggleDropdown()}
+                      className="block px-4 py-2 text-sm font-semibold text-blueText hover:bg-blueText/10"
                     >
                       {sub.name}
                     </Link>
@@ -113,7 +114,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         {firstName ? (
           <Link
-            to="mi-cuenta"
+            to="account"
             className="text-sm/6 font-semibold text-[#033649]"
           >
             Hola, {firstName} 👋

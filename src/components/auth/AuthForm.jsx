@@ -72,7 +72,7 @@ export default function AuthForm() {
              <div className="flex min-h-full flex-1 flex-col justify-center px-4 sm:px-8 py-12">
               <div
                 className={`max-w-md mx-auto p-8 sm:p-12 rounded-2xl mt-10 shadow-md ${
-                  isRegistering ? "bg-white/40" : "bg-white/20"
+                  isRegistering ? "bg-white/50" : "bg-white/20"
                 }`}
               >
            <h2 className="text-2xl font-bold mb-4 text-center text-[#033649]">
