@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { people } from "../../constants/team";
+import { Link } from "react-router-dom";
 
 export default function Team() {
 
@@ -18,7 +19,7 @@ export default function Team() {
 
   
   return (
-    <div className="bg-[#79e3f8] py-24 sm:py-32">
+    <div className="bg-gradient-to-b  from-[#60cee5] to-[#9effca] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl animate-fade-down animate-delay-[700ms]">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-blueText sm:text-5xl">Nuestro Equipo</h2>
@@ -29,17 +30,17 @@ export default function Team() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+          className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
           {  
             people.map((member, index) => (
             <li key={index}
                 onClick={() => openModal(member)}
-                className="cursor-pointer rounded-2xl hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md px-8 py-10 animate-fade-down animate-delay-[1200ms]">
+                className="rounded-2xl hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md px-8 py-10 animate-fade-down animate-delay-[1200ms]">
               <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-full md:size-56" />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.name}</h3>
               <p className="text-sm/6 text-blueText">{member.role}</p>
-              <ul role="list" className="mt-6 flex justify-center gap-x-6">
+              <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
                 <li>
                   <a href={member.xUrl} className="text-blueText">
                     <span className="sr-only">X</span>
@@ -59,6 +60,17 @@ export default function Team() {
                       />
                     </svg>
                   </a>
+
+                </li>
+                <li>
+
+                    <button
+                      onClick={() => openModal(member)}
+                      className="px-6 py-2 bg-blueText rounded-md 
+                                 font-medium text-white hover:bg-blue-900 transition"
+                    >
+                      Ver más
+                    </button>
                 </li>
               </ul>
             </li>
@@ -73,7 +85,7 @@ export default function Team() {
           <div className="bg-white rounded-lg p-6 max-w-md w-full shadow-lg relative">
             <button
               onClick={closeModal}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+              className="absolute top-5 right-5 text-gray-500 hover:text-gray-800"
             >
               ✖
             </button>

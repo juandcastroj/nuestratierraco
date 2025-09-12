@@ -3,9 +3,9 @@ import historyPhoto from "../../assets/images/home/community.png";
 
 export default function History() {
   return (
-    <div className="px-6 py-32 lg:px-8 bg-[#9effca]">
+    <div className="px-6 py-32 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#9effca]">
       <div className="mx-auto text-justify max-w-3xl text-base/7 text-blueText">
-        <p className="text-base/7 font-bold">Historia </p>
+        <p className="text-base/7 font-bold">Historia 🌎</p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
             ¿Quiénes somos?...
           </h1>

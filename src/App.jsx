@@ -15,6 +15,7 @@ import TeamRoute from './routes/TeamRoute';
 import ProfileRoute from './routes/ProfileRoute';
 import VerifyEmailRoute from './routes/VerifyEmailRoute';
 import { PrivateRoute } from './routes/private-routes/PrivateRoute';
+import HistoryRoute from './routes/HistoryRoute';
 
 export default function App() {
 
@@ -23,14 +24,20 @@ export default function App() {
       <Header/>
           <Routes>
             <Route path='/' element={<HomeRoute/>}></Route>
-            <Route path='/proyectos' element={<ProjectsRoute/>}></Route>
-            <Route path='/lineas-estrategicas' element={<StrategicLinesRoute/>}></Route>
-            <Route path='/equipo' element={<TeamRoute/>}></Route>
-            <Route path='/productos' element={<ProductsRoute/>}></Route>
-            <Route path='/blog' element={<BlogRoute/>}></Route>
-            <Route path='/embajadores' element={<InscriptionsRoute/>}></Route>
-            <Route path='/contacto' element={<ContactUsRoute/>}></Route>
+
+            <Route path='/projects' element={<ProjectsRoute/>}></Route>
+
+            <Route path='/strategic-lines' element={<StrategicLinesRoute/>}></Route>
+
+            <Route path='/history' element={<HistoryRoute/>}></Route>
+            <Route path='/team' element={<TeamRoute/>}></Route>
+            <Route path='/products' element={<ProductsRoute/>}></Route>
             <Route path='/petcoins' element={<PetCoinsInfoRoute/>}></Route>
+
+            <Route path='/blog' element={<BlogRoute/>}></Route>
+            <Route path='/inscriptions' element={<InscriptionsRoute/>}></Route>
+
+            <Route path='/contact' element={<ContactUsRoute/>}></Route>
             <Route path='/email-sent' element={<EmailSentRoute/>}></Route>
 
             {/* 🔑 Página de auth (pública): si ya está logueado lo mando fuera) */}
@@ -55,7 +62,7 @@ export default function App() {
 
             {/* 👤 Perfil: requiere login y correo verificado */}
             <Route
-              path="/mi-cuenta"
+              path="/account"
               element={
                 <PrivateRoute requireAuth={true} requireVerified={true}>
                   <ProfileRoute />
