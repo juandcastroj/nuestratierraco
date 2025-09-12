@@ -66,7 +66,7 @@ export default function Team() {
 
                     <button
                       onClick={() => openModal(member)}
-                      className="px-6 py-2 bg-blueText rounded-md 
+                      className="px-6 py-2 bg-blueButton rounded-md 
                                  font-medium text-white hover:bg-blue-900 transition"
                     >
                       Ver más

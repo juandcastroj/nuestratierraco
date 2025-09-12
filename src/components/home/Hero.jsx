@@ -3,7 +3,7 @@ import planetPhoto from "../../assets/images/home/planet.png";
 
 export default function Hero() {
   return (
-    <div className="min-h-[75vh] sm:min-h-screen flex items-center justify-center relative bg-[#9effca]">
+    <div className="min-h-[90vh] sm:min-h-screen flex items-center justify-center relative bg-[#9effca]">
       <div className="relative isolate px-6 py-28 sm:py-0 lg:px-8">
 
         <div className="mx-auto max-w-2xl py-12 sm:py-32">
