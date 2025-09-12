@@ -80,7 +80,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                 <ChevronDownIcon className="w-4 h-4" stroke-width="2.5"/>
               </button>
               {openDropdown === item.name && (
-                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white/50 border-2 border-blueText ring-1 ring-gray-200 z-20">
+                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white/50 border-2 border-blueText ring-1 ring-gray-200 z-50">
                   {item.subItems.map((sub) => (
                     <Link
                       key={sub.name}
@@ -124,7 +124,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
               <Link
                 to="/auth"
                 onClick={handleMobileMenu}
-                className="text-center sm:text-left -mx-3 block rounded-xl px-4 py-1.5 text-base font-semibold text-blueText bg-blueText/10 hover:bg-transparent border-blueText border-2 animate-jump-in"
+                className="text-center sm:text-left -mx-3 block rounded-xl px-4 py-1.5 text-base font-semibold text-blueText hover:text-blue-800 border-blueText border-2"
               >
                 Mi Cuenta
               </Link>

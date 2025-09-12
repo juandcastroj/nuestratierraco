@@ -39,8 +39,7 @@ export const loginWithGoogle = async () => {
   try {
     const result = await signInWithPopup(auth, googleProvider);
     const user = result.user;
-        console.log("Usuario con Google:", user);
-
+      // console.log("Usuario con Google:", user);
     await saveUserInFirestore(user);
     return user;
 

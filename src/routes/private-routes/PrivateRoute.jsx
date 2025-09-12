@@ -9,7 +9,7 @@ export const PrivateRoute = ({
   onlyWhenNotVerified = false, // ¿solo accesible a usuarios logueados Y NO verificados?
   redirectTo = "/auth",        // a dónde mandar si no está logueado
   verifiedRedirect = "/verify-email", // a dónde mandar si no está verificado
-  loggedRedirect = "/mi-cuenta"  // a dónde mandar si ya está logueado y no debería estar aquí
+  loggedRedirect = "/account"  // a dónde mandar si ya está logueado y no debería estar aquí
 }) => {
   const { firebaseUser, loading } = useAuth();
 
