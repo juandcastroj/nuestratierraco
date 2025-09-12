@@ -36,19 +36,21 @@ export default function Team() {
             people.map((member, index) => (
             <li key={index}
                 onClick={() => openModal(member)}
-                className="rounded-2xl hover:shadow-md bg-white/20 hover:bg-white/30 hover:backdrop-blur-md px-8 py-10 animate-fade-down animate-delay-[1200ms]">
+                className="rounded-2xl shadow-lg bg-white/40 hover:bg-white/50 hover:backdrop-blur-md p-6 animate-fade-down animate-delay-[1200ms]">
               <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-full md:size-56" />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.name}</h3>
-              <p className="text-sm/6 text-blueText">{member.role}</p>
+              {/* <p className="text-sm/6 text-blueText">{member.role}</p> */}
               <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
-                <li>
+
+                {/* <li>
                   <a href={member.xUrl} className="text-blueText">
                     <span className="sr-only">X</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" className="size-5">
                       <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
                     </svg>
                   </a>
-                </li>
+                </li> */}
+
                 <li>
                   <a href={member.linkedinUrl} className="text-blueText">
                     <span className="sr-only">LinkedIn</span>
@@ -60,10 +62,9 @@ export default function Team() {
                       />
                     </svg>
                   </a>
-
                 </li>
-                <li>
 
+                <li>
                     <button
                       onClick={() => openModal(member)}
                       className="px-6 py-2 bg-blueButton rounded-md 
@@ -72,6 +73,7 @@ export default function Team() {
                       Ver más
                     </button>
                 </li>
+
               </ul>
             </li>
           ))}

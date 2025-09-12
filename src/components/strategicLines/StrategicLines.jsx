@@ -37,7 +37,7 @@ export default function Projects() {
                 <li
                   key={index}
                   className="flex flex-col bg-white/20 hover:bg-white/40 hover:backdrop-blur-md 
-                             rounded-3xl p-2 hover:shadow-md transition"
+                             rounded-3xl p-2 hover:shadow-md transition hover:-translate-y-1"
                 >
                   <img
                     alt={company}

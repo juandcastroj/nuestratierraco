@@ -7,12 +7,11 @@ export const navBarItems = [
       { name: "Inclusión Social", to: "/" },
     ],
   },
-
-  { name: "Proyectos", to: "/projects" },
   { name: "Líneas Estratégicas", to: "/strategic-lines" },
+  { name: "Proyectos", to: "/projects" },
   { name: "Productos", to: "/products" },
-
-    {
+  { name: "Petcoins", to: "/petcoins" },
+  {
     name: "Comunidad",
     subItems: [
       { name: "Embajadores", to: "/inscriptions" },

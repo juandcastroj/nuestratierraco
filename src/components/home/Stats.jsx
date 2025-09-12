@@ -22,7 +22,7 @@ export default function Stats() {
               {stats.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-white/50 p-8">
                   <dt className="text-base font-bold text-[#004e64] leading-normal mt-3">{stat.name}</dt>
-                  <dd className="order-first text-4xl font-extrabold text-[#004e64]">{stat.value}</dd>
+                  <dd className="order-first text-4xl font-extrabold text-[#004e64] animation hover:animate-rotate-x">{stat.value}</dd>
                 </div>
               ))}
             </dl>

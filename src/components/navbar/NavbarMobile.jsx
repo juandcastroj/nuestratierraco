@@ -32,16 +32,17 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
         </div>
 
         {/* Navigation */}
-        <div className="mt-6 flow-root">
-          <div className="text-center sm:text-left -my-6 divide-y divide-gray-500/10">
-            <div className="space-y-3 py-20">
+        <div className="flex flex-col min-h-screen">
+          <div className="flex-1 overflow-y-auto">
+            {/* Contenedor con divide-y */}
+            <div className="text-center sm:text-left py-20 divide-y divide-gray-300/20">
+
               {navigationItems.map(item => {
                 const isActive = location.pathname === item.to;
-
                 // Caso con subItems → Acordeón
                 if (item.subItems) {
                   return (
-                    <Disclosure key={item.name} as="div" className="px-3">
+                    <Disclosure key={item.name} as="div" className="px-3 py-2">
                       {({ open }) => (
                         <>
                           <Disclosure.Button className="flex w-full items-center justify-center rounded-lg py-2 text-xl font-semibold text-[#9fffcb] hover:text-white">
@@ -50,7 +51,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                               className={`h-6 w-6 mx-1 transition-transform ${open ? "rotate-180" : ""}`}
                             />
                           </Disclosure.Button>
-                          <Disclosure.Panel className="ml-4 mt-2 space-y-2">
+                          <Disclosure.Panel className="ml-4 mt-2 space-y-2 divide-y divide-gray-500/10">
                             {item.subItems.map(sub => {
                               const isSubActive = location.pathname === sub.to;
                               return (
@@ -86,19 +87,22 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                 );
               })}
             </div>
+          </div>
 
-            {/* Cuenta */}
-            <div className="py-10">
-              <Link
-                to="/account"
-                onClick={handleMobileMenu}
-                className="text-center sm:text-left mx-12 block rounded-lg px-6 py-2.5 text-xl font-semibold text-[#9fffcb] border-2 border-gray-200 hover:border-[#458ea8] hover:text-white"
-              >
-                Mi Cuenta
-              </Link>
-            </div>
+          {/* Cuenta sticky al fondo con separador arriba */}
+          <div className="sticky bottom-0 py-6 border-t border-gray-300">
+            <Link
+              to="/account"
+              onClick={handleMobileMenu}
+              className="text-center sm:text-left mx-12 block rounded-lg px-6 py-2.5 text-xl font-semibold text-[#9fffcb] border-2 border-gray-300/50 hover:border-[#458ea8] hover:text-white"
+            >
+              Mi Cuenta
+            </Link>
           </div>
         </div>
+
+
+
       </DialogPanel>
     </Dialog>
   )

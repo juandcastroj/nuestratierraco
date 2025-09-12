@@ -8,7 +8,7 @@ export default function Inscriptions() {
           <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
              Nuestros Embajadores 
           </h2>
-            <p className="mt-6 text-base sm:text-lg text-[#004e64]">
+            <p className="mt-6 text-base text-[#004e64] leading-6">
               ¡Bienvenidos a un mundo donde la
               creatividad, la conciencia y el cambio se
               entrelazan para dar forma al mañana! En
