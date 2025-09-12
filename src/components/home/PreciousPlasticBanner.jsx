@@ -6,7 +6,7 @@ export default function PreciousPlasticBanner () {
     <div className="relative isolate overflow-hidden w-full h-[300px] bg-cover bg-center" 
         style={{ backgroundImage: `url(${preciousMachines})` }}>
 
-            <div className="absolute inset-0 bg-[#023246] bg-opacity-90"></div>
+            <div className="absolute inset-0 bg-[#004e64] bg-opacity-90"></div>
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="mx-auto max-w-2xl py-12 sm:py-20 lg:px-12 text-center text-white hover:animate-shake animate-duration-[3000ms] animate-delay-[200ms]">

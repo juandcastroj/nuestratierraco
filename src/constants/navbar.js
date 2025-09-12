@@ -1,24 +1,23 @@
 export const navBarItems = [
   {
-    name: "Líneas Estratégicas",
+    name: "Nosotros",
     subItems: [
-      { name: "Economía Circular", to: "/lineas-estrategicas/economia-circular" },
-      { name: "Educación Ambiental", to: "/lineas-estrategicas/educacion-ambiental" },
-      { name: "Inclusión Social", to: "/lineas-estrategicas/inclusion-social" },
+      { name: "Historia", to: "/history" },
+      { name: "Equipo", to: "/team" },
+      { name: "Inclusión Social", to: "/" },
     ],
   },
-  {
-    name: "Proyectos",
+
+  { name: "Proyectos", to: "/projects" },
+  { name: "Líneas Estratégicas", to: "/strategic-lines" },
+  { name: "Productos", to: "/products" },
+
+    {
+    name: "Comunidad",
     subItems: [
-      { name: "Proyecto A", to: "/proyectos/proyecto-a" },
-      { name: "Proyecto B", to: "/proyectos/proyecto-b" },
-      { name: "Proyecto C", to: "/proyectos/proyecto-c" },
+      { name: "Embajadores", to: "/inscriptions" },
+      { name: "Blog", to: "/blog" },
+      { name: "Contacto", to: "/contact" },
     ],
   },
-  { name: "Equipo", to: "/equipo" },
-  { name: "Eco Catálogo", to: "/productos" },
-  { name: "PetCoins", to: "/petcoins" },
-  // { name: "Embajadores", to: "/embajadores" },
-  // { name: "Blog", to: "/blog" },
-  // { name: "Contacto", to: "/contacto" },
 ];

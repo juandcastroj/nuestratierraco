@@ -13,7 +13,7 @@ export default function Contact() {
               Contáctanos 
             </h2>
 
-            <p className="mt-6 text-base text-[#004e64]">
+            <p className="mt-6 text-base text-[#004e64] font-normal">
               Con tu compra, apoyas el cuidado del planeta y ayudas a crear más iniciativas en beneficio de las comunidades.  <br/>
               ¡Escríbenos para fabricar tu producto o crear nuevas ideas!</p>
             <dl className="mt-4 space-y-6 text-base/7 text-gray-600">

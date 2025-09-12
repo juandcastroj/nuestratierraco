@@ -75,22 +75,17 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
             <div key={item.name} className="relative">
               <button
                 onClick={() => toggleDropdown(item.name)}
-                className="flex items-center gap-1 text-sm/6 font-semibold cursor-pointer text-blueText "
-                //   location.pathname.startsWith(item.to || "")
-                //     ? "text-[#458ea8]"
-                //     : "text-blueText hover:text-[#458ea8]"
-                // }`}
-              >
+                className="flex items-center gap-1 text-sm/6 font-semibold cursor-pointer text-blueText">
                 {item.name}
                 <ChevronDownIcon className="w-4 h-4" />
               </button>
               {openDropdown === item.name && (
-                <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-gray-200 z-20">
+                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white/50 ring-1 ring-gray-200 z-20">
                   {item.subItems.map((sub) => (
                     <Link
                       key={sub.name}
                       to={sub.to}
-                      className="block px-4 py-2 text-sm text-blueText hover:bg-gray-100"
+                      className="block px-4 py-2 text-sm text-blueText hover:bg-white/70"
                     >
                       {sub.name}
                     </Link>
@@ -127,7 +122,8 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
           location.pathname !== "/auth" && (
               <Link
                 to="/auth"
-                className="text-center sm:text-left -mx-3 block rounded-lg px-3 py-2 text-sm font-semibold text-white bg-blueButton hover:bg-blueText animate-jump-in"
+                onClick={handleMobileMenu}
+                className="text-center sm:text-left -mx-3 block rounded-xl px-4 py-1.5 text-base font-semibold text-blueText bg-blueText/10 hover:bg-transparent border-blueText border-2 animate-jump-in"
               >
                 Mi Cuenta
               </Link>
