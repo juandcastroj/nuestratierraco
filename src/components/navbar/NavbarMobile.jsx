@@ -10,7 +10,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
     <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
       <div className="fixed inset-0 z-50 bg-black/50" /> {/* backdrop */}
 
-      <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-blueText px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-[#033649]/10">
+      <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-blueText px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-[#033649]/10 animate-fade-left">
         {/* Header */}
         <div className="flex items-center justify-between">
           <Link to="/" onClick={() => setMobileMenuOpen(false)} className="-m-1.5 p-1.5">
@@ -34,7 +34,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
         {/* Navigation */}
         <div className="mt-6 flow-root">
           <div className="text-center sm:text-left -my-6 divide-y divide-gray-500/10">
-            <div className="space-y-2 py-6">
+            <div className="space-y-3 py-20">
               {navigationItems.map(item => {
                 const isActive = location.pathname === item.to;
 
@@ -44,10 +44,10 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                     <Disclosure key={item.name} as="div" className="px-3">
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 text-xl font-semibold text-[#9fffcb] hover:text-white">
+                          <Disclosure.Button className="flex w-full items-center justify-center rounded-lg py-2 text-xl font-semibold text-[#9fffcb] hover:text-white">
                             {item.name}
                             <ChevronDownIcon
-                              className={`h-6 w-6 transition-transform ${open ? "rotate-180" : ""}`}
+                              className={`h-6 w-6 mx-1 transition-transform ${open ? "rotate-180" : ""}`}
                             />
                           </Disclosure.Button>
                           <Disclosure.Panel className="ml-4 mt-2 space-y-2">
@@ -78,8 +78,8 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                     key={item.name}
                     to={item.to}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`-mx-3 block rounded-lg px-6 py-2 text-xl font-semibold
-                      ${isActive ? "text-white" : "text-[#9fffcb] hover:text-white"}`}
+                    className={`-mx-3 block rounded-lg px-6 py-2 text-xl font-medium
+                      ${isActive ? "text-white" : "text-[#b2e6c9] hover:text-white"}`}
                   >
                     {item.name}
                   </Link>
@@ -90,9 +90,9 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
             {/* Cuenta */}
             <div className="py-10">
               <Link
-                to="/auth"
+                to="/account"
                 onClick={handleMobileMenu}
-                className="text-center sm:text-left -mx-3 block rounded-lg px-6 py-2.5 text-xl font-semibold text-[#9fffcb] border-2 border-gray-200 hover:border-[#458ea8] hover:text-white animate-jump-in"
+                className="text-center sm:text-left mx-12 block rounded-lg px-6 py-2.5 text-xl font-semibold text-[#9fffcb] border-2 border-gray-200 hover:border-[#458ea8] hover:text-white"
               >
                 Mi Cuenta
               </Link>
