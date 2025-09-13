@@ -35,7 +35,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
         <div className="flex flex-col min-h-screen">
           <div className="flex-1 overflow-y-auto">
             {/* Contenedor con divide-y */}
-            <div className="text-center sm:text-left py-20 divide-y divide-gray-300/20">
+            <div className="text-center sm:text-left py-12 divide-y divide-gray-300/20">
 
               {navigationItems.map(item => {
                 const isActive = location.pathname === item.to;
@@ -59,7 +59,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                                   key={sub.name}
                                   to={sub.to}
                                   onClick={() => setMobileMenuOpen(false)}
-                                  className={`block rounded-lg px-4 py-2 text-lg font-medium
+                                  className={`block rounded-lg px-4 py-2 text-lg font-medium bg-gray-200/10
                                     ${isSubActive ? "text-white" : "text-[#9fffcb] hover:text-white"}`}
                                 >
                                   {sub.name}
