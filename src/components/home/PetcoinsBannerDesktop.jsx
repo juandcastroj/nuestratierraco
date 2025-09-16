@@ -1,27 +1,31 @@
 import { XMarkIcon } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom'
 
-export default function PetCoinsBanner() {
+export default function PetcoinsBannerDesktop() {
   return (
     <>
-      <div id="PetcoinsBanner" className="hidden sm:flex sticky bottom-0 start-0 z-30 isolate items-center gap-x-6 overflow-hidden bg-[#023246] px-6 py-2 sm:px-5 sm:before:flex-1  transition-all duration-500 ease-in-out max-h-40 animate-flip-up">
+      <div id="PetcoinsBanner" className="hidden sm:flex sticky bottom-0 start-0 z-30 isolate items-center gap-x-6 overflow-hidden bg-[#004e64] px-6 sm:px-5 py-4 sm:py-2 sm:before:flex-1 border-t-[1px] border-gray-600 transition-all duration-500 ease-in-out max-h-40 animate-flip-up">
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <p className="text-base text-white font-semibold">
-            <strong>PetCoins 🪙</strong>
+          <p className="text-base text-[#9fffcb] font-semibold">
+            <Link to="/petcoins">
+              <strong>PetCoins 🪙</strong>
+            </Link>
+            
             <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-0.5 fill-current">
               <circle r={1} cx={1} cy={1} />
             </svg>
             ¡Usalos para canjear tu reciclaje por nuestros productos!
           </p>
+
           <Link
             to="/petcoins"
-            className="flex-none rounded-full bg-[#25a18e] hover:bg-[#26dabf] px-3.5 py-1 text-base font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+            className="hidden sm:flex flex-none rounded-full bg-[#25a18e] hover:bg-[#26dabf] px-3.5 py-1 text-base font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           >
                 Conoce mas <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
 
-        <div className="flex flex-1 justify-end">
+        <div className="hidden sm:flex flex-1 justify-end">
           <button type="button" 
               onClick={() => {
                 const banner = document.querySelector('#PetcoinsBanner');
@@ -33,7 +37,7 @@ export default function PetCoinsBanner() {
                 }
               }}
 
-          className="-m-3 p-3 focus-visible:-outline-offset-4">
+            className="-m-3 p-3 focus-visible:-outline-offset-4">
             <span className="sr-only">Dismiss</span>
             <XMarkIcon aria-hidden="true" className="size-5 text-white"/>
           </button>

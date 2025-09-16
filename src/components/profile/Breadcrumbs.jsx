@@ -51,7 +51,7 @@ export default function Breadcrumbs() {
                     </div>
 
                     {/* Botón a la derecha */}
-                    <div className="flex items-center">
+                    <div className="flex items-center z-50">
                         <li className="flex">
                         <LogoutButton />
                         </li>
