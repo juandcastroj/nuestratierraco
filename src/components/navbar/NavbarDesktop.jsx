@@ -77,7 +77,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                 onClick={() => toggleDropdown(item.name)}
                 className="flex items-center gap-1 text-sm font-semibold cursor-pointer text-blueText">
                 {item.name}
-                <ChevronDownIcon className="w-4 h-4" stroke-width="2.5"/>
+                <ChevronDownIcon className="w-4 h-4" strokeWidth="2.5"/>
               </button>
               {openDropdown === item.name && (
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white/50 border-2 border-blueText ring-1 ring-gray-200 z-50">

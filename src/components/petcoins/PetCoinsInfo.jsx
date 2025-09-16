@@ -1,7 +1,8 @@
 export default function PetCoinsInfo() {
   return (
     <div className="overflow-hidden bg-[#9fffcb] py-24 sm:py-32">
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8">
+
         <div className="max-w-4xl">
           <p className="text-base/7 font-semibold text-[#004e64]">About PetCoins</p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-[#004e64] sm:text-5xl">
@@ -12,6 +13,7 @@ export default function PetCoinsInfo() {
             aliquam. Quisque id at vitae feugiat egestas.
           </p>
         </div>
+
         <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
             <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#004e64]">Our mission</h2>
@@ -90,6 +92,7 @@ export default function PetCoinsInfo() {
             </dl>
           </div>
         </section>
+
       </div>
     </div>
   )

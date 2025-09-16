@@ -1,9 +1,10 @@
 import Hero from "../components/home/Hero";
 import Stats from "../components/home/Stats";
-import PetCoinsBanner from "../components/home/PetCoinsBanner";
 import PartnersBanner from "../components/home/PartnersBanner";
 import PreciousPlasticBanner from "../components/home/PreciousPlasticBanner";
 import Map from "../components/home/Map";
+import PetcoinsBannerDesktop from "../components/home/PetcoinsBannerDesktop";
+import PetcoinsBannerMobile from "../components/home/PetcoinsBannerMobile";
 
 export default function HomeRoute() {
     return (
@@ -13,7 +14,8 @@ export default function HomeRoute() {
             <Stats/>
             <PreciousPlasticBanner/>
             <Map/>
-            <PetCoinsBanner/>
+            <PetcoinsBannerMobile/>
+            <PetcoinsBannerDesktop/>
         </>
     )
 }

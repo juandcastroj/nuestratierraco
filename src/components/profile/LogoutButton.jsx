@@ -22,11 +22,11 @@ export default function LogoutButton({ onClick }) {
 
       {/* Tooltip (solo visible en desktop) */}
       {showTooltip && (
-        <div className="absolute -top-10 left-1/2 -translate-x-1/2 hidden md:block">
+        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 hidden md:block">
           <div className="bg-gray-800 text-white text-xs rounded-md px-2 py-1 shadow">
             Cerrar sesión
           </div>
-          <div className="absolute left-1/2 -translate-x-1/2 top-full border-4 border-transparent border-t-gray-800"></div>
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-full border-4 border-transparent border-t-gray-800"></div>
         </div>
       )}
     </div>
