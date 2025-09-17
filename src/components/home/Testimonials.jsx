@@ -16,8 +16,8 @@ export default function Testimonials() {
           </p>
 
           <p className="mt-6 text-lg leading-2 text-[#004e64]">
-            La iniciativa "Mujeres Nuestra
-            Tierra" es un testimonio de nuestro
+            La iniciativa &quot;Mujeres Nuestra
+            Tierra&quot; es un testimonio de nuestro
             compromiso con la equidad de
             género y la inclusión. Trabajamos
             para empoderar a las mujeres y
