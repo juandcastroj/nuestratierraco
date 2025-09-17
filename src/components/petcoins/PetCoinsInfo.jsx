@@ -15,6 +15,7 @@ export default function PetCoinsInfo() {
         </div>
 
         <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+
           <div className="lg:pr-8">
             <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#004e64]">Our mission</h2>
             <p className="mt-6 text-base/7 text-[#004e64]">
@@ -29,8 +30,9 @@ export default function PetCoinsInfo() {
               adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
             </p>
           </div>
+
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
-            <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
+            <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
                 <img
                   alt=""
@@ -61,6 +63,7 @@ export default function PetCoinsInfo() {
               </div>
             </div>
           </div>
+
           <div className="max-lg:mt-16 lg:col-span-1">
             <p className="text-base/7 font-semibold text-gray-500">The numbers</p>
             <hr className="mt-6 border-t border-gray-200" />
@@ -91,6 +94,7 @@ export default function PetCoinsInfo() {
               </div>
             </dl>
           </div>
+
         </section>
 
       </div>

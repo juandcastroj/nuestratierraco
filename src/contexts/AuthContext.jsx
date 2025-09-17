@@ -4,8 +4,8 @@ import { doc, getDoc } from "firebase/firestore";
 import { auth, db } from "../firebase";
 
 const AuthContext = createContext();
-export const useAuth = () => useContext(AuthContext);
 
+export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
 
