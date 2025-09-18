@@ -90,7 +90,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
           </div>
 
           {/* Cuenta sticky al fondo con separador arriba */}
-          <div className="sticky bottom-0 py-6 border-t border-gray-300">
+          <div className="sticky bottom-0 py-6 border-t border-gray-300 bg-blueText">
             <Link
               to="/account"
               onClick={handleMobileMenu}
