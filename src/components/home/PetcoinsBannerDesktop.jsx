@@ -5,7 +5,7 @@ export default function PetcoinsBannerDesktop() {
   return (
     <>
       <div className="hidden sm:flex sticky bottom-0 start-0 z-30 isolate 
-        items-center justify-center gap-x-6 overflow-hidden bg-[#004e64] 
+        items-center justify-center gap-x-6 overflow-hidden bg-blueText 
         px-6 sm:px-5 py-4 sm:py-2 sm:before:flex-1 border-t border-gray-600 
         transition-all duration-500 ease-in-out max-h-40 animate-flip-up">
 

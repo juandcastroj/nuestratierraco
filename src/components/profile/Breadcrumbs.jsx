@@ -13,7 +13,7 @@ export default function Breadcrumbs() {
             <nav aria-label="Breadcrumb" className="flex justify-between mt-20 border-b border-t border-gray-300">
                 <ol
                     role="list"
-                    className="mx-auto flex w-full max-w-(--breakpoint-xl) justify-between px-4 sm:px-6 lg:px-8 fixed top-[78px] z-40 bg-gray-50"
+                    className="mx-auto flex w-full max-w-(--breakpoint-xl) justify-between px-4 sm:px-6 lg:px-8 fixed top-[72px] z-40 bg-gray-50"
                     >
                     {/* Items a la izquierda */}
                     <div className="flex space-x-4">

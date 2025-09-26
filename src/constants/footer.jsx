@@ -1,14 +1,4 @@
 export const navigation = 
-//{
-
-  // main: [
-  //   { name: '¿Quiénes somos?', to: '/' },
-  //   { name: 'Proyectos', to: '/projects' },
-  //   { name: 'Catálogo', to: '/stack' },
-  //   { name: 'Inscripciones', to: '/inscriptions' },
-  //   { name: 'Contacto', to: '/contact' },
-  // ],
-
    [
       {
       name: 'LinkedIn',
@@ -47,7 +37,7 @@ export const navigation =
     },
     {
       name: 'YouTube',
-      href: 'https://www.youtube.com/watch?v=Q9qxPsBak48&t=9s',
+      href: 'https://www.youtube.com/@nuestratierraco7153',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
