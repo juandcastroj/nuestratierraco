@@ -18,7 +18,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
             <img
               alt="logo corpo"
               src={nuestraTierraLogoMobile}
-              className="h-20 w-auto rounded-full"
+              className="h-24 w-auto rounded-full"
             />
           </Link>
           <button
@@ -33,7 +33,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
 
         {/* Navigation */}
         <div className="flex flex-col min-h-screen">
-          <div className="flex-1 overflow-y-auto">
+          <div className="flex-1">
             {/* Contenedor con divide-y */}
             <div className="text-center sm:text-left py-12 divide-y divide-gray-300/20">
 
@@ -100,8 +100,6 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
             </Link>
           </div>
         </div>
-
-
 
       </DialogPanel>
     </Dialog>

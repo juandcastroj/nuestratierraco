@@ -35,13 +35,13 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
   return (
     <nav
       aria-label="Global"
-      className={`flex items-center justify-between py-2 px-6 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
+      className={`flex items-center justify-between px-6 lg:px-8 animate-fade-down animate-duration-[2500ms] animate-delay-[250ms]
         ${
           location.pathname === "/account"
-            ? "bg-white shadow-md backdrop-blur-sm"
+            ? "bg-white shadow-md backdrop-blur-sm py-1"
             : hasBackground
-            ? "bg-white/30 shadow-md backdrop-blur-sm"
-            : "bg-transparent"
+            ? "bg-white/30 shadow-md backdrop-blur-sm py-6"
+            : "bg-transparent py-6"
         }`}
     >
       {/* Logo */}
@@ -51,7 +51,12 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
           <img
             alt="Logo"
             src={nuestraTierraLogo}
-            className="h-16 w-auto rounded-full"
+            className={ `w-auto rounded-full
+                 ${
+                   location.pathname === "/account" 
+                   ? "h-16 relative top-0" 
+                   : "h-24 absolute top-3"}
+            `}
           />
         </Link>
       </div>
@@ -69,7 +74,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
       </div>
 
       {/* Menu Desktop */}
-      <div className="hidden lg:flex lg:gap-x-12" ref={dropdownRef}>
+      <div className="hidden lg:flex items-center lg:gap-x-12" ref={dropdownRef}>
         {navigationItems.map((item) =>
           item.subItems ? (
             <div key={item.name} className="relative">
