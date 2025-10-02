@@ -3,7 +3,7 @@ import mujeresEnAccion from "../../assets/images/strategic-lines/image1.png"
 
 export default function History() {
   return (
-    <div className="px-6 py-32 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#9effca]">
+    <div className="px-6 py-32 lg:px-8 bg-gradient-to-b from-[#9effca] to-[#60cee5]">
       <div className="mx-auto text-justify max-w-3xl lg:max-w-5xl text-base/7 text-blueText">
 
           <div className="mx-auto max-w-2xl lg:max-w-7xl text-blueText">
@@ -11,7 +11,7 @@ export default function History() {
             <div className="max-w-4xl">
               <p className="text-base/7 font-bold">Historia 🐢</p>
               <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl">
-                Quienes somos?...
+                ¿Quiénes somos?...
               </h1>
             </div>
 

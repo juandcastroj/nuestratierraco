@@ -1,6 +1,6 @@
 export default function PetCoinsInfo() {
   return (
-    <div className="overflow-hidden bg-[#9fffcb] py-24 sm:py-32">
+    <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8">
 
         <div className="max-w-4xl">

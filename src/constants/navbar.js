@@ -4,13 +4,22 @@ export const navBarItems = [
     subItems: [
       { name: "Historia", to: "/history" },
       { name: "Equipo", to: "/team" },
-      { name: "Inclusión Social", to: "/" },
     ],
   },
-  { name: "Líneas Estratégicas", to: "/strategic-lines" },
-  { name: "Proyectos", to: "/projects" },
-  { name: "Productos", to: "/products" },
-  { name: "Petcoins", to: "/petcoins" },
+    {
+    name: "Iniciativas",
+    subItems: [
+      { name: "Líneas Estratégicas", to: "/strategic-lines" },
+      { name: "Proyectos", to: "/projects" },
+    ],
+  },
+  {
+    name: "Tienda",
+    subItems: [
+      { name: "Productos", to: "/products" },
+      { name: "Petcoins", to: "/petcoins" },
+    ],
+  },
   {
     name: "Comunidad",
     subItems: [
@@ -30,6 +39,4 @@ export const footerItems = [
   { name: "Embajadores", to: "/inscriptions" },
   { name: "Blog", to: "/blog" },
   { name: "Contacto", to: "/contact" },
-  // { name: "Términos y Condiciones", to: "/terms-and-conditions" },
-  // { name: "Política de Privacidad", to: "/privacy-policy" },
 ];

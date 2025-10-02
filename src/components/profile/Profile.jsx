@@ -64,7 +64,7 @@ export default function Profile() {
                   {/* Botón acción */}
                   <div>
                     <Link
-                      to="/productos"
+                      to="/products"
                       className="w-full sm:w-auto inline-block rounded-lg bg-[#0589bd] px-4 py-2 text-sm font-semibold text-white shadow hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
                     >
                       Canjear PetCoins

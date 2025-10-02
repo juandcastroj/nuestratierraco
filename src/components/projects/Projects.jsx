@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-[#9effca]">
+    <div className="min-h-screen bg-[#affff4]">
       <div className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl gap-20 px-6 sm:px-12 lg:px-16">
           {/* Encabezado */}
