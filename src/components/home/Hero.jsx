@@ -3,7 +3,7 @@ import tortleImg from "../../assets/images/home/hero-bg.png";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-[#9effca] overflow-hidden">
+    <div className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-gradient-to-b from-[#affff4] to-[#60cee5] overflow-hidden">
       
       {/* Texto */}
       <div className="relative z-20 mx-auto max-w-2xl py-12 sm:py-32 text-center">
@@ -25,7 +25,7 @@ export default function Hero() {
           </Link>
           <Link
             to="/inscriptions"
-            className="rounded-2xl border-2 border-[#023246] bg-[#9effca] px-4 py-3 text-base font-semibold text-[#023246] hover:text-[#096288] shadow-sm"
+            className="rounded-2xl border-2 border-[#023246] bg-transparent px-4 py-3 text-base font-semibold text-[#023246] hover:text-[#096288] shadow-sm"
           >
             Haz parte del cambio
           </Link>
