@@ -16,7 +16,6 @@ export default function Team() {
     setIsOpen(false);
     setSelectedMember(null);
   };
-
   
   return (
     <div className="bg-gradient-to-b  from-[#9effca] to-[#60cee5] py-24 sm:py-32">
@@ -30,7 +29,7 @@ export default function Team() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+          className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-6xl lg:grid-cols-3 lg:gap-16"
         >
           {  
             people.map((member, index) => (
@@ -41,15 +40,6 @@ export default function Team() {
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.name}</h3>
               {/* <p className="text-sm/6 text-blueText">{member.role}</p> */}
               <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
-
-                {/* <li>
-                  <a href={member.xUrl} className="text-blueText">
-                    <span className="sr-only">X</span>
-                    <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" className="size-5">
-                      <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-                    </svg>
-                  </a>
-                </li> */}
 
                 <li>
                   <a href={member.linkedinUrl} className="text-blueText">

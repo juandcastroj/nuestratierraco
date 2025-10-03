@@ -129,7 +129,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
               <Link
                 to="/auth"
                 onClick={handleMobileMenu}
-                className="text-center sm:text-left -mx-3 block rounded-xl px-4 py-1.5 text-base font-semibold text-blueText hover:text-blue-800 border-blueText border-2"
+                className="text-center sm:text-left -mx-3 block rounded-xl px-3 py-1 text-sm font-semibold text-blueText border-blueText border-[1px]"
               >
                 Mi Cuenta
               </Link>

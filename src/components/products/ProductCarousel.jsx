@@ -10,6 +10,12 @@ export default function ProductCarousel() {
   return (
     <div className="w-full pt-28 sm:pt-24 pb-16 sm:pb-24 lg:mx-auto lg:max-w-6xl lg:px-8">
 
+        <div className="text-center mx-auto max-w-4xl xl:col-span-2 mb-12 animate-fade-down animate-duration-[1500ms] animate-delay-[400ms]">
+          <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
+            Nuestra Tienda 🛍️ 
+          </h2>
+        </div>
+
         <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
           <h2 className="text-2xl font-bold text-blueText"> Productos destacados</h2>
           <Link to="https://co.mitienda.la/nuestratierra" className="block text-lg font-semibold text-blueText hover:text-[#458ea8]">
@@ -55,8 +61,13 @@ export default function ProductCarousel() {
                           {product.name}
                       </h3>
                       <p className="mt-1 text-teal-600 font-bold">{product.price}</p>
+                      <button className="mt-2 px-4 py-2 bg-blueText rounded-md 
+                                 font-medium text-white hover:bg-blue-950 transition">
+                        Comprar
+                      </button>
                     </div>
                 </div>
+
               </div>
             </a>
           </SwiperSlide>
