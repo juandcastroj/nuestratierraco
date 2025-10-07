@@ -16,7 +16,7 @@ export default function ProductCarousel() {
           </h2>
         </div>
 
-        <div className="flex items-center justify-between px-4 sm:px-6 lg:px-0">
+        <div className="hidden sm:flex items-center justify-between px-4 sm:px-6 lg:px-0">
           <h2 className="text-2xl font-bold text-blueText"> Productos destacados</h2>
           <Link to="https://co.mitienda.la/nuestratierra" className="block text-lg font-semibold text-blueText hover:text-[#458ea8]">
             Ver todos
@@ -61,7 +61,7 @@ export default function ProductCarousel() {
                           {product.name}
                       </h3>
                       <p className="mt-1 text-teal-600 font-bold">{product.price}</p>
-                      <button className="mt-2 px-4 py-2 bg-blueText rounded-md 
+                      <button className="mt-2 px-4 py-2 bg-blueText rounded-xl 
                                  font-medium text-white hover:bg-blue-950 transition">
                         Comprar
                       </button>

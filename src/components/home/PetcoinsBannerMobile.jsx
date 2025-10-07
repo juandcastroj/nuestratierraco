@@ -8,7 +8,7 @@ export default function PetcoinsBannerMobile() {
         <span className="text-3xl">🪙</span>
         <div>
           <p className="text-base font-semibold text-[#9fffcb]">Petcoins</p>
-          <p className="text-xs text-gray-300">
+          <p className="text-xs text-white">
             ¡Canjealos por nuestros productos!
           </p>
         </div>
