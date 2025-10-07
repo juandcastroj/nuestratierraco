@@ -4,7 +4,7 @@ export default function Stats() {
   return (
     <>
       <div className="bg-gradient-to-b from-[#affff4] to-[#60cee5] py-20 sm:py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-7xl">
 
             <div className="text-center text-[#004e64] sm:max-w-4xl mx-auto animate-fade-right animate-duration-[2500ms] animate-delay-[500ms]">

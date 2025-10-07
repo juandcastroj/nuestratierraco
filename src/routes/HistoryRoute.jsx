@@ -1,4 +1,4 @@
-import History from "../components/home/History";
+import History from "../components/history/History";
 
 export default function HistoryRoute() {
     return (
