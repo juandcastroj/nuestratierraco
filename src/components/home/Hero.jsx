@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Texto */}
       <div className="relative z-20 mx-auto max-w-2xl py-12 sm:py-32 text-center">
         <h1 className="text-5xl sm:text-7xl font-extrabold text-[#033649] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
-          Corporación NuestraTierra
+          Corporación Nuestra Tierra
         </h1>
 
         <p className="mt-8 text-lg sm:text-xl font-medium text-[#023246] animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">

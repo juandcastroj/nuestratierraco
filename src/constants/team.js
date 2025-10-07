@@ -31,9 +31,9 @@ export const people = [
     linkedinUrl: '#',
   },
     {
-    name: 'Gabriela',
+    name: 'David',
     role: 'Team member',
-    imageUrl: userImg,
+    imageUrl: DavidImg,
     bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
     xUrl: '#',
     linkedinUrl: '#',
@@ -46,10 +46,19 @@ export const people = [
     xUrl: '#',
     linkedinUrl: '#',
   },
-    {
-    name: 'David',
+
+      {
+    name: 'Carolina',
     role: 'Team member',
-    imageUrl: DavidImg,
+    imageUrl: userImg,
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
+    xUrl: '#',
+    linkedinUrl: '#',
+  },
+      {
+    name: 'Angela',
+    role: 'Team member',
+    imageUrl: userImg,
     bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  ',
     xUrl: '#',
     linkedinUrl: '#',

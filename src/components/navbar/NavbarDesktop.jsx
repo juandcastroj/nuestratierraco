@@ -85,7 +85,7 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
                 <ChevronDownIcon className="w-4 h-4" strokeWidth="2.5"/>
               </button>
               {openDropdown === item.name && (
-                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white/50 border-2 border-blueText ring-1 ring-gray-200 z-50">
+                <div className="absolute text-center mt-2 w-44 rounded-md shadow-lg bg-white/50 border-2 border-blueText ring-1 ring-gray-200 z-50">
                   {item.subItems.map((sub) => (
                     <Link
                       key={sub.name}

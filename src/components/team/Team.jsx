@@ -35,11 +35,11 @@ export default function Team() {
             people.map((member, index) => (
             <li key={index}
                 onClick={() => openModal(member)}
-                className="rounded-2xl shadow-lg bg-white/40 hover:bg-white/50 hover:backdrop-blur-md p-6 animate-fade-down animate-delay-[1200ms]">
+                className="rounded-2xl shadow-lg bg-white/40 hover:bg-white/50 hover:backdrop-blur-md p-6 animate-fade-down animate-delay-[1200ms] cursor-pointer">
               <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-3xl md:size-56" />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.name}</h3>
               {/* <p className="text-sm/6 text-blueText">{member.role}</p> */}
-              <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
+              {/* <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
 
                 <li>
                   <a href={member.linkedinUrl} className="text-blueText">
@@ -64,7 +64,7 @@ export default function Team() {
                     </button>
                 </li>
 
-              </ul>
+              </ul> */}
             </li>
           ))}
         </ul>

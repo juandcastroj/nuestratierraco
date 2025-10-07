@@ -24,8 +24,8 @@ export const navBarItems = [
     name: "Comunidad",
     subItems: [
       { name: "Embajadores", to: "/inscriptions" },
-      { name: "Blog", to: "/blog" },
       { name: "Contacto", to: "/contact" },
+      { name: "Blog", to: "/blog" },
     ],
   },
 ];

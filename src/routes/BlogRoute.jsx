@@ -1,11 +1,11 @@
-import BlogBlock from "../components/blog/BlogBlock";
-import BlogGrid from "../components/blog/BlogGrid";
+import BlogInProgress from "../components/blog/BlogInProgress";
 
 export default function BlogRoute() { 
     return (
         <div className="bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-            <BlogGrid />
-            <BlogBlock />
+            <BlogInProgress />
+            {/* <BlogGrid />
+            <BlogBlock /> */}
         </div>
     );
 }
