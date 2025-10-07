@@ -36,7 +36,7 @@ export default function Team() {
             <li key={index}
                 onClick={() => openModal(member)}
                 className="rounded-2xl shadow-lg bg-white/40 hover:bg-white/50 hover:backdrop-blur-md p-6 animate-fade-down animate-delay-[1200ms]">
-              <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-full md:size-56" />
+              <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-3xl md:size-56" />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.name}</h3>
               {/* <p className="text-sm/6 text-blueText">{member.role}</p> */}
               <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
@@ -60,7 +60,7 @@ export default function Team() {
                       className="px-6 py-2 bg-blueButton rounded-md 
                                  font-medium text-white hover:bg-blue-900 transition"
                     >
-                      Ver más
+                      Mas info
                     </button>
                 </li>
 
@@ -82,8 +82,8 @@ export default function Team() {
               ✖
             </button>
             <h2 className="text-2xl font-bold">{selectedMember.name}</h2>
-            <p className="text-gray-600">{selectedMember.role}</p>
-            <img alt="" src={selectedMember.imageUrl} className="mx-auto mt-4 size-48 rounded-full md:size-56" />
+            {/* <p className="text-gray-600">{selectedMember.role}</p> */}
+            <img alt="" src={selectedMember.imageUrl} className="mx-auto mt-4 size-48 rounded-3xl md:size-56" />
             <p className="text-gray-600 text-sm mt-4">{selectedMember.bio}</p>
           </div>
         </div>
