@@ -18,6 +18,7 @@ import { PrivateRoute } from './routes/private-routes/PrivateRoute';
 import HistoryRoute from './routes/HistoryRoute';
 import NuestraTierraEducaRoute from './routes/NuestraTierraEducaRoute';
 import TerraInnovaRoute from './routes/TerraInnovaRoute';
+import MujeresNuestraTierraRoute from './routes/MujeresNuestraTierraRoute';
 
 export default function App() {
 
@@ -33,6 +34,7 @@ export default function App() {
             <Route path='/strategic-lines' element={<StrategicLinesRoute/>}></Route>
             <Route path='/nuestratierra-educa' element={<NuestraTierraEducaRoute/>}></Route>
             <Route path='/terrainnova' element={<TerraInnovaRoute/>}></Route>
+            <Route path='/mujeres-nuestratierra' element={<MujeresNuestraTierraRoute/>}></Route>
 
 
             <Route path='/projects' element={<ProjectsRoute/>}></Route>

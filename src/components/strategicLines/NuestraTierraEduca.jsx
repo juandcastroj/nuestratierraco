@@ -22,7 +22,7 @@ export default function NuestraTierraEduca() {
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-[#004e64] sm:text-5xl">
             Nuestra Tierra Educa
           </h1>
-          <p className="mt-6 text-xl/8 text-balance text-[#004e64]">
+          <p className="mt-6 text-base text-balance text-[#004e64]">
             La educación popular y ambiental ocupa un lugar central en nuestra
             misión. Creemos en el poder transformador de la educación para
             generar conciencia y acción en la protección de nuestro entorno
@@ -68,28 +68,28 @@ export default function NuestraTierraEduca() {
 
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
             <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
                   src={img1}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
                 <img
                   alt=""
                   src={img2}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
                   src={img3}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
                 <img
                   alt=""
                   src={img4}
@@ -105,14 +105,14 @@ export default function NuestraTierraEduca() {
         <section className="mt-36 flex flex-col-reverse sm:grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
             <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
-              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-right">
                 <img
                   alt=""
                   src={img5}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-right">
                 <img
                   alt=""
                   src={img6}
@@ -120,7 +120,7 @@ export default function NuestraTierraEduca() {
                 />
               </div>
 
-              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-right">
                 <img
                   alt=""
                   src={img7}
@@ -128,7 +128,7 @@ export default function NuestraTierraEduca() {
                 />
               </div>
 
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-right">
                 <img
                   alt=""
                   src={img8}
@@ -192,28 +192,28 @@ export default function NuestraTierraEduca() {
           </div>
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
             <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
                   src={img9}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
                 <img
                   alt=""
                   src={img10}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
                   src={img11}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
                 <img
                   alt=""
                   src={img12}
