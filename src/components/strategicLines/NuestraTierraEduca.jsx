@@ -1,4 +1,18 @@
-//import img1 from "../../assets/images/strategic-lines/nuestra-tierra-educa/1.jpg"
+import img1 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa.jpg";
+import img2 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa 5.jpg";
+import img3 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa 1.jpg";
+import img4 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa 4.jpg";
+
+import img5 from "../../assets/images/strategic-lines/nuestratierra-educa/Muros Verdes.png";
+import img6 from "../../assets/images/strategic-lines/nuestratierra-educa/Muros Verdes 2.png";
+import img7 from "../../assets/images/strategic-lines/nuestratierra-educa/Muros Verdes 3.png";
+import img8 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa 2.jpg";
+
+import img9 from "../../assets/images/strategic-lines/nuestratierra-educa/Talleres Género.jpg";
+import img10 from "../../assets/images/strategic-lines/nuestratierra-educa/Talleres Género 2.jpg";
+import img11 from "../../assets/images/strategic-lines/nuestratierra-educa/Talleres Género 3.jpg";
+import img12 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa 2.jpg";
+
 
 export default function NuestraTierraEduca() {
   return (
@@ -15,6 +29,7 @@ export default function NuestraTierraEduca() {
             natural y la promoción de prácticas sostenibles.
           </p>
         </div>
+
 
         {/* DEL BARRIO A LA U  */}
         <section className="mt-24 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
@@ -56,28 +71,28 @@ export default function NuestraTierraEduca() {
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                  src={img1}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                  src={img2}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                  src={img3}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                  src={img4}
                   className="block size-full object-cover"
                 />
               </div>
@@ -85,21 +100,22 @@ export default function NuestraTierraEduca() {
           </div>
         </section>
 
+
         {/* TALLERES AMBIENTALES */}
-        <section className="mt-36 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+        <section className="mt-36 flex flex-col-reverse sm:grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
             <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
               <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                  src={img5}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                  src={img6}
                   className="block size-full object-cover"
                 />
               </div>
@@ -107,7 +123,7 @@ export default function NuestraTierraEduca() {
               <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                  src={img7}
                   className="block size-full object-cover"
                 />
               </div>
@@ -115,7 +131,7 @@ export default function NuestraTierraEduca() {
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                  src={img8}
                   className="block size-full object-cover"
                 />
               </div>
@@ -148,11 +164,12 @@ export default function NuestraTierraEduca() {
           </div>
         </section>
 
+
         {/* TALLERES CON ENFOQUE DE GENERO */}
         <section className="mt-36 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
             <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#004e64]">
-              Del Barrio a la U
+               Talleres con Enfoque de Género
             </h2>
             <p className="mt-6 text-base/7 text-[#004e64]">
               Impulsamos espacios formativos que promueven la{" "}
@@ -178,28 +195,28 @@ export default function NuestraTierraEduca() {
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                  src={img9}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                  src={img10}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
+                  src={img11}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
+                  src={img12}
                   className="block size-full object-cover"
                 />
               </div>

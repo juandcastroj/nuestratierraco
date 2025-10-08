@@ -1,5 +1,6 @@
+import nuestraTierraEducaImage from '../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa 1.jpg';
+
 import strategicImg from '../assets/images/strategic-lines/image1.png';
-import nuestraTierraEducaImage from '../assets/images/strategic-lines/nuestratierra-educa/foto nuestratierra educa.jpg';
 import strategicImg3 from '../assets/images/projects/image1.png';
 
 export const strategicLines = [

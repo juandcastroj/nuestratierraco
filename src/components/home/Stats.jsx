@@ -10,12 +10,13 @@ export default function Stats() {
             <div className="text-center text-[#004e64] sm:max-w-4xl mx-auto animate-fade-right animate-duration-[2500ms] animate-delay-[500ms]">
               <h2 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
                 La gestión de residuos plásticos como una oportunidad</h2>
-              <p className="mt-4 text-lg/8">
+              <p className="mt-4">
                   Recuperamos el plástico a través de donaciones comunitarias.
-                  Trabajamos con PP, HDPE (envases de aseo, cuidado personal,
-                  tapas, entre otros) y PLAde impresión 3D.</p>  <br />
+                  Trabajamos con PP (Polipropileno) [♻️5], HDPE (Polietileno de Alta Densidad)  [♻️2]  y PLA (Ácido Poliláctico).</p>  <br />
+                  El <strong>HDPE y el PP</strong>  los encuentras, por ejemplo, en tapas de botellas, envases de shampoo, jabón o aceite de motor.
+                  El <strong>PLA</strong> , por otro lado, es común en la industria de la impresión 3D. Aunque suene muy técnico, también genera residuos, ¡y esos son los que aprovechamos para reciclar!
               <p className="mt-2 text-2xl font-bold">
-                Recuperamos:</p>
+                Nuestras cifras:</p>
             </div>
 
             <dl className="mt-10 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4 animate-fade-left animate-duration-[2500ms] animate-delay-[500ms]">

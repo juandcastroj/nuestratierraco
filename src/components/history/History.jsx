@@ -1,9 +1,6 @@
 import mujeresEnAccion from "../../assets/images/strategic-lines/image1.png";
 import historyImg2 from "../../assets/images/history/Historia 2.jpg";
 import historyImg3 from "../../assets/images/home/Historia 9.jpg";
-
-
-// import testimonialImg from "../../assets/images/logo/logo.png";
 import { historyCarousel } from "../../constants/historyImages";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,9 +8,10 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import VideoSection from "./VideoSection";
 
+
 export default function History() {
   return (
-    <div className="px-6 py-32 lg:px-8 bg-[#7be3f8]">
+    <div className="px-6 py-32 lg:px-8 bg-[#99eeff]">
       <div className="mx-auto text-justify max-w-3xl lg:max-w-5xl text-base/7 text-blueText">
         <div className="mx-auto max-w-2xl lg:max-w-7xl text-blueText">
           <div className="max-w-4xl">

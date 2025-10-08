@@ -6,15 +6,6 @@ export default function MainInfo2() {
         <>
             <div className="px-6 py-8 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#affff4]">   
                 <div className="mx-auto max-w-3xl text-base/7 text-gray-700">     
-                    <div className="">
-                        {/* <p className="text-blueText">
-                            Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
-                            sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
-                            Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae
-                            sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.
-                        </p> */}
-                    </div>
-
                     <figure className="mt-16 flex flex-col">
                         <img
                             alt=""
