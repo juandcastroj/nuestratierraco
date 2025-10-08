@@ -16,6 +16,7 @@ import ProfileRoute from './routes/ProfileRoute';
 import VerifyEmailRoute from './routes/VerifyEmailRoute';
 import { PrivateRoute } from './routes/private-routes/PrivateRoute';
 import HistoryRoute from './routes/HistoryRoute';
+import NuestraTierraEducaRoute from './routes/NuestraTierraEducaRoute';
 
 export default function App() {
 
@@ -25,12 +26,14 @@ export default function App() {
           <Routes>
             <Route path='/' element={<HomeRoute/>}></Route>
 
-            <Route path='/projects' element={<ProjectsRoute/>}></Route>
-
-            <Route path='/strategic-lines' element={<StrategicLinesRoute/>}></Route>
-
             <Route path='/history' element={<HistoryRoute/>}></Route>
             <Route path='/team' element={<TeamRoute/>}></Route>
+
+            <Route path='/strategic-lines' element={<StrategicLinesRoute/>}></Route>
+            <Route path='/nuestratierra-educa' element={<NuestraTierraEducaRoute/>}></Route>
+
+            <Route path='/projects' element={<ProjectsRoute/>}></Route>
+
             <Route path='/products' element={<ProductsRoute/>}></Route>
             <Route path='/petcoins' element={<PetCoinsInfoRoute/>}></Route>
 
