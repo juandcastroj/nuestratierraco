@@ -1,6 +1,6 @@
 export const stats = [
-  { id: 1, name: 'de residuos plásticos con la fabricación de un cuaderno.', value: '250 gr' },
-  { id: 2, name: 'de residuos plásticos con la fabricación de una libreta.', value: '125 gr' },
-  { id: 3, name: 'de residuos plásticos con la fabricación de una legajadora.', value: '270 gr' },
-  { id: 4, name: 'de residuos plásticos con la fabricación de una repisa.', value: '850 gr' },
+  { id: 1, name: 'cantidad de productos distribuidos', value: '316' },
+  { id: 2, name: 'cantidad de material reciclado', value: '90.5 kg' },
+  { id: 3, name: 'cantidad de co2 reducido', value: '152 kg' },
+  { id: 4, name: 'recuperados con la fabricación de cada repisa', value: '850 gr' },
 ]
