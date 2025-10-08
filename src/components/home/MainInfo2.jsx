@@ -4,7 +4,7 @@ import image2 from "../../assets/images/home/Historia 9.jpg";
 export default function MainInfo2() {
     return(
         <>
-            <div className="px-6 py-8 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#affff4]">   
+            <div className="px-6 pt-2 pb-12 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#affff4]">   
                 <div className="mx-auto max-w-3xl text-base/7 text-gray-700">     
                     <figure className="mt-16 flex flex-col">
                         <img

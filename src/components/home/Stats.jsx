@@ -15,11 +15,11 @@ export default function Stats() {
                   Trabajamos con PP (Polipropileno) [♻️5], HDPE (Polietileno de Alta Densidad)  [♻️2]  y PLA (Ácido Poliláctico).</p>  <br />
                   El <strong>HDPE y el PP</strong>  los encuentras, por ejemplo, en tapas de botellas, envases de shampoo, jabón o aceite de motor.
                   El <strong>PLA</strong> , por otro lado, es común en la industria de la impresión 3D. Aunque suene muy técnico, también genera residuos, ¡y esos son los que aprovechamos para reciclar!
-              <p className="mt-2 text-2xl font-bold">
+              <p className="mt-8 text-2xl font-bold">
                 Nuestras cifras:</p>
             </div>
 
-            <dl className="mt-10 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4 animate-fade-left animate-duration-[2500ms] animate-delay-[500ms]">
+            <dl className="mt-6 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center lg:grid-cols-3 animate-fade-left animate-duration-[2500ms] animate-delay-[500ms]">
               {stats.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-white/50 p-8">
                   <dt className="text-base font-bold text-[#004e64] leading-normal mt-3">{stat.name}</dt>

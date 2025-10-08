@@ -82,7 +82,7 @@ export default function Terrainnova() {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-6xl lg:px-8">
-        <section className="mt-24 sm:mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+        <section className="mt-24 sm:mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 transition animate-fade-right">
           <div className="lg:pr-8 mt-4 m:mt-20">
             <h2 className="text-3xl font-bold text-[#004e64]">Terrainnova</h2>
             <p className="mt-6 text-base/7 text-[#004e64]">
@@ -95,7 +95,7 @@ export default function Terrainnova() {
               <strong>cuidado del medio ambiente y la sostenibilidad</strong> .
             </p>
 
-            <div className="mt-12 overflow-hidden rounded-xl shadow-xl">
+            <div className="mt-12 overflow-hidden rounded-xl shadow-xl transition animate-fade-up">
               <img
                 alt=""
                 src={img5}
@@ -106,28 +106,28 @@ export default function Terrainnova() {
 
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
             <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
                   src={img1}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
                 <img
                   alt=""
                   src={img2}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
                   src={img3}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
+              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
                 <img
                   alt=""
                   src={img4}
@@ -156,7 +156,7 @@ export default function Terrainnova() {
                   <div className="absolute mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#004e64] text-white font-bold">
                     {index + 1}
                   </div>
-                  <p className="ml-10 text-lg font-semibold text-gray-900">
+                  <p className="ml-10 text-lg font-semibold text-blueText">
                     {e.name}
                   </p>
                 </dt>
@@ -221,7 +221,7 @@ export default function Terrainnova() {
             desde el territorio.{" "}
           </p>
     
-            <div className="mt-12 overflow-hidden rounded-full mx-auto text-center">
+            <div className="mt-12 overflow-hidden rounded-full mx-auto flex justify-center">
               <img
                 alt="precious plastic logo"
                 src={img6}

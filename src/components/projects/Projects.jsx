@@ -59,7 +59,7 @@ export default function Projects() {
                   <div className="mt-6 flex justify-center">
                     <Link
                       to={url}
-                      className="px-6 py-2 bg-blueButton hover:bg-blue-900 rounded-md 
+                      className="px-6 py-2 bg-blueButton hover:bg-[#25a18e] rounded-md 
                                  font-medium text-white transition"
                     >
                       Mas info
