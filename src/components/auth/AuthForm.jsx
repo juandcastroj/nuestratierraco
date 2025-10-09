@@ -68,7 +68,7 @@ export default function AuthForm() {
   return (
     <div className="flex min-h-[60vh] bg-gradient-to-b from-[#60cee5] to-[#9effca]">
 
-      <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+      <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24 font-OpunMai">
              <div className="flex min-h-full flex-1 flex-col justify-center px-4 sm:px-8 py-12">
               <div
                 className={`max-w-md mx-auto p-8 sm:p-12 rounded-2xl mt-10 shadow-md ${

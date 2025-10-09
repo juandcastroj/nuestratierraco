@@ -10,7 +10,7 @@ export default function MainInfo() {
         <div className="mt-10">
 
           <figure className="mt-10 border-l-2 border-blueText pl-9 transition animate-fade-right animate-duration-[2500ms] animate-delay-[1000ms]">
-            <blockquote className="font-semibold text-gray-900">
+            <blockquote className="font-semibold text-blueText font-OpunMai">
               <p>
                 “¡Bienvenidos a un mundo donde la creatividad, la conciencia y el cambio se entrelazan para dar forma al mañana! En Nuestra Tierra, la innovación es nuestra brújula y el desarrollo sostenible es nuestro horizonte.”
               </p>
@@ -34,7 +34,7 @@ export default function MainInfo() {
                   src={image1}
                   className="aspect-video rounded-xl bg-gray-50 object-cover"
               />
-              <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-blueText">
+              <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-blueText font-OpunMai">
                   <InformationCircleIcon aria-hidden="true" className="mt-0.5 size-5 flex-none text-blueText"/>
                   Nuestros inicios en la recolección de materiales.
               </figcaption>

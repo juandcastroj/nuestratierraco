@@ -8,7 +8,7 @@ export default function Footer() {
       <>
         <WhatsAppButton />
 
-        <footer className="bg-blueText border-t-[1px] border-gray-600">
+        <footer className="bg-blueText border-t-[1px] border-gray-600 font-OpunMai">
           <div className="mx-auto max-w-7xl overflow-hidden px-6 py-12 lg:px-8">
             <nav aria-label="Footer" className="-mb-6 grid grid-cols-2 sm:flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
               { footerItems.map((item) => (

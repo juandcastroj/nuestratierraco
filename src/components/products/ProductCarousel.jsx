@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function ProductCarousel() {
   return (
-    <div className="w-full pt-28 sm:pt-24 pb-16 sm:pb-24 lg:mx-auto lg:max-w-6xl lg:px-8">
+    <div className="w-full pt-28 sm:pt-24 pb-16 sm:pb-24 lg:mx-auto lg:max-w-6xl lg:px-8 font-OpunMai">
 
         <div className="text-center mx-auto max-w-4xl xl:col-span-2 mb-12 animate-fade-down animate-duration-[1500ms] animate-delay-[400ms]">
           <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">

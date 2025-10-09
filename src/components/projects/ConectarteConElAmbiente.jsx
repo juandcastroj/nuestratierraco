@@ -8,7 +8,7 @@ import { ConectarteImages } from "../../constants/projects/conectarte";
 export default function ConectarteConElAmbiente() {
   return (
     <div className="px-6 py-32 lg:px-8 bg-[#c0f4ff]">
-      <div className="mx-auto text-justify max-w-3xl lg:max-w-5xl text-base/7 text-blueText">
+      <div className="mx-auto text-justify max-w-3xl lg:max-w-5xl text-base/7 text-blueText font-OpunMai">
        
         <div className="max-w-3xl mx-auto">
           <h1 className="mt-4 text-3xl tracking-tight text-pretty text-gray-900 font-bold">

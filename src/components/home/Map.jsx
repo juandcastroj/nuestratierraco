@@ -10,9 +10,9 @@ export default function Map() {
                      allowFullScreen="" loading="eager" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div className="relative px-6 lg:static lg:px-8 py-12 sm:py-8 lg:py-0">
+            <div className="relative px-6 lg:static lg:px-8 py-12 sm:py-8 lg:py-0 font-OpunMai">
                 <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg animate-fade-down sm:animate-fade-left">
-                    <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
+                    <h2 className="text-4xl font-TTmilks font-medium tracking-tight text-[#033649] sm:text-5xl">
                     Visítanos
                     </h2>
 

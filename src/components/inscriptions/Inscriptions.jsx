@@ -6,11 +6,11 @@ export default function Inscriptions() {
   return (
   <div className="overflow-hidden bg-[#b6f3ff] py-12">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8">
-        <section className="mt-24 sm:mt-20 grid grid-cols-1 transition animate-fade-right">
+        <section className="mt-24 sm:mt-20 grid grid-cols-1 transition animate-fade-right font-OpunMai">
           <div className="lg:pr-8 mt-4 m:mt-20">
              {/* <h1 className="text-3xl font-bold text-[#004e64]">Embajadores</h1> */}
             <h2 className="text-3xl mt-4 font-semibold text-[#004e64]">“Un Embajador NuestraTierra no espera el cambio: lo crea”</h2>
-            <p className="mt-12 text-base text-[#004e64]">
+            <p className="mt-6 text-base text-[#004e64]">
                Ser Embajador NuestraTierra es ser parte activa del cambio. Es creer que cada acción, por pequeña que parezca, puede transformar nuestro entorno. Nuestros Embajadores son personas, empresas o comunidades que inspiran con el ejemplo y promueven un futuro más consciente y sostenible.
             </p>
             <p className="mt-4 text-base text-[#004e64]">

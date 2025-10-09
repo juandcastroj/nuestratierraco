@@ -11,12 +11,12 @@ export default function Hero() {
           Corporación Nuestra Tierra
         </h1>
 
-        <p className="mt-8 text-lg sm:text-xl font-medium text-[#023246] animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
+        <p className="mt-8 text-lg sm:text-xl font-OpunMai font-medium text-[#023246] animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
           Juntos somos el cambio <br />
           Juntos somos nuestra tierra.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 font-OpunMai animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
           <Link
             to="/products"
             className="rounded-2xl bg-[#023246] hover:bg-[#215163] px-4 py-3 text-base font-semibold text-[#9fffcb] shadow-sm"

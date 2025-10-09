@@ -9,7 +9,7 @@ export default function PetcoinsBannerDesktop() {
         px-6 sm:px-5 py-4 sm:py-2 sm:before:flex-1 border-t border-gray-600 
         transition-all duration-500 ease-in-out max-h-40 animate-flip-up">
 
-        <div className="flex w-full flex-wrap justify-center items-center gap-x-4 gap-y-2">
+        <div className="flex w-full flex-wrap justify-center items-center gap-x-4 gap-y-2 font-OpunMai">
           <p className="text-base text-[#9fffcb] font-semibold text-center">
             <strong>PetCoins 🪙</strong>
             <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-0.5 fill-current">

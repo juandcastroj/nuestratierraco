@@ -23,7 +23,7 @@ export default function Profile() {
         <Breadcrumbs handleLogout={handleLogout}/>
 
         <div className="flex min-h-[60vh]">
-          <div className="flex flex-1 flex-col lg:flex-none px-4 py-12 sm:py-16 sm:px-6 lg:px-32">
+          <div className="flex flex-1 flex-col lg:flex-none px-4 py-12 sm:py-16 sm:px-6 lg:px-32 font-OpunMai">
             <div className="flex min-h-full justify-center">
               <div className="relative flex flex-col justify-center max-w-md w-full mx-auto my-20 sm:my-8 bg-white shadow-lg rounded-2xl overflow-hidden">
 
