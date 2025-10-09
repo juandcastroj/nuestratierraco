@@ -16,7 +16,7 @@ export default function History() {
         <div className="mx-auto max-w-2xl lg:max-w-7xl text-blueText">
           <div className="max-w-4xl">
             <p className="text-base/7 font-bold">Historia 🐢</p>
-            <h1 className="mt-2 text-4xl font-semibold font-TTmilks tracking-tight text-pretty sm:text-5xl">
+            <h1 className="mt-2 text-4xl font-semibold font-BubbleboddyNeue sm:text-5xl">
               ¿Quiénes somos?...
             </h1>
           </div>

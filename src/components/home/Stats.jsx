@@ -8,7 +8,7 @@ export default function Stats() {
           <div className="mx-auto max-w-2xl lg:max-w-7xl">
 
             <div className="text-center text-[#004e64] sm:max-w-4xl mx-auto animate-fade-right animate-duration-[2500ms] animate-delay-[500ms]">
-              <h2 className="text-balance font-TTmilks text-4xl font-semibold tracking-tight sm:text-5xl">
+              <h2 className="text-balance font-BubbleboddyNeue text-4xl font-semibold tracking-tight sm:text-5xl">
                 La gestión de residuos plásticos como una oportunidad</h2>
               <p className="mt-4 font-OpunMai">
                   Recuperamos el plástico a través de donaciones comunitarias.
@@ -24,7 +24,7 @@ export default function Stats() {
               {stats.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-white/50 p-8">
                   <dt className="text-base font-bold font-OpunMai text-[#004e64] leading-normal mt-3">{stat.name}</dt>
-                  <dd className="order-first text-4xl font-TTmilks font-semibold text-[#004e64] animation hover:animate-rotate-x">{stat.value}</dd>
+                  <dd className="order-first text-4xl font-OpunMai font-semibold text-[#004e64] animation hover:animate-rotate-x">{stat.value}</dd>
                 </div>
               ))}
             </dl>

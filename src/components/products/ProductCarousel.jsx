@@ -25,9 +25,9 @@ export default function ProductCarousel() {
         </div>
 
       <Swiper
-        modules={[Navigation, Autoplay]}
+        modules={[Autoplay]}
         spaceBetween={20}
-        navigation
+        navigation={false}
         loop={true}
         autoplay={{
           delay: 2500, // ⏳ 2.5 segundos
