@@ -6,7 +6,7 @@ import img5 from "../../assets/images/strategic-lines/terrainnova/terrainnova 5.
 import img6 from "../../assets/images/strategic-lines/terrainnova/terrainnova 6.jpg";
 
 
-import { CheckIcon } from "@heroicons/react/20/solid";
+import { CheckIcon, InformationCircleIcon } from "@heroicons/react/20/solid";
 
 const processes = [
   {
@@ -57,7 +57,7 @@ const processes = [
   {
     name: "Producto terminado",
     description:
-      " ¡Listo para stock, envío o entrega!",
+      " ¡Listo para stock, envío o entrega! ✅",
   },
   {
     name: "Producto en manos del cliente",
@@ -80,12 +80,12 @@ const machines = [
 
 export default function Terrainnova() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-6xl lg:px-8">
-        <section className="mt-24 sm:mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16 transition animate-fade-right">
+    <div className="overflow-hidden bg-white py-20">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8">
+        <section className="mt-24 sm:mt-20 grid grid-cols-1 transition animate-fade-right">
           <div className="lg:pr-8 mt-4 m:mt-20">
             <h2 className="text-3xl font-bold text-[#004e64]">Terrainnova</h2>
-            <p className="mt-6 text-base/7 text-[#004e64]">
+            <p className="mt-12 text-base text-[#004e64]">
               TerraInnova es nuestro espacio de{" "}
               <strong>innovación y desarrollo</strong> , en esta área exploramos
               nuevas tecnologías y prácticas para abordar desafíos ambientales
@@ -95,17 +95,16 @@ export default function Terrainnova() {
               <strong>cuidado del medio ambiente y la sostenibilidad</strong> .
             </p>
 
-            <div className="mt-12 overflow-hidden rounded-xl shadow-xl transition animate-fade-up">
-              <img
-                alt=""
-                src={img5}
-                className="block size-full object-cover"
-              />
-            </div>
+
+            <p className="hidden sm:block mt-6 text-base text-[#004e64]">
+
+            🛠️ <strong>Si tienes una idea especial</strong> , la evaluamos, la diseñamos en CAD y te enviamos la cotización.
+            No todas las ideas son viables depende de la complejidad, pero muchas pueden volverse realidad.
+            </p>
           </div>
 
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
-            <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
+            <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4">
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
@@ -113,7 +112,7 @@ export default function Terrainnova() {
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
+              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
                   src={img2}
@@ -127,7 +126,7 @@ export default function Terrainnova() {
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 transition animate-fade-left">
+              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
                 <img
                   alt=""
                   src={img4}
@@ -138,7 +137,7 @@ export default function Terrainnova() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-12 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-20 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold text-[#004e64] sm:text-4xl">
               Nuestro proceso
@@ -156,11 +155,11 @@ export default function Terrainnova() {
                   <div className="absolute mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-[#004e64] text-white font-bold">
                     {index + 1}
                   </div>
-                  <p className="ml-10 text-lg font-semibold text-blueText">
+                  <p className="ml-10 text-base font-semibold text-blueText">
                     {e.name}
                   </p>
                 </dt>
-                <dd className="mt-2 ml-10 text-base text-gray-600 text-justify">
+                <dd className="mt-2 ml-10 text-sm text-gray-600 text-justify">
                   {e.description}
                 </dd>
               </div>
@@ -198,6 +197,16 @@ export default function Terrainnova() {
               </div>
             ))}
           </dl>
+
+            <div className="mt-12 overflow-hidden text-center mx-auto flex-col">
+              <img
+                alt="3D printer"
+                src={img5}
+                className="block w-96 rounded-2xl mx-auto"
+              />
+                  <p className="text-center">
+                  Nuestra nueva máquina de corte lazer.</p> 
+            </div>
         </div>
 
         <div className="mt-16 max-w-4xl text-center mx-auto px-6 lg:px-8 text-[#004e64]">

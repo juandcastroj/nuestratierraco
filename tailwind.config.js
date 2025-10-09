@@ -11,6 +11,9 @@ export default {
   
   theme: {
     extend: {
+      fontFamily: {
+        TTmilks: ["TTmilks", "sans-serif"],
+      },
         colors: {
           blueText: '#033649',
           blueButton: '#004e64',

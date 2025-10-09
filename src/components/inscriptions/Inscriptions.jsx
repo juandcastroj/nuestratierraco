@@ -1,36 +1,39 @@
+import img from "../../assets/images/embajadores/FOTO EMBAJADOR JEAN FERNEL.jpeg/";
+
+
 export default function Inscriptions() {
 
   return (
-   <div className="min-h-screen bg-gradient-to-b from-[#9effca] to-[#60cee5]">
-    <div className="py-20 md:py-28">
-      <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 ">
-        <div className="text-center mx-auto max-w-4xl xl:col-span-2 mb-12 animate-fade-down animate-duration-[1500ms] animate-delay-[400ms]">
-          <h2 className="text-4xl font-semibold tracking-tight text-[#033649] sm:text-5xl">
-             Nuestros Embajadores 
-          </h2>
-            <p className="mt-6 text-base text-[#004e64] leading-6">
-              ¡Bienvenidos a un mundo donde la
-              creatividad, la conciencia y el cambio se
-              entrelazan para dar forma al mañana! En
-              Nuestra Tierra, la innovación es nuestra
-              brújula y el desarrollo sostenible es
-              nuestro horizonte. Desde las
-              profundidades de la investigación hasta
-              las cimas de la acción, navegamos por
-              mares de posibilidades, explorando
-              territorios desconocidos en busca de
-              soluciones que transformen nuestra
-              realidad.      
+  <div className="overflow-hidden bg-[#b6f3ff] py-12">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8">
+        <section className="mt-24 sm:mt-20 grid grid-cols-1 transition animate-fade-right">
+          <div className="lg:pr-8 mt-4 m:mt-20">
+             {/* <h1 className="text-3xl font-bold text-[#004e64]">Embajadores</h1> */}
+            <h2 className="text-3xl mt-4 font-semibold text-[#004e64]">“Un Embajador NuestraTierra no espera el cambio: lo crea”</h2>
+            <p className="mt-12 text-base text-[#004e64]">
+               Ser Embajador NuestraTierra es ser parte activa del cambio. Es creer que cada acción, por pequeña que parezca, puede transformar nuestro entorno. Nuestros Embajadores son personas, empresas o comunidades que inspiran con el ejemplo y promueven un futuro más consciente y sostenible.
             </p>
-        </div>
+            <p className="mt-4 text-base text-[#004e64]">
+              A través de su compromiso, los Embajadores impulsan NuestraTierraCO, conectando a más personas y llevando nuestro mensaje de economía circular, educación ambiental y popular, multiplicando así el impacto positivo en el planeta.            
+              </p>
+            <p className="mt-4 text-base text-[#004e64]">
+                Cada Embajador recibe reconocimiento por su labor con el Sello NuestraTierra, que acredita su aporte al cuidado del planeta y su compromiso con la educación ambiental y la reducción de residuos.
+                Porque ser un Embajador no es solo representar una marca: es llevar en las manos el propósito de cuidar a NUESTRATIERRA 
+              </p>
+          </div>
 
-        <div className="flex min-h-full max-w-full justify-center px-0 lg:px-auto">
-          <iframe className="h-[44rem] sm:h-[32rem] w-96 sm:w-[48rem] md:w-[54rem] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms] rounded-xl" src="https://docs.google.com/forms/d/1TyBfSYOrGGmpUDcNBEzbWTMikBCq1bE9wvz4eTNgmWA/viewform?edit_requested=true"></iframe>
+          <div className="mt-12 overflow-hidden text-center mx-auto flex-col">
+              <img
+                alt="Embajador Jean"
+                src={img}
+                className="block w-96 rounded-2xl mx-auto"
+              />
+                  <p className="text-center text-blueText">
+                  Nuestro embajador Jean Fernel.</p> 
+            </div>
+        </section>
         </div>
-
-      </div>
     </div>
-   </div>
 
   )
 }

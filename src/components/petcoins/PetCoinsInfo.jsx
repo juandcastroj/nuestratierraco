@@ -1,103 +1,72 @@
 export default function PetCoinsInfo() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8">
-
-        <div className="max-w-4xl">
-          <p className="text-base/7 font-semibold text-[#004e64]">About PetCoins</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-[#004e64] sm:text-5xl">
-            On a mission to empower reciclyng and sustainability
-          </h1>
-          <p className="mt-6 text-xl/8 text-balance text-[#004e64]">
-            Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget
-            aliquam. Quisque id at vitae feugiat egestas.
+    <div className="overflow-hidden bg-[#b6f3ff] py-24 sm:py-32">
+     <section className="w-full flex justify-center px-4 py-10">
+      <div className="max-w-5xl w-full text-blueText space-y-6">
+        {/* Título */}
+        <div>
+          <h2 className="text-2xl font-bold">
+            PET COINS 🪙 — <span className="font-normal">Nuestra moneda ecológica</span>
+          </h2>
+          <p className="mt-3">
+            PET COINS es una iniciativa de la Corporación{" "}
+            <a href="#" className="text-blueButton hover:underline">
+              NuestraTierra
+            </a>{" "}
+            que convierte el reciclaje en una acción con valor real.
+          </p>
+          <p className="mt-2">
+            Es una moneda ecológica creada para{" "}
+            <strong>reconocer y recompensar</strong> el compromiso ambiental de
+            las personas, empresas y comunidades que participan en la
+            recuperación de plásticos.
           </p>
         </div>
 
-        <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
+        {/* Cómo funciona */}
+        <div>
+          <h3 className="text-lg font-semibold text-blueText mb-2">¿Cómo funciona?</h3>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>Entrega tus residuos plásticos limpios y clasificados en nuestra sede</li>
+            <li>
+              Por cada kilo recibido, ganas <strong>5 PET COINS</strong>, nuestra moneda verde.
+            </li>
+            <li>Regístrate aquí y acumula tus PET COINS en tu cuenta</li>
+            <li>
+              Puedes intercambiarlos por productos sostenibles, talleres,
+              certificaciones o experiencias ambientales de{" "}
+              <a href="#" className="text-blueText hover:underline">
+                NuestraTierra
+              </a>.
+            </li>
+          </ol>
+        </div>
 
-          <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#004e64]">Our mission</h2>
-            <p className="mt-6 text-base/7 text-[#004e64]">
-              Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-              vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-              erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-              sed amet vitae sed turpis id.
-            </p>
-            <p className="mt-8 text-base/7 text-[#004e64]">
-              Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor
-              fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-              adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.
-            </p>
-          </div>
-
-          <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
-            <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-                <img
-                  alt=""
-                  src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
-                  className="block size-full object-cover"
-                />
-              </div>
-              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
-                <img
-                  alt=""
-                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
-                  className="block size-full object-cover"
-                />
-              </div>
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-                <img
-                  alt=""
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?&auto=format&fit=crop&crop=left&w=560&h=560&q=90"
-                  className="block size-full object-cover"
-                />
-              </div>
-              <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40">
-                <img
-                  alt=""
-                  src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?&auto=format&fit=crop&crop=center&w=560&h=560&q=90"
-                  className="block size-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="max-lg:mt-16 lg:col-span-1">
-            <p className="text-base/7 font-semibold text-gray-500">The numbers</p>
-            <hr className="mt-6 border-t border-gray-200" />
-            <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
-              <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-                <dt className="text-sm/6 text-[#004e64]">Raised</dt>
-                <dd className="order-first text-6xl font-semibold tracking-tight">
-                  $<span>150</span>M
-                </dd>
-              </div>
-              <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-                <dt className="text-sm/6 text-[#004e64]">Products</dt>
-                <dd className="order-first text-6xl font-semibold tracking-tight">
-                  <span>30</span>
-                </dd>
-              </div>
-              <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-                <dt className="text-sm/6 text-[#004e64]">Deals Closed</dt>
-                <dd className="order-first text-6xl font-semibold tracking-tight">
-                  <span>1.5</span>M
-                </dd>
-              </div>
-              <div className="flex flex-col gap-y-2">
-                <dt className="text-sm/6 text-[#004e64]">Leads Generated</dt>
-                <dd className="order-first text-6xl font-semibold tracking-tight">
-                  <span>200</span>M
-                </dd>
-              </div>
-            </dl>
-          </div>
-
-        </section>
-
+        {/* Materiales */}
+        <div>
+          <h3 className="text-lg font-semibold text-blueText mb-2">¿Qué materiales recibimos?</h3>
+          <p className="mb-3">
+            Trabajamos principalmente con los siguientes tipos de plástico:
+          </p>
+          <ul className="space-y-2 list-disc list-inside">
+            <li>
+              <strong>PLA (Ácido Poliláctico):</strong> utilizado en impresión 3D.
+            </li>
+            <li>
+              <strong>HDPE (Polietileno de alta densidad):</strong> envases de productos de aseo,
+              detergentes, champús, entre otros.
+            </li>
+            <li>
+              <strong>PP (Polipropileno):</strong> tapas de botellas, envases de alimentos,{" "}
+              <span className="italic">pajillas</span> y envases de yogurt.
+            </li>
+            <li>
+              <strong>PS (Poliestireno):</strong> vasos de tinto, cucharas y utensilios desechables.
+            </li>
+          </ul>
+        </div>
       </div>
+    </section>
     </div>
   )
 }

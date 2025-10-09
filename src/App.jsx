@@ -2,23 +2,33 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeRoute from './routes/HomeRoute';
+
 import ContactUsRoute from './routes/ContactUsRoute';
-import ProjectsRoute from './routes/ProjectsRoute';
 import ProductsRoute from './routes/ProductsRoute';
 import InscriptionsRoute from './routes/InscriptionsRoute';
 import BlogRoute from './routes/BlogRoute';
-import StrategicLinesRoute from './routes/StrategicLinesRoute';
 import AuthRoute from './routes/AuthRoute';
 import PetCoinsInfoRoute from './routes/PetCoinsInfoRoute';
 import EmailSentRoute from './routes/EmailSentRoute';
+
 import TeamRoute from './routes/TeamRoute';
 import ProfileRoute from './routes/ProfileRoute';
 import VerifyEmailRoute from './routes/VerifyEmailRoute';
 import { PrivateRoute } from './routes/private-routes/PrivateRoute';
 import HistoryRoute from './routes/HistoryRoute';
-import NuestraTierraEducaRoute from './routes/NuestraTierraEducaRoute';
-import TerraInnovaRoute from './routes/TerraInnovaRoute';
-import MujeresNuestraTierraRoute from './routes/MujeresNuestraTierraRoute';
+
+import StrategicLinesRoute from './routes/strategic-lines/StrategicLinesRoute';
+import NuestraTierraEducaRoute from './routes/strategic-lines/NuestraTierraEducaRoute';
+import TerraInnovaRoute from './routes/strategic-lines/TerraInnovaRoute';
+import MujeresNuestraTierraRoute from './routes/strategic-lines/MujeresNuestraTierraRoute';
+
+import ProjectsRoute from './routes/projects/ProjectsRoute';
+import FestivalNuestraTierraRoute from './routes/projects/FestivalNuestraTierraRoute';
+import EcoReporterosRoute from './routes/projects/EcoReporterosRoute';
+import ConectarteConElAmbienteRoute from './routes/projects/ConectarteConElAmbienteRoute';
+import MujeresEnConstruccionRoute from './routes/projects/MujeresEnConstruccionRoute';
+import MujeresAlCartelRoute from './routes/projects/MujeresAlCartelRoute';
+
 
 export default function App() {
 
@@ -36,8 +46,12 @@ export default function App() {
             <Route path='/terrainnova' element={<TerraInnovaRoute/>}></Route>
             <Route path='/mujeres-nuestratierra' element={<MujeresNuestraTierraRoute/>}></Route>
 
-
             <Route path='/projects' element={<ProjectsRoute/>}></Route>
+            <Route path='/festival-nuestratierra' element={<FestivalNuestraTierraRoute/>}></Route>
+            <Route path='/ecoreporteros' element={<EcoReporterosRoute/>}></Route>
+            <Route path='/conectarte-medioambiente' element={<ConectarteConElAmbienteRoute/>}></Route>
+            <Route path='/mujeres-en-construccion' element={<MujeresEnConstruccionRoute/>}></Route>
+            <Route path='/mujeres-al-cartel' element={<MujeresAlCartelRoute/>}></Route>
 
             <Route path='/products' element={<ProductsRoute/>}></Route>
             <Route path='/petcoins' element={<PetCoinsInfoRoute/>}></Route>

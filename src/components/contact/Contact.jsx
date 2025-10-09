@@ -4,7 +4,7 @@ import { Form } from './Form'
 export default function Contact() {
   
   return (
-    <div className="relative isolate min-h-80 bg-[#9effca]">
+    <div className="relative isolate min-h-80 bg-[#b6ffd7]">
       <div className="mx-auto grid max-w-4xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
 
         <div className="relative px-6 lg:static lg:px-8 py-24 sm:py-16 lg:py-28">
@@ -24,8 +24,8 @@ export default function Contact() {
                   <EnvelopeIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
                 </dt>
                 <dd>
-                  <a href="mailto:nuestratierracorporación@gmail.com" className="text-[#033649] font-semibold">
-                      nuestratierracorporación@gmail.com                  
+                  <a href="mailto:comunicaciones@nuestratierraco.com" className="text-[#033649] font-semibold">
+                      comunicaciones@nuestratierraco.com                  
                     </a>
                 </dd>
               </div>
