@@ -5,7 +5,7 @@ export default function Contact() {
   
   return (
     <div className="relative isolate min-h-80 bg-[#b6ffd7]">
-      <div className="mx-auto grid max-w-4xl grid-cols-1 lg:grid-cols-2 lg:pt-12">
+      <div className="mx-auto grid max-w-4xl grid-cols-1 lg:grid-cols-2 lg:pt-12 font-OpunMai">
 
         <div className="relative px-6 lg:static lg:px-8 py-24 sm:py-16 lg:py-28">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg font-semibold  animate-fade-right">
