@@ -82,7 +82,7 @@ export const people = [
     nombre: 'Juan David',
     profesion: 'Desarrollador de software',
     vocacion: 'Crear herramientas útiles para la sociedad por medio de la programación.',
-    hobbie: 'moverme, leer, aprender',
+    hobbie: 'Montar en bici, caminar, leer, ir a conciertos.',
     descripcionPerfil: '',
     animal: 'Una nutria y disfrutar tanto del rio como de la tierra',
     datoCurioso: 'Como arroz chino en todos mis cumpleaños',
