@@ -12,7 +12,7 @@ export default function MainInfo2() {
                             src={image2}
                             className="aspect-video rounded-xl bg-gray-50 object-cover"
                         />
-                        <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-blueText">
+                        <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-blueText font-OpunMai">
                             <InformationCircleIcon aria-hidden="true" className="mt-0.5 size-5 flex-none text-blueText"/>
                             Participación en ferias de emprendimiento.
                         </figcaption>

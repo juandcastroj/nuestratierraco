@@ -2,7 +2,7 @@ export default function PetCoinsInfo() {
   return (
     <div className="overflow-hidden bg-[#b6f3ff] py-24 sm:py-32">
      <section className="w-full flex justify-center px-4 py-10">
-      <div className="max-w-5xl w-full text-blueText space-y-6">
+      <div className="max-w-5xl w-full text-blueText font-OpunMai space-y-6">
         {/* Título */}
         <div>
           <h2 className="text-2xl font-bold">

@@ -1,18 +1,26 @@
+/* Fuente personalizada */
 @font-face {
   font-family: "TTmilks";
-  src: url("/src/assets/fonts/tt-milks/TT\ Milks\ Casual\ Pie\ Trial\ Base.otf") format("opentype");
-  font-weight: 600;
+  src: url("/src/assets/fonts/tt-milks/TT_Milks_Casual_Pie_Trial_Base.otf") format("opentype");
+  font-weight: 500;
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: "MiFuente";
-  src: url("/src/assets/fonts/MiFuente-Bold.ttf") format("truetype");
-  font-weight: 700;
+@font-face {
+  font-family: "OpunMai";
+  src: url("/src/assets/fonts/opun-mai/Opun_Mai_Regular.ttf") format("opentype");
+  font-weight: 500;
   font-style: normal;
-} */
+}
 
+@font-face {
+  font-family: "BubbleboddyNeue";
+  src: url("/src/assets/fonts/bubbleboddy_neue/bubbleboddyneue-regular\ trial.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
 
+/* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

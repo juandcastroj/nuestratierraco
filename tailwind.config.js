@@ -11,8 +11,10 @@ export default {
   
   theme: {
     extend: {
-      fontFamily: {
-        TTmilks: ["TTmilks", "sans-serif"],
+   fontFamily: {
+        TTmilks: ["TTmilks", "ui-sans-serif"], 
+        BubbleboddyNeue: ["BubbleboddyNeue", "ui-sans-serif"], 
+        OpunMai: ["OpunMai", "ui-sans-serif"], 
       },
         colors: {
           blueText: '#033649',

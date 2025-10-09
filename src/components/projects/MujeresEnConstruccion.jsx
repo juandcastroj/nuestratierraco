@@ -7,7 +7,7 @@ import { MujeresEnConstruccionImages } from "../../constants/projects/mujeresEnC
 export default function MujeresEnConstruccion() {
   return (
    <div className="px-6 py-32 lg:px-8 bg-[#99eeff]">
-        <div className="mx-auto text-justify max-w-3xl lg:max-w-5xl text-base/7 text-blueText">
+        <div className="mx-auto text-justify max-w-3xl lg:max-w-5xl text-base/7 text-blueText font-OpunMai">
           <div className="max-w-3xl mx-auto">
             <h1 className="mt-4 text-3xl text-gray-900 font-bold">
              2023 - Mujeres en construccion

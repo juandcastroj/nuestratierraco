@@ -16,7 +16,7 @@ import img12 from "../../assets/images/strategic-lines/nuestratierra-educa/nuest
 
 export default function NuestraTierraEduca() {
   return (
-    <div className="overflow-hidden bg-white py-24 sm:py-32">
+    <div className="overflow-hidden bg-white py-24 sm:py-32 font-OpunMai">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-6xl lg:px-8">
         <div className="max-w-4xl">
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-[#004e64] sm:text-5xl">

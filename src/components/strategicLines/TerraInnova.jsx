@@ -81,7 +81,7 @@ const machines = [
 export default function Terrainnova() {
   return (
     <div className="overflow-hidden bg-white py-20">
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8 font-OpunMai">
         <section className="mt-24 sm:mt-20 grid grid-cols-1 transition animate-fade-right">
           <div className="lg:pr-8 mt-4 m:mt-20">
             <h2 className="text-3xl font-bold text-[#004e64]">Terrainnova</h2>
