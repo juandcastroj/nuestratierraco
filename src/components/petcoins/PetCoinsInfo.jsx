@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function PetCoinsInfo() {
   return (
     <div className="overflow-hidden bg-[#b6f3ff] py-24 sm:py-32">
@@ -31,7 +33,7 @@ export default function PetCoinsInfo() {
             <li>
               Por cada kilo recibido, ganas <strong>5 PET COINS</strong>, nuestra moneda verde.
             </li>
-            <li>Regístrate aquí y acumula tus PET COINS en tu cuenta</li>
+            <li>Regístrate <Link to={'/auth'} className="font-semibold">aquí</Link> y acumula tus PET COINS en tu cuenta</li>
             <li>
               Puedes intercambiarlos por productos sostenibles, talleres,
               certificaciones o experiencias ambientales de{" "}
