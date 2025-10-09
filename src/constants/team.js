@@ -80,11 +80,11 @@ export const people = [
   },
   {
     nombre: 'Juan David',
-    profesion: 'Desarrollador de software',
+    profesion: 'Desarrollador de Software',
     vocacion: 'Crear herramientas útiles para la sociedad por medio de la programación.',
     hobbie: 'Montar en bici, caminar, leer, ir a conciertos.',
     descripcionPerfil: '',
-    animal: 'Una nutria y disfrutar tanto del rio como de la tierra',
+    animal: 'Una nutria para disfrutar tanto del rio como de la tierra',
     datoCurioso: 'Como arroz chino en todos mis cumpleaños',
     imageUrl: JuanDImg
   }
