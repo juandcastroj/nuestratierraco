@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { people } from "../../constants/team";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { Briefcase, Heart, Palette, Info, PawPrint, Sparkles } from "lucide-react";
 
 export default function Team() {
 
@@ -36,11 +38,11 @@ export default function Team() {
             <li key={index}
                 onClick={() => openModal(member)}
                 className="rounded-2xl shadow-lg bg-white/40 hover:bg-white/50 hover:backdrop-blur-md p-6 animate-fade-down animate-delay-[1200ms] cursor-pointer">
-              <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-3xl md:size-56" />
-              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.name}</h3>
+              <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-full md:size-56  object-cover" />
+              <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.nombre}</h3>
               {/* <p className="text-sm/6 text-blueText">{member.role}</p> */}
-              {/* <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
-
+              <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
+{/* 
                 <li>
                   <a href={member.linkedinUrl} className="text-blueText">
                     <span className="sr-only">LinkedIn</span>
@@ -52,19 +54,19 @@ export default function Team() {
                       />
                     </svg>
                   </a>
-                </li>
+                </li> */}
 
                 <li>
                     <button
                       onClick={() => openModal(member)}
                       className="px-6 py-2 bg-blueButton rounded-md 
-                                 font-medium text-white hover:bg-blue-900 transition"
+                                 font-medium text-white hover:bg-[#25a18e] transition"
                     >
                       Mas info
                     </button>
                 </li>
 
-              </ul> */}
+              </ul>
             </li>
           ))}
         </ul>
@@ -72,22 +74,100 @@ export default function Team() {
 
 
       {/* MODAL */}
-      {isOpen && selectedMember && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white rounded-lg p-6 max-w-md w-full shadow-lg relative">
-            <button
-              onClick={closeModal}
-              className="absolute top-5 right-5 text-gray-500 hover:text-gray-800"
-            >
-              ✖
-            </button>
-            <h2 className="text-2xl font-bold">{selectedMember.name}</h2>
-            {/* <p className="text-gray-600">{selectedMember.role}</p> */}
-            <img alt="" src={selectedMember.imageUrl} className="mx-auto mt-4 size-48 rounded-3xl md:size-56" />
-            <p className="text-gray-600 text-sm mt-4">{selectedMember.bio}</p>
+
+
+<AnimatePresence>
+  {isOpen && selectedMember && (
+    <motion.div
+      className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-50 px-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <motion.div
+        className="bg-white rounded-2xl p-6 max-w-lg w-full shadow-2xl relative"
+        initial={{ opacity: 0, scale: 0.85, y: -20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.85, y: -20 }}
+        transition={{ duration: 0.25, ease: "easeOut" }}
+      >
+        {/* Botón cerrar */}
+        <button
+          onClick={closeModal}
+          className="absolute top-5 right-5 text-gray-500 hover:text-gray-800 text-xl"
+        >
+          ✖
+        </button>
+
+        {/* Nombre */}
+        <h2 className="text-3xl font-bold text-center text-blueText">
+          {selectedMember.nombre}
+        </h2>
+
+        {/* Imagen */}
+        <div className="flex justify-center mt-4">
+          <img
+            alt={selectedMember.nombre}
+            src={selectedMember.imageUrl}
+            className="rounded-3xl size-48 md:size-56 object-cover border-4 border-gray-100 shadow-md"
+          />
+        </div>
+
+        {/* Info en ficha */}
+        <div className="mt-6 grid grid-cols-1 text-gray-700 text-sm">
+          <div className="flex items-start space-x-2">
+            <Briefcase className="w-5 h-5 text-gray-500 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold">Profesión</p>
+              <p>{selectedMember.profesion}</p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-2">
+            <Heart className="w-5 h-5 text-gray-500 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold">Vocación</p>
+              <p>{selectedMember.vocacion}</p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-2">
+            <Palette className="w-5 h-5 text-gray-500 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold">Hobbie</p>
+              <p>{selectedMember.hobbie}</p>
+            </div>
+          </div>
+
+          {/* <div className="flex items-start space-x-2 sm:col-span-2">
+            <Info className="w-5 h-5 text-gray-500 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold">Descripción</p>
+              <p>{selectedMember.descripcionPerfil}</p>
+            </div>
+          </div> */}
+
+          <div className="flex items-start space-x-2">
+            <PawPrint className="w-5 h-5 text-gray-500 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold">Animal</p>
+              <p>{selectedMember.animal}</p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-2">
+            <Sparkles className="w-5 h-5 text-gray-500 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold">Dato curioso</p>
+              <p>{selectedMember.datoCurioso}</p>
+            </div>
           </div>
         </div>
-      )} 
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
 
 
     </div>

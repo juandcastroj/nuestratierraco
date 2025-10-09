@@ -1,32 +1,36 @@
-import projectImg3 from '../assets/images/projects/image1.png';
-import projectImg2 from '../assets/images/projects/image2.png';
-import projectImg from '../assets/images/projects/image3.png';
+import img1 from '../assets/images/projects/festival/Festival NuestraTierra 3.jpg';
+import img2 from '../assets/images/projects/conectarte/7.png';
+import img3 from '../assets/images/projects/ecoreporteros/Eco-Reporteros por la Tierra.png';
+import img4 from '../assets/images/projects/mujeres-construccion/MEC 5.jpg';
+import img5 from '../assets/images/projects/mujeres-cartel/MAC 2025 (2).jpeg';
+
 
 
 export const projectsData = [
     {
-      company: 'Projecto 1',
-      role: 'Projecto 1',
-      imageUrl: projectImg,
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: '2020 - Festival Nuestra Tierra',
+      imageUrl: img1,
+      url: '/festival-nuestratierra'
     },
     {
-      company: 'Projecto 2',
-      role: 'Projecto 2',
-      imageUrl: projectImg2,
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: '2021 - Conectarte con el ambiente',
+      imageUrl: img2,
+      url: '/conectarte-medioambiente'
     },
     {
-      company: 'Projecto 3',
-      role: 'Projecto 3',
-      imageUrl: projectImg3,
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: '2022 - ECO Reporteros por la tierra',
+      imageUrl: img3,
+      url: '/ecoreporteros'
     },
     {
-      company: 'Projecto 4',
-      role: 'Projecto 4',
-      imageUrl: projectImg,
-      description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: '2023 – Mujeres en Construcción',
+      imageUrl: img4,
+      url: '/mujeres-en-construccion'
+    },
+    {
+      name: '2025 – Mujeres al cartel',
+      imageUrl: img5,
+      url: '/mujeres-al-cartel'
     },
 
 ]

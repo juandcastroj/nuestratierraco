@@ -11,7 +11,7 @@ import VideoSection from "./VideoSection";
 
 export default function History() {
   return (
-    <div className="px-6 py-32 lg:px-8 bg-[#99eeff]">
+    <div className="px-6 py-32 lg:px-8 bg-[#aaf1ff]">
       <div className="mx-auto text-justify max-w-3xl lg:max-w-5xl text-base/7 text-blueText">
         <div className="mx-auto max-w-2xl lg:max-w-7xl text-blueText">
           <div className="max-w-4xl">

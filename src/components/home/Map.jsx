@@ -27,8 +27,8 @@ export default function Map() {
                         <EnvelopeIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
                         </dt>
                         <dd>
-                        <a href="mailto:nuestratierracorporación@gmail.com" className="text-[#033649] font-semibold">
-                            nuestratierracorporación@gmail.com                  
+                        <a href="mailto:comunicaciones@nuestratierraco.com" className="text-[#033649] font-semibold">
+                            comunicaciones@nuestratierraco.com                  
                             </a>
                         </dd>
                     </div>
