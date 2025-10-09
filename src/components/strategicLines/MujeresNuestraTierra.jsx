@@ -19,8 +19,8 @@ export default function MujeresNuestraTierra() {
           <p className="mt-6 text-base text-balance text-[#004e64]">
             La línea Mujeres Nuestra Tierra impulsa procesos y proyectos
             enfocados en la{" "}
-            <strong> transformación de los imaginarios tradicionales</strong>
-            sobre los roles de las mujeres en distintos contextos. A través del
+            <strong> transformación de los imaginarios tradicionales</strong>{" "}
+            sobre los roles de las mujeres en distintos contextos. A través del {" "}
             <strong>arte, la participación y el diálogo</strong> , buscamos
             fomentar la igualdad, la equidad y la justicia de género, creando
             espacios donde las voces femeninas puedan{" "}
@@ -53,7 +53,7 @@ export default function MujeresNuestraTierra() {
               <strong>
                 resignificar los espacios públicos de la ciudad a través del
                 cartelismo
-              </strong>{" "}
+              </strong>
               , una herramienta artística y política que permite a las mujeres
               ocupar y transformar lugares que históricamente han generado temor
               o exclusión.
@@ -162,7 +162,7 @@ export default function MujeresNuestraTierra() {
             <p className="mt-8 text-base/7 text-[#004e64]">
               Mujeres en Construcción cuestiona los roles tradicionales y
               promueve una visión equitativa de las labores del hogar, donde la
-              <strong>independencia y la cooperación </strong> son pilares
+              {" "}<strong>independencia y la cooperación </strong> son pilares
               fundamentales para la transformación social.
             </p>
           </div>

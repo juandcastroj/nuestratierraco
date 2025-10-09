@@ -17,7 +17,7 @@ export const people = [
     descripcionPerfil:
       "Creo en cree en el poder de las pequeñas acciones, entendí que no puedo salvar todo el mundo, pero soy feliz haciendo algo en la parte que me toca. Siempre busco darle un “toque mágico” a todo lo que crea, le encanta pensar que su profesión puede servir para reribuir y aportar a la sociedad",
     animal:
-      "Me gustaría ser una tortuga preferiblemente marina, poruqe podría disfrutar la tierra. Pero también, me gustaría ser una guacamaya para poder volar por los aires y utilizar muchos colores",
+      "Me gustaría ser una tortuga preferiblemente marina, porqUe podría disfrutar la tierra. Pero también, me gustaría ser una guacamaya para poder volar por los aires y utilizar muchos colores",
     datoCurioso:
       "Me encanta bailar, y me gustaría algún día ser bailarina de un grupo de merengue",
     imageUrl: LuisaImg,

@@ -41,8 +41,8 @@ export default function History() {
                     inicio, a quienes han partido dejando su huella, a quienes
                     hoy siguen caminando con nosotros y a quienes aún están por
                     llegar.”
-                    <br /> <br /> Cada grano, cada mano y cada aporte han sido
-                    esenciales para que hoy seamos NuestraTierra.
+                    <br /> <br /> Cada grano de arena, cada mano y cada aporte han sido
+                    esenciales para que hoy seamos Nuestra Tierra.
                   </p>
                 </blockquote>
  

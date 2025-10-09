@@ -84,21 +84,21 @@ export default function Terrainnova() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8 font-OpunMai">
         <section className="mt-24 sm:mt-20 grid grid-cols-1 transition animate-fade-right">
           <div className="lg:pr-8 mt-4 m:mt-20">
-            <h2 className="text-3xl font-bold text-[#004e64]">Terrainnova</h2>
+            <h2 className="text-3xl font-bold text-[#004e64]">TerraInnova</h2>
             <p className="mt-12 text-base text-[#004e64]">
               TerraInnova es nuestro espacio de{" "}
-              <strong>innovación y desarrollo</strong> , en esta área exploramos
+              <strong>innovación y desarrollo</strong>, en esta área exploramos
               nuevas tecnologías y prácticas para abordar desafíos ambientales
               urgentes, en nuestro caso la transformación de plástico
               recuperado. Contamos con ingenieros que pueden dar soluciones
               innovadoras que promuevan el{" "}
-              <strong>cuidado del medio ambiente y la sostenibilidad</strong> .
+              <strong>cuidado del medio ambiente y la sostenibilidad</strong>.
             </p>
 
 
             <p className="hidden sm:block mt-6 text-base text-[#004e64]">
 
-            🛠️ <strong>Si tienes una idea especial</strong> , la evaluamos, la diseñamos en CAD y te enviamos la cotización.
+            🛠️ <strong>Si tienes una idea especial</strong>, la evaluamos, la diseñamos en CAD y te enviamos la cotización.
             No todas las ideas son viables depende de la complejidad, pero muchas pueden volverse realidad.
             </p>
           </div>
@@ -204,20 +204,20 @@ export default function Terrainnova() {
                 src={img5}
                 className="block w-96 rounded-2xl mx-auto"
               />
-                  <p className="text-center">
-                  Nuestra nueva máquina de corte lazer.</p> 
+                  <p className="text-center text-blueText">
+                  Nuestra nueva máquina de corte láser. 🤩</p> 
             </div>
         </div>
 
         <div className="mt-16 max-w-4xl text-center mx-auto px-6 lg:px-8 text-[#004e64]">
           <h2 className="mt-12 text-3xl tracking-tight text-pretty text-[#004e64] font-bold">
-            Somos parte de la comunidad precious plastic{" "}
+            Somos parte de la comunidad Precious Plastic{" "}
           </h2>
           <p className="mt-4">
             ¿Qué es Precious Plastic? Es un proyecto global que busca combatir
             la contaminación plástica mediante la creación de una comunidad de
             personas que comparten información y proporciona herramientas,
-            planos de maquinaria y conocimiento para crear pequeños y grandes
+            planos de maquinaria y conocimientoS para crear pequeños y grandes
             talleres de reciclaje y procesar plástico de desecho y transformarlo
             en productos nuevos.
           </p>
