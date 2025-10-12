@@ -17,7 +17,7 @@ export default function Stats() {
                   El <strong>HDPE y el PP</strong>  los encuentras, por ejemplo, en tapas de botellas, envases de shampoo, jabón o aceite de motor.
                   El <strong>PLA</strong> , por otro lado, es común en la industria de la impresión 3D. Aunque suene muy técnico, también genera residuos, ¡y esos son los que aprovechamos para reciclar! </p>
               <p className="mt-8 text-2xl font-bold">
-                Nuestras cifras:</p>
+                Algunas cifras:</p>
             </div>
 
             <dl className="mt-6 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center lg:grid-cols-3 animate-fade-left animate-duration-[2500ms] animate-delay-[500ms]">

@@ -3,7 +3,6 @@ import { strategicLines } from "../../constants/strategicLines";
 
 export default function StrategicLines() {
   return (
-
     <>
     <div className="min-h-screen bg-[#affff4]">
       <div className="py-20 md:py-28">
@@ -35,25 +34,22 @@ export default function StrategicLines() {
             className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 animate-fade-down animate-duration-[1500ms] animate-delay-500"
           >
             {strategicLines.map(
-              ({ company, imageUrl, description, url }, index) => (
+              ({ name, imageUrl, url }, index) => (
                 <li
                   key={index}
                   className="flex flex-col bg-white/30 hover:bg-white/40 hover:backdrop-blur-md 
                              rounded-3xl p-4 hover:shadow-md transition hover:-translate-y-1 cursor-pointer"
                 >
                   <img
-                    alt={company}
+                    alt={name}
                     src={imageUrl}
                     className="w-full h-48 object-cover rounded-xl mb-4"
                   />
 
                   <div className="flex flex-col flex-1 text-center mx-6">
-                    <h3 className="text-xl font-bold tracking-tight text-[#033649] dark:text-blue-300">
-                      {company}
+                    <h3 className="text-xl font-bold tracking-tight text-blueText">
+                      {name}
                     </h3>
-                    {/* <p className="mt-2 text-sm text-[#004e64] font-medium">
-                      {description}
-                    </p> */}
                   </div>
 
                   <div className="mt-6 flex justify-center">

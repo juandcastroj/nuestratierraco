@@ -16,10 +16,10 @@ export default {
         BubbleboddyNeue: ["BubbleboddyNeue", "ui-sans-serif"], 
         OpunMai: ["OpunMai", "ui-sans-serif"], 
       },
-        colors: {
-          blueText: '#033649',
-          blueButton: '#004e64',
-        },
+    colors: {
+      blueText: '#033649',
+      blueButton: '#004e64',
+    },
     },
   },
   plugins: [

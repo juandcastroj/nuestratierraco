@@ -2,14 +2,14 @@ import LuisaImg from "../assets/images/team/Luisa.jpg";
 import MichelleImg from "../assets/images/team/Michelle.jpg";
 import DavidImg from "../assets/images/team/David.jpg";
 import VickyImg from "../assets/images/team/Vicky.jpg";
-// import CarolinaImg from "../assets/images/team/Carolina.jpg";
+import CarolinaImg from "../assets/images/team/Carolina.jpg";
 import AngelaImg from "../assets/images/team/Angela.jpg";
 import JuanDImg from "../assets/images/team/Juan.jpg";
 
 export const people = [
   {
     nombre: "Luisa Maria",
-    profesion: "Ing Mecánica",
+    profesion: "Ingeniera Mecánica",
     vocacion:
       "He encontrado en la educación popular una herramienta para transformar la manera en que las personas se relacionan con el conocimiento y con su entorno.",
     hobbie:
@@ -65,7 +65,7 @@ export const people = [
       "Un perro, porque me parecen los animales más bonitos, tiernos y me encantan ",
     datoCurioso:
       "No me gusta el cilantro en absolutamente nada. Me gusta armar torres de piedras cuando voy al río",
-    // imageUrl: CarolinaImg,
+    imageUrl: CarolinaImg,
   },
   {
     nombre: "Ángela",

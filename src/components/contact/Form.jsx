@@ -15,7 +15,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
             <div>
               <label
                 htmlFor="first-name"
-                className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
+                className="block text-sm/6 font-semibold text-gray-900"
               >
                 Nombre
               </label>
@@ -35,7 +35,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
             <div>
               <label
                 htmlFor="last-name"
-                className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
+                className="block text-sm/6 font-semibold text-gray-900"
               >
                 Apellido
               </label>
@@ -55,7 +55,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
             <div className="sm:col-span-2">
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
+                className="block text-sm/6 font-semibold text-gray-900"
               >
                 Correo
               </label>
@@ -75,7 +75,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="block text-sm/6 font-semibold text-gray-900 dark:text-gray-200"
+                className="block text-sm/6 font-semibold text-gray-900"
               >
                 Mensaje
               </label>
@@ -97,7 +97,7 @@ export function Form({ firstName, lastName, email, message, handleChange, error,
             { error ? <ShowError /> : null }
             <button
               type="submit"
-              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white dark:text-gray-800 shadow-sm bg-[#033649] hover:bg-[#165d77] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+              className="rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm bg-[#033649] hover:bg-[#165d77] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Enviar
             </button>

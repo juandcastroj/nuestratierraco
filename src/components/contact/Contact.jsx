@@ -20,18 +20,6 @@ export default function Contact() {
 
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <span className="sr-only">Email</span>
-                  <EnvelopeIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
-                </dt>
-                <dd>
-                  <a href="mailto:comunicaciones@nuestratierraco.com" className="text-[#033649] font-semibold">
-                      comunicaciones@nuestratierraco.com                  
-                    </a>
-                </dd>
-              </div>
-
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <PhoneIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
                 </dt>
@@ -44,11 +32,23 @@ export default function Contact() {
 
               <div className="flex gap-x-4">
                 <dt className="flex-none">
+                  <span className="sr-only">Email</span>
+                  <EnvelopeIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
+                </dt>
+                <dd>
+                  <a href="mailto:comunicaciones@nuestratierraco.com" className="text-[#033649] font-semibold">
+                      comunicaciones@nuestratierraco.com                  
+                    </a>
+                </dd>
+              </div>
+
+              <div className="flex gap-x-4">
+                <dt className="flex-none">
                   <span className="sr-only">Address</span>
                   <BuildingOffice2Icon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
                 </dt>
                 <dd className='text-[#033649] font-semibold'>
-                  Ciudad Bolivar, Bogotá D.C, Colombia.
+                  Barrio El Perdomo, Bogotá D.C, Colombia.
                 </dd>
               </div>
 
