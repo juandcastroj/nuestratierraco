@@ -23,6 +23,18 @@ export default function Map() {
 
                     <div className="flex gap-x-4">
                         <dt className="flex-none">
+                        <span className="sr-only">Telephone</span>
+                        <PhoneIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
+                        </dt>
+                        <dd>
+                        <a href="tel:+57 319 641 03 97" className="text-[#033649] font-semibold">
+                            +57 319 641 03 97
+                        </a>
+                        </dd>
+                    </div>
+
+                    <div className="flex gap-x-4">
+                        <dt className="flex-none">
                         <span className="sr-only">Email</span>
                         <EnvelopeIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
                         </dt>
@@ -40,18 +52,6 @@ export default function Map() {
                         </dt>
                         <dd className='text-[#033649] font-semibold'>
                         Ciudad Bolivar, Bogotá D.C, Colombia.
-                        </dd>
-                    </div>
-
-                    <div className="flex gap-x-4">
-                        <dt className="flex-none">
-                        <span className="sr-only">Telephone</span>
-                        <PhoneIcon aria-hidden="true" className="w-9 sm:w-6 text-[#033649]"/>
-                        </dt>
-                        <dd>
-                        <a href="tel:+57 319 641 03 97" className="text-[#033649] font-semibold">
-                            +57 319 641 03 97
-                        </a>
                         </dd>
                     </div>
 

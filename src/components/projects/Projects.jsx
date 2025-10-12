@@ -37,7 +37,7 @@ export default function Projects() {
                   />
 
                   <div className="flex flex-col flex-1 text-center mx-6">
-                    <h3 className="text-xl font-bold tracking-tight text-[#033649] dark:text-blue-300">
+                    <h3 className="text-xl font-bold tracking-tight text-[#033649]">
                       {name}
                     </h3>
                     {/* <p className="mt-2 text-sm text-[#004e64] font-medium">

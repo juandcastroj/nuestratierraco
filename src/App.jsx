@@ -41,17 +41,19 @@ export default function App() {
             <Route path='/history' element={<HistoryRoute/>}></Route>
             <Route path='/team' element={<TeamRoute/>}></Route>
 
+          {/* |   Líneas Estratégicas */}
             <Route path='/strategic-lines' element={<StrategicLinesRoute/>}></Route>
-            <Route path='/nuestratierra-educa' element={<NuestraTierraEducaRoute/>}></Route>
-            <Route path='/terrainnova' element={<TerraInnovaRoute/>}></Route>
-            <Route path='/mujeres-nuestratierra' element={<MujeresNuestraTierraRoute/>}></Route>
+            <Route path='/strategic-lines/nuestratierra-educa' element={<NuestraTierraEducaRoute/>}></Route>
+            <Route path='/strategic-lines/terrainnova' element={<TerraInnovaRoute/>}></Route>
+            <Route path='/strategic-lines/mujeres-nuestratierra' element={<MujeresNuestraTierraRoute/>}></Route>
 
+            {/* Proyectos */}
             <Route path='/projects' element={<ProjectsRoute/>}></Route>
-            <Route path='/festival-nuestratierra' element={<FestivalNuestraTierraRoute/>}></Route>
-            <Route path='/ecoreporteros' element={<EcoReporterosRoute/>}></Route>
-            <Route path='/conectarte-medioambiente' element={<ConectarteConElAmbienteRoute/>}></Route>
-            <Route path='/mujeres-en-construccion' element={<MujeresEnConstruccionRoute/>}></Route>
-            <Route path='/mujeres-al-cartel' element={<MujeresAlCartelRoute/>}></Route>
+            <Route path='/projects/festival-nuestratierra' element={<FestivalNuestraTierraRoute/>}></Route>
+            <Route path='/projects/ecoreporteros' element={<EcoReporterosRoute/>}></Route>
+            <Route path='/projects/conectarte-medioambiente' element={<ConectarteConElAmbienteRoute/>}></Route>
+            <Route path='/projects/mujeres-en-construccion' element={<MujeresEnConstruccionRoute/>}></Route>
+            <Route path='/projects/mujeres-al-cartel' element={<MujeresAlCartelRoute/>}></Route>
 
             <Route path='/products' element={<ProductsRoute/>}></Route>
             <Route path='/petcoins' element={<PetCoinsInfoRoute/>}></Route>

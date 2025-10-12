@@ -4,8 +4,6 @@ import img3 from "../../assets/images/strategic-lines/terrainnova/terrainnova 3.
 import img4 from "../../assets/images/strategic-lines/terrainnova/terrainnova 4.jpg";
 import img5 from "../../assets/images/strategic-lines/terrainnova/terrainnova 5.jpg";
 import img6 from "../../assets/images/strategic-lines/terrainnova/terrainnova 6.jpg";
-
-
 import { CheckIcon, InformationCircleIcon } from "@heroicons/react/20/solid";
 
 const processes = [
@@ -82,10 +80,10 @@ export default function Terrainnova() {
   return (
     <div className="overflow-hidden bg-white py-20">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8 font-OpunMai">
-        <section className="mt-24 sm:mt-20 grid grid-cols-1 transition animate-fade-right">
-          <div className="lg:pr-8 mt-4 m:mt-20">
+        <section className="grid grid-cols-1 transition animate-fade-right">
+          <div className="lg:pr-8 mt-12 m:mt-20">
             <h2 className="text-3xl font-bold text-[#004e64]">TerraInnova</h2>
-            <p className="mt-12 text-base text-[#004e64]">
+            <p className="mt-6 text-base text-[#004e64]">
               TerraInnova es nuestro espacio de{" "}
               <strong>innovación y desarrollo</strong>, en esta área exploramos
               nuevas tecnologías y prácticas para abordar desafíos ambientales
@@ -94,7 +92,6 @@ export default function Terrainnova() {
               innovadoras que promuevan el{" "}
               <strong>cuidado del medio ambiente y la sostenibilidad</strong>.
             </p>
-
 
             <p className="hidden sm:block mt-6 text-base text-[#004e64]">
 
@@ -105,34 +102,39 @@ export default function Terrainnova() {
 
           <div className="pt-16 lg:row-span-2 lg:-mr-16 xl:mr-auto">
             <div className="-mx-4 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4">
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
+
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-down">
                 <img
                   alt=""
                   src={img1}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
+
+              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-up">
                 <img
                   alt=""
                   src={img2}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
+
+              <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-down">
                 <img
                   alt=""
                   src={img3}
                   className="block size-full object-cover"
                 />
               </div>
-              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-left">
+
+              <div className="-mt-4 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 transition animate-fade-up">
                 <img
                   alt=""
                   src={img4}
                   className="block size-full object-cover"
                 />
               </div>
+
             </div>
           </div>
         </section>
