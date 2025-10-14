@@ -26,7 +26,7 @@ export const people = [
     nombre: "Michelle",
     profesion: "Maestra en artes plásticas y visuales ",
     vocacion:
-      "Mi vocación esta enfocada hacia el arte como herramienta de transformación social. Creo profundamente en el poder de la creación colectiva, el diálogo y la sensibilidad estética para abrir espacios de reflexión, cuidado y memoria. A través del arte busco acompañar procesos que fortalezcan la voz y la presencia de las comunidades, especialmente de las mujeres, en los territorios que habitan.",
+      "Enfocada hacia el arte como herramienta de transformación social. Creo profundamente en el poder de la creación colectiva, el diálogo y la sensibilidad estética para abrir espacios de reflexión, cuidado y memoria. A través del arte busco acompañar procesos que fortalezcan la voz y la presencia de las comunidades, especialmente de las mujeres, en los territorios que habitan.",
     hobbie:
       "Bailar hasta el amanecer hasta que duelan los pies, compartir charlas profundas con amigos, leer, descubrir y escuchar nueva música, y consentir a mis peludos.",
     descripcionPerfil: "",
