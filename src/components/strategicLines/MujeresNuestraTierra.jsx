@@ -13,39 +13,26 @@ export default function MujeresNuestraTierra() {
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-6xl lg:px-8 font-OpunMai">
         <div className="max-w-4xl">
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-[#004e64] sm:text-5xl">
+          <h1 className="mt-2 text-4xl font-semibold text-[#004e64] sm:text-5xl">
             Mujeres Nuestra Tierra
           </h1>
           <p className="mt-6 text-base text-balance text-[#004e64]">
             La línea Mujeres Nuestra Tierra impulsa procesos y proyectos
             enfocados en la{" "}
             <strong> transformación de los imaginarios tradicionales</strong>{" "}
-            sobre los roles de las mujeres en distintos contextos. A través del {" "}
+            sobre los roles de las mujeres en distintos contextos. A través del{" "}
             <strong>arte, la participación y el diálogo</strong> , buscamos
             fomentar la igualdad, la equidad y la justicia de género, creando
             espacios donde las voces femeninas puedan{" "}
             <strong> expresarse, cuestionar y reconstruir</strong> sus propias
             narrativas.
           </p>
-          {/* <p className="mt-6 text-base text-balance text-[#004e64]">
-            Desde esta línea, promovemos la{" "}
-            <strong>
-              autonomía, la reflexión colectiva y la creación como herramientas
-              de cambio
-            </strong>{" "}
-            , reconociendo la{" "}
-            <strong>diversidad de experiencias y saberes</strong> que habitan en
-            las mujeres de los territorios. Cada iniciativa propone un espacio
-            de encuentro y acción donde las mujeres pueden{" "}
-            <strong>reconocer, cuestionar y resignificar</strong>
-            sus relaciones con el territorio, el cuerpo y la comunidad.{" "}
-          </p> */}
         </div>
 
         {/* Mujeres al Cartel */}
         <section className="mt-24 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#004e64]">
+            <h2 className="text-2xl font-semibold text-[#004e64]">
               Mujeres al Cartel
             </h2>
             <p className="mt-6 text-base/7 text-[#004e64]">
@@ -146,23 +133,23 @@ export default function MujeresNuestraTierra() {
           </div>
 
           <div className="lg:pr-8">
-            <h2 className="text-2xl font-semibold tracking-tight text-pretty text-[#004e64]">
+            <h2 className="text-2xl font-semibold text-[#004e64]">
               Mujeres en Construcción
             </h2>
             <p className="mt-6 text-base/7 text-[#004e64]">
               Este proyecto está diseñado para{" "}
               <strong>
                 enseñar el uso de herramientas básicas en el hogar
-              </strong>{" "}
-              , fomentando la <strong>autonomía y la confianza personal</strong>{" "}
+              </strong>
+              , fomentando la <strong>autonomía y la confianza personal</strong>
               . A través de talleres prácticos, se busca que tareas cotidianas
               —como reparaciones sencillas— puedan ser realizadas por cualquier
-              persona, <strong>sin importar su género</strong> .
+              persona, <strong>sin importar su género</strong>.
             </p>
             <p className="mt-8 text-base/7 text-[#004e64]">
               Mujeres en Construcción cuestiona los roles tradicionales y
-              promueve una visión equitativa de las labores del hogar, donde la
-              {" "}<strong>independencia y la cooperación </strong> son pilares
+              promueve una visión equitativa de las labores del hogar, donde la{" "}
+              <strong>independencia y la cooperación </strong> son pilares
               fundamentales para la transformación social.
             </p>
           </div>

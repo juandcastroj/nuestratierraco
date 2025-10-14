@@ -14,9 +14,9 @@ export default function MujeresAlCartel() {
              2025 - Mujeres al cartel
             </h1>
             <p className="mt-4">
-                <strong>Proyecto ganador de la beca IDARTES Bogotá Diversa</strong> , enfocado en transformar los imaginarios sobre las mujeres y su tránsito por la ciudad.
+                <strong>Proyecto ganador de la beca IDARTES Bogotá Diversa</strong>, enfocado en transformar los imaginarios sobre las mujeres y su tránsito por la ciudad.
                 A través de laboratorios creativos de cartelismo (linograbado, stencil y serigrafía), mujeres de Ciudad Bolívar reflexionaron sobre sus derechos, el cuerpo como territorio y el espacio público como lugar de libertad.
-                El resultado: carteles que ocupan los muros de la ciudad como mensajes de resistencia y esperanza bajo la premisa “cuando muere el miedo, nace la libertad.”
+                El resultado: carteles que ocupan los muros de la ciudad como mensajes de resistencia y esperanza bajo la premisa <strong> “cuando muere el miedo, nace la libertad”.</strong>
             </p>
             <h2 className="mt-12 text-base text-blueText font-semibold">
               “El arte como herramienta de libertad y expresión.” 

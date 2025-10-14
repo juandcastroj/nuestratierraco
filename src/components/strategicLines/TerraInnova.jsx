@@ -4,77 +4,8 @@ import img3 from "../../assets/images/strategic-lines/terrainnova/terrainnova 3.
 import img4 from "../../assets/images/strategic-lines/terrainnova/terrainnova 4.jpg";
 import img5 from "../../assets/images/strategic-lines/terrainnova/terrainnova 5.jpg";
 import img6 from "../../assets/images/strategic-lines/terrainnova/terrainnova 6.jpg";
-import { CheckIcon, InformationCircleIcon } from "@heroicons/react/20/solid";
-
-const processes = [
-  {
-    name: "Recolección del plástico",
-    description:
-      " Recibimos el material en nuestra sede, gracias a los aportes de la comunidad que nos rodea.",
-  },
-  {
-    name: "Clasificación",
-    description:
-      "Separamos el plástico por tipo y color para asegurar una buena calidad en el producto final.",
-  },
-  {
-    name: "Trituración",
-    description:
-      "Trituramos el material hasta obtener pequeñas escamas de unos 5 mm.",
-  },
-  {
-    name: "Lavado eficiente",
-    description:
-      " Usamos la menor cantidad de agua posible para limpiar el plástico, quitando suciedad e impurezas.",
-  },
-  {
-    name: "Secado natural",
-    description:
-      " Aprovechamos el sol y el viento para secar el material sin usar energía adicional.",
-  },
-  {
-    name: "Fundición",
-    description:
-      "El plástico limpio se funde en moldes dentro de un horno especial diseñado por nosotros.",
-  },
-  {
-    name: "Compresión en frío",
-    description:
-      "Después de fundirse, el material se enfría y se comprime para darle la forma final.",
-  },
-  {
-    name: "Corte láser",
-    description:
-      "Usamos nuestra máquina de corte láser para crear formas personalizadas según los diseños que necesite cada cliente.",
-  },
-  {
-    name: "Acabado final",
-    description:
-      "Retiramos rebabas y damos los toques finales para que el producto quede limpio y profesional.",
-  },
-  {
-    name: "Producto terminado",
-    description:
-      " ¡Listo para stock, envío o entrega! ✅",
-  },
-  {
-    name: "Producto en manos del cliente",
-    description:
-      " El resultado: un producto único, funcional y hecho con materiales reciclados. ¡Cada cliente se convierte en parte del cambio!",
-  }
-];
-
-const machines = [
-  {
-    name: "Trituradora",
-  },
-  {
-    name: "Horno de fundición",
-  },
-  {
-    name: "Máquina de corte láser",
-  },
-];
+import { CheckIcon } from "@heroicons/react/20/solid";
+import { machines, processes } from "../../constants/strategic-lines/terrainnova";
 
 export default function Terrainnova() {
   return (
@@ -82,7 +13,7 @@ export default function Terrainnova() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8 font-OpunMai">
         <section className="grid grid-cols-1 transition animate-fade-right">
           <div className="lg:pr-8 mt-12 m:mt-20">
-            <h2 className="text-3xl font-bold text-[#004e64]">TerraInnova</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#004e64]">TerraInnova</h2>
             <p className="mt-6 text-base text-[#004e64]">
               TerraInnova es nuestro espacio de{" "}
               <strong>innovación y desarrollo</strong>, en esta área exploramos
@@ -180,7 +111,7 @@ export default function Terrainnova() {
             </p>
           </div>
 
-          <dl className="mt-6 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 mx-auto max-w-3xl">
+          <dl className="mt-6 grid grid-cols-1 gap-4 sm:gap-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 mx-auto max-w-3xl">
             {machines.map((e) => (
               <div key={e.name} className="relative">
                 {" "}
