@@ -27,7 +27,7 @@ export default function Inscriptions() {
                 className="block w-96 rounded-2xl mx-auto"
               />
                   <p className="text-center text-blueText">
-                  Nuestro embajador Jean Fernel.</p> 
+                  Nuestro embajador Jean Fernel en Maicao, La Guajira.</p> 
             </div>
         </section>
         </div>
