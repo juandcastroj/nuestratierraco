@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -5,8 +6,12 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { productsCarousel } from "../../constants/productsCarousel";
 import { Link } from "react-router-dom";
 
-
 export default function ProductCarousel() {
+
+  useEffect(() => {
+    document.title = "Tienda - Nuestra Tierra";
+  }, [])
+
   return (
     <div className="w-full pt-28 sm:pt-24 pb-16 sm:pb-24 lg:mx-auto lg:max-w-6xl lg:px-8 font-OpunMai">
 

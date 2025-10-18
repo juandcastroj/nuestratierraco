@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { people } from "../../constants/team";
-import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Briefcase, Heart, Palette, Info, PawPrint, Sparkles } from "lucide-react";
 
@@ -18,6 +17,10 @@ export default function Team() {
     setIsOpen(false);
     setSelectedMember(null);
   };
+
+  useEffect(() => {
+    document.title = "Equipo | NuestraTierraCO";
+  }, []);
   
   return (
     <div className="bg-gradient-to-b  from-[#9effca] to-[#60cee5] py-24 sm:py-32">

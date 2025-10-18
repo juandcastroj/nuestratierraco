@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import mujeresEnAccion from "../../assets/images/strategic-lines/image1.png";
 import historyImg2 from "../../assets/images/history/Historia 2.jpg";
 import historyImg3 from "../../assets/images/home/Historia 9.jpg";
@@ -8,8 +9,12 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import VideoSection from "./VideoSection";
 
-
 export default function History() {
+
+    useEffect(() => {
+      document.title = "Historia | NuestraTierraCO";
+    }, []);
+
   return (
     <div className="px-6 py-32 lg:px-8 bg-[#aaf1ff]">
       <div className="mx-auto text-justify max-w-3xl lg:max-w-5xl text-base/7 text-blueText font-OpunMai">

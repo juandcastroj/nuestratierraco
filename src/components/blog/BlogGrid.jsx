@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { posts } from "../../constants/blog";
 
 export default function BlogGrid() {
+
+  useEffect(() => {
+    document.title = "Blog - Nuestra Tierra";
+  }, [])
+
     return (
     <div className="min-h-screen py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">

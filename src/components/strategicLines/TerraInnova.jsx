@@ -8,6 +8,11 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 import { machines, processes } from "../../constants/strategic-lines/terrainnova";
 
 export default function Terrainnova() {
+
+    useEffect(() => {
+      document.title = "TerraInnova | NuestraTierraCO";
+    }, []);
+
   return (
     <div className="overflow-hidden bg-white py-20">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8 font-OpunMai">

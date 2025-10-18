@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { projectsData } from "../../constants/projects";
 
 export default function Projects() {
+
+    useEffect(() => {
+      document.title = "Proyectos | NuestraTierraCO";
+    }, []);
+
   return (
 
     <>
@@ -24,7 +30,7 @@ export default function Projects() {
             className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 animate-fade-down animate-duration-[1500ms] animate-delay-500"
           >
             {projectsData.map(
-              ({  name, imageUrl, url }, index) => (
+              ({ name, imageUrl, url }, index) => (
                 <li
                   key={index}
                   className="flex flex-col bg-white/30 hover:bg-white/40 hover:backdrop-blur-md 
