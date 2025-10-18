@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function PetCoinsInfo() {
+
+  useEffect(() => {
+    document.title = "PetCoins - Nuestra Tierra";
+  }, [])
+
   return (
     <div className="overflow-hidden bg-[#b6f3ff] py-24 sm:py-32">
      <section className="w-full flex justify-center px-4 py-10">

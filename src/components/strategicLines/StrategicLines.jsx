@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { strategicLines } from "../../constants/strategicLines";
 
 export default function StrategicLines() {
+
+    useEffect(() => {
+      document.title = "Lineas Estratégicas";
+    }, []);
+
   return (
     <>
     <div className="min-h-screen bg-[#affff4]">

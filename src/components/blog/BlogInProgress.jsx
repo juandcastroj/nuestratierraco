@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 export default function BlogInProgress() {
+
+    useEffect(() => {
+      document.title = "Blog - Nuestra Tierra";
+    }, [])
+
     return(
     <div className="min-h-full py-60 sm:py-44 animate-fade-down animate-duration-[1500ms] animate-delay-400">
       <div className="mx-auto max-w-6xl gap-20 px-6 sm:px-12 lg:px-16 font-OpunMai">
@@ -6,7 +13,6 @@ export default function BlogInProgress() {
           <h2 className="text-4xl font-semibold tracking-tight text-blueText sm:text-5xl">
             Nuestro Blog
           </h2>
-
             <p className="mt-20 text-2xl text-blueText">
                 Proximamente... 🚧🚧🚧
             </p>

@@ -1,7 +1,12 @@
+import { useEffect } from 'react'
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 import { Form } from './Form'
 
 export default function Contact() {
+
+  useEffect(() => {
+    document.title = "Contacto - Nuestra Tierra";
+  }, [])
   
   return (
     <div className="relative isolate min-h-80 bg-[#b6ffd7]">

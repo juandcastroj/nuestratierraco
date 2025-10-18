@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import img from "../../assets/images/embajadores/FOTO EMBAJADOR JEAN FERNEL.jpeg/";
 
 export default function Inscriptions() {
+
+  useEffect(() => {
+    document.title = "Embajadores | NuestraTierraCO";
+  }, []);
+
   return (
   <div className="overflow-hidden bg-[#b6f3ff]">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-5xl lg:px-8 py-12">

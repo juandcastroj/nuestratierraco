@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import tortleImg from "../../assets/images/home/hero-bg.png";
 
 export default function Hero() {
+
+    useEffect(() => {
+      document.title = "NuestraTierraCo | Sitio oficial";
+    }, [])
+
   return (
     <div className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-gradient-to-b from-[#affff4] to-[#60cee5] overflow-hidden">
       

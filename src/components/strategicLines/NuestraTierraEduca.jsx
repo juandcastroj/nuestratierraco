@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import img1 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa.jpg";
 import img2 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa 5.jpg";
 import img3 from "../../assets/images/strategic-lines/nuestratierra-educa/nuestratierra educa 1.jpg";
@@ -15,6 +16,11 @@ import img12 from "../../assets/images/strategic-lines/nuestratierra-educa/nuest
 
 
 export default function NuestraTierraEduca() {
+
+    useEffect(() => {
+      document.title = "NuestraTierra Educa";
+    }, []);
+
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32 font-OpunMai">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-6xl lg:px-8">

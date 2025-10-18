@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import img1 from "../../assets/images/strategic-lines/mujeres-nuestratierra/MAC 1.jpg";
 import img2 from "../../assets/images/strategic-lines/mujeres-nuestratierra/MAC 2.jpg";
 import img3 from "../../assets/images/strategic-lines/mujeres-nuestratierra/MAC 3.jpg";
@@ -9,6 +10,11 @@ import img7 from "../../assets/images/strategic-lines/mujeres-nuestratierra/MEC 
 import img8 from "../../assets/images/strategic-lines/mujeres-nuestratierra/MEC 4.jpg";
 
 export default function MujeresNuestraTierra() {
+
+      useEffect(() => {
+        document.title = "Mujeres Nuestra Tierra";
+      }, []);
+
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-6xl lg:px-8 font-OpunMai">
