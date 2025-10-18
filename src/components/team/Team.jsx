@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { people } from "../../constants/team";
 import { motion, AnimatePresence } from "framer-motion";
 import { Briefcase, Heart, Palette, Info, PawPrint, Sparkles } from "lucide-react";
