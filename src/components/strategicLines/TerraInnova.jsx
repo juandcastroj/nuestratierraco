@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import img1 from "../../assets/images/strategic-lines/terrainnova/terrainnova.jpg";
 import img2 from "../../assets/images/strategic-lines/terrainnova/terrainnova 2.jpg";
 import img3 from "../../assets/images/strategic-lines/terrainnova/terrainnova 3.jpg";
