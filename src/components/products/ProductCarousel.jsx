@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export default function ProductCarousel() {
 
   useEffect(() => {
-    document.title = "Tienda - Nuestra Tierra";
+    document.title = "Nuestra Tienda 🛍️ - NuestraTierraCo";
   }, [])
 
   return (
@@ -21,7 +21,7 @@ export default function ProductCarousel() {
           </h2>
         </div>
 
-        <div className="hidden sm:flex items-center justify-between px-4 sm:px-6 lg:px-0">
+        <div className="hidden sm:flex items-center justify-between px-4 sm:px-6 lg:px-0 animate-fade-down animate-duration-[1000ms] animate-delay-[500ms]">
           <h2 className="text-2xl font-bold text-blueText"> Productos destacados</h2>
           <Link to="https://co.mitienda.la/nuestratierra" className="block text-lg font-semibold text-blueText hover:text-[#458ea8]">
             Ver todos
