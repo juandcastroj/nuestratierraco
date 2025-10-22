@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { sendEmailVerification } from "firebase/auth";
 import { useAuth } from "../../contexts/AuthContext";
-import { Link } from "react-router-dom";
 
 export default function VerifyEmail() {
   
@@ -53,12 +52,6 @@ export default function VerifyEmail() {
           {message && (
             <p className="mt-4 text-sm text-green-600">{message}</p>
           )}
-
-          {/* <div className="mt-4">
-            <Link to="/auth" className="text-blueText hover:underline font-semibold text-sm">
-             ¿Quieres ingresar con otra cuenta?{" "}
-            </Link> 
-          </div> */}
 
           <p className="mt-2 text-sm text-gray-500">
             Si ya verificaste tu correo{" "}
