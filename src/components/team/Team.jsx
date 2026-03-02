@@ -6,17 +6,10 @@ import { Briefcase, Heart, Palette, PawPrint, Sparkles } from "lucide-react";
 export default function Team() {
 
   const [selectedMember, setSelectedMember] = useState(null);
-  const [isOpen, setIsOpen] = useState(false); 
 
-  const openModal = (member) => {
+  const handleModal = (member = null) => {
     setSelectedMember(member);
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-    setSelectedMember(null);
-  };
+  }
 
   useEffect(() => {
     document.title = "Equipo | NuestraTierraCO";
@@ -35,23 +28,20 @@ export default function Team() {
           {  
             people.map((member, index) => (
             <li key={index}
-                onClick={() => openModal(member)}
+                onClick={() => handleModal(member)}
                 className="rounded-2xl shadow-lg bg-white/40 hover:bg-white/50 hover:backdrop-blur-md p-6 animate-fade-down animate-delay-[1200ms] cursor-pointer">
               <img alt="" src={member.imageUrl} className="mx-auto size-48 rounded-full md:size-56  object-cover" />
               <h3 className="mt-6 text-base/7 font-semibold tracking-tight text-blueText">{member.nombre}</h3>
               {/* <p className="text-sm/6 text-blueText">{member.role}</p> */}
               <ul role="list" className="mt-6 flex justify-center items-center gap-x-6">
-
                 <li>
                     <button
-                      onClick={() => openModal(member)}
                       className="px-6 py-2 bg-blueButton rounded-md 
                                  font-medium text-white hover:bg-[#25a18e] transition"
                     >
                       Mas info
                     </button>
                 </li>
-
               </ul>
             </li>
           ))}
@@ -61,7 +51,7 @@ export default function Team() {
 
       {/* MODAL */}
         <AnimatePresence>
-          {isOpen && selectedMember && (
+          {selectedMember && (
             <motion.div
               className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm z-50 px-4"
               initial={{ opacity: 0 }}
@@ -77,7 +67,7 @@ export default function Team() {
               >
                 {/* Botón cerrar */}
                 <button
-                  onClick={closeModal}
+                  onClick={() => setSelectedMember(null)}
                   className="absolute top-5 right-5 text-gray-500 hover:text-gray-800 text-xl"
                 >
                   ✖
