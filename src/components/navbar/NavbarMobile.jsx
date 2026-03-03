@@ -1,7 +1,8 @@
-import { Dialog, DialogPanel, Disclosure } from '@headlessui/react'
+import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import nuestraTierraLogoMobile from '../../assets/images/logo/logo.png'
 import { XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import { Link, useLocation } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 export default function NavbarMobile({ navigationItems, handleMobileMenu, mobileMenuOpen, setMobileMenuOpen }) {
   const location = useLocation();
@@ -45,13 +46,13 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                     <Disclosure key={item.name} as="div" className="px-3 py-2">
                       {({ open }) => (
                         <>
-                          <Disclosure.Button className="flex w-full items-center justify-center sm:justify-start rounded-lg py-2 text-xl font-semibold text-[#9fffcb] hover:text-white">
+                          <DisclosureButton className="flex w-full items-center justify-center sm:justify-start rounded-lg py-2 text-xl font-semibold text-[#9fffcb] hover:text-white">
                             {item.name}
                             <ChevronDownIcon
                               className={`h-6 w-6 mx-1 transition-transform ${open ? "rotate-180" : ""}`}
                             />
-                          </Disclosure.Button>
-                          <Disclosure.Panel className="ml-4 mt-2 space-y-2 divide-y divide-gray-500/10">
+                          </DisclosureButton>
+                          <DisclosurePanel className="ml-4 mt-2 space-y-2 divide-y divide-gray-500/10">
                             {item.subItems.map(sub => {
                               const isSubActive = location.pathname === sub.to;
                               return (
@@ -66,7 +67,7 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
                                 </Link>
                               );
                             })}
-                          </Disclosure.Panel>
+                          </DisclosurePanel>
                         </>
                       )}
                     </Disclosure>
@@ -105,3 +106,21 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
     </Dialog>
   )
 }
+
+NavbarMobile.propTypes = {
+  navigationItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      to: PropTypes.string,
+      subItems: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          to: PropTypes.string.isRequired,
+        })
+      ),
+    })
+  ).isRequired,
+  handleMobileMenu: PropTypes.func.isRequired,
+  mobileMenuOpen: PropTypes.bool.isRequired,
+  setMobileMenuOpen: PropTypes.func.isRequired,
+};

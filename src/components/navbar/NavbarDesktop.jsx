@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import { useEffect, useRef, useState } from "react";
+import PropTypes from "prop-types";
 import nuestraTierraLogo from "../../assets/images/logo/logo.png";
 import { Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
@@ -139,3 +140,19 @@ export default function NavbarDesktop({ navigationItems, handleMobileMenu }) {
     </nav>
   );
 }
+
+NavbarDesktop.propTypes = {
+  navigationItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      to: PropTypes.string,
+      subItems: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          to: PropTypes.string.isRequired,
+        })
+      ),
+    })
+  ).isRequired,
+  handleMobileMenu: PropTypes.func.isRequired,
+};
