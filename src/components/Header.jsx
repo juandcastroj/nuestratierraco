@@ -8,7 +8,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     const handleMobileMenu = () => {
-        setMobileMenuOpen(!mobileMenuOpen)
+        setMobileMenuOpen(prev => !prev)
     }
 
     return ( 
