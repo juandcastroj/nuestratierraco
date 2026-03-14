@@ -1,4 +1,15 @@
-export const navBarItems = [
+type FooterItem = {
+  name: string;
+  to: string;
+};
+
+export type NavBarItem = {
+  name: string;
+  to?: string;
+  subItems?: FooterItem[];
+};
+
+export const navBarItems: NavBarItem[] = [
   {
     name: "Nosotros",
     subItems: [
@@ -6,7 +17,7 @@ export const navBarItems = [
       { name: "Equipo", to: "/team" },
     ],
   },
-    {
+  {
     name: "Iniciativas",
     subItems: [
       { name: "Líneas Estratégicas", to: "/strategic-lines" },
@@ -30,7 +41,7 @@ export const navBarItems = [
   },
 ];
 
-export const footerItems = [
+export const footerItems: FooterItem[] = [
   { name: "Historia", to: "/history" },
   { name: "Líneas Estratégicas", to: "/strategic-lines" },
   { name: "Proyectos", to: "/projects" },
