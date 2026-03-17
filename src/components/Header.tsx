@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { navBarItems } from '../constants/navbar'
-import NavbarDesktop from './navbar/NavbarDesktop'
-import NavbarMobile from './navbar/NavbarMobile'
+import { navBarItems } from '../constants/navbarItems'
+import NavbarDesktop from './navbar/NavbarDesktop.tsx'
+import NavbarMobile from './navbar/NavbarMobile.tsx'
 
 export default function Header() {
   
