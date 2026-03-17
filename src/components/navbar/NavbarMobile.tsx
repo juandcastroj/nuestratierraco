@@ -2,9 +2,23 @@ import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel } fr
 import nuestraTierraLogoMobile from '../../assets/images/logo/logo.png'
 import { XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import { Link, useLocation } from 'react-router-dom'
-import PropTypes from 'prop-types'
+import type { Dispatch, SetStateAction } from 'react'
+import { NavBarItem } from '../../constants/navbarItems'
 
-export default function NavbarMobile({ navigationItems, handleMobileMenu, mobileMenuOpen, setMobileMenuOpen }) {
+type NavbarMobileProps = {
+  navigationItems: NavBarItem[]
+  handleMobileMenu: () => void
+  mobileMenuOpen: boolean
+  setMobileMenuOpen: Dispatch<SetStateAction<boolean>>
+};
+
+
+export default function NavbarMobile({
+  navigationItems,
+  handleMobileMenu,
+  mobileMenuOpen,
+  setMobileMenuOpen,
+}: NavbarMobileProps) {
   const location = useLocation();
 
   return (
@@ -106,21 +120,3 @@ export default function NavbarMobile({ navigationItems, handleMobileMenu, mobile
     </Dialog>
   )
 }
-
-NavbarMobile.propTypes = {
-  navigationItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      to: PropTypes.string,
-      subItems: PropTypes.arrayOf(
-        PropTypes.shape({
-          name: PropTypes.string.isRequired,
-          to: PropTypes.string.isRequired,
-        })
-      ),
-    })
-  ).isRequired,
-  handleMobileMenu: PropTypes.func.isRequired,
-  mobileMenuOpen: PropTypes.bool.isRequired,
-  setMobileMenuOpen: PropTypes.func.isRequired,
-};

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { navigation } from "../constants/footer";
-import { footerItems } from "../constants/navbar";
+import { footerItems } from "../constants/navbarItems";
 import WhatsAppButton from "./home/WhatsAppButton";
 
 export default function Footer() {
