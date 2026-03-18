@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-gradient-to-b from-[#affff4] to-[#60cee5] overflow-hidden">
       
-      {/* Texto */}
+      {/* Text */}
       <div className="relative z-20 mx-auto max-w-2xl py-12 sm:py-32 text-center">
         <h1 className="text-5xl sm:text-7xl font-TTmilks font-extrabold text-[#033649] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
           Corporación Nuestra Tierra
@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Imagen */}
+      {/* Image */}
       <img
         src={tortleImg}
         alt="Planeta Tierra"

@@ -1,4 +1,3 @@
-// import { XMarkIcon } from '@heroicons/react/20/solid'
 import { Link } from 'react-router-dom'
 
 export default function PetcoinsBannerDesktop() {
@@ -27,25 +26,6 @@ export default function PetcoinsBannerDesktop() {
             Conoce más <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
-
-
-        {/* <div className="hidden sm:flex flex-1 justify-end">
-          <button type="button" 
-              onClick={() => {
-                const banner = document.querySelector('#PetcoinsBanner');
-                if (banner) {
-                  banner.classList.add('max-h-0', 'opacity-0');
-                  setTimeout(() => {
-                    banner.classList.add('hidden');
-                  }, 500); 
-                }
-              }}
-
-            className="-m-3 p-3 focus-visible:-outline-offset-4">
-            <span className="sr-only">Dismiss</span>
-            <XMarkIcon aria-hidden="true" className="size-5 text-white"/>
-          </button>
-        </div> */}
 
       </div>
     </>

@@ -1,0 +1,38 @@
+import { InformationCircleIcon } from '@heroicons/react/20/solid'
+import image1 from "../../assets/images/home/Historia.jpeg";
+
+export default function MainInfo() {
+  return (
+    <>    
+      <div className="px-6 py-8 lg:px-8 bg-gradient-to-b from-[#60cee5] to-[#affff4]">
+        <div className="mx-auto max-w-3xl text-base/7 text-gray-700">
+
+          <div className="mt-10">
+
+            <figure className="mt-10 border-l-2 border-blueText pl-9 transition animate-fade-right animate-duration-[2500ms] animate-delay-[1000ms]">
+              <blockquote className="font-semibold text-blueText font-OpunMai">
+                <p>
+                  “¡Bienvenidos a un mundo donde la creatividad, la conciencia y el cambio se entrelazan para dar forma al mañana! En Nuestra Tierra, la innovación es nuestra brújula y el desarrollo sostenible es nuestro horizonte.”
+                </p>
+              </blockquote>
+
+            </figure>
+
+            <figure className="mt-16 flex flex-col">
+                <img
+                    alt=""
+                    src={image1}
+                    className="aspect-video rounded-xl bg-gray-50 object-cover"
+                />
+                <figcaption className="mt-4 flex gap-x-2 text-sm/6 text-blueText font-OpunMai">
+                    <InformationCircleIcon aria-hidden="true" className="mt-0.5 size-5 flex-none text-blueText"/>
+                    Nuestros inicios en la recolección de materiales.
+                </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </>
+  )
+}
