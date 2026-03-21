@@ -10,13 +10,11 @@ export default function Hero() {
 
   return (
     <div className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center bg-gradient-to-b from-[#affff4] to-[#60cee5] overflow-hidden">
-      
       {/* Text */}
       <div className="relative z-20 mx-auto max-w-2xl py-12 sm:py-32 text-center">
         <h1 className="text-5xl sm:text-7xl font-TTmilks font-extrabold text-[#033649] animate-fade-down animate-duration-[2500ms] animate-delay-[500ms]">
           Corporación Nuestra Tierra
         </h1>
-
         <p className="mt-8 text-lg sm:text-xl font-OpunMai font-medium text-[#023246] animate-fade-down animate-duration-[2200ms] animate-delay-[800ms]">
           Juntos somos el cambio <br />
           Juntos somos nuestra tierra.
