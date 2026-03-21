@@ -27,7 +27,7 @@ export default function Footer() {
               ))}
             </div>
 
-            <p className="mt-10 text-center font-bold text-sm/6 text-[#9fffcb]">&copy; 2025   nuestratierraco</p>
+            <p className="mt-10 text-center font-bold text-sm/6 text-[#9fffcb]">&copy; 2026   nuestratierraco</p>
           </div>
         </footer>
       </>
